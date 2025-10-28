@@ -1,0 +1,102 @@
+.btn_wrapper{
+    a{
+        padding: 12px 4px 12px 30px;
+        background-color: $white;
+        @include border-radius(40px);
+        font-weight: 600;
+        font-size: 16px;
+        color: $text_color;
+        @include transition(0.4s);
+
+        span{
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            background-color: $text_color;
+            color: $white;
+            @include border-radius(50%);
+            margin-left: 12px;
+            
+            display: inline-block;
+            i{
+                @include transition(0.4s);
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+            }
+        }
+        &:hover{
+            background-color: $primary;
+            color: white;
+            span{
+                background-color: white;
+                color: $text_color;
+                i {
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                }
+            }
+        }
+    }
+    &.style_1{
+        a{
+            background-color: $text_color;
+            color: $white;
+            @include transition(0.4s);
+            span{
+                background-color: $white;
+                color: $text_color;
+            }
+            &:hover{
+                background-color: $primary;
+                color: $white;
+                i{
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                }
+            }
+        }
+    }
+    &.style_3{
+        a{
+            background-color: $primary;
+            color: $white;
+            @include transition(0.4s);
+            span{
+                background-color: $white;
+                color: $text_color;
+            }
+            &:hover{
+                background-color: $primary;
+                color: $white;
+                i{
+                    transform: rotate(0deg);
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+    }
+            }
+        }
+    }
+    &.style_2{
+        a{
+            background-color: $white;
+            color: $text_color;
+            span{
+                background-color: $text_color;
+                color: $white;
+            }
+        }
+    }
+   
+    }

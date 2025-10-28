@@ -1,0 +1,292 @@
+.mb_wiki_area{
+    .mb_breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 47px;
+    font-size: 14px;
+    color: $text_color;
+    @include xs {
+        margin-bottom: 35px;
+    }
+
+    .mb_breadcrumb_item {
+        color: $text_color;
+        text-decoration: none;
+        @include transition(0.4s);
+
+        &:hover {
+            color: $primary;
+        }
+
+        i {
+            margin-right: 4px;
+        }
+    }
+
+    .mb_breadcrumb_separator {
+        font-size: 12px;
+    }
+
+    .mb_breadcrumb_current {
+        font-weight: 500;
+        color: $text_color;
+    }
+}
+
+
+.mb_wiki_container {
+    width: 100%;
+    border: 1px solid rgba(3, 26, 38, 0.1);
+    border-radius: 10px;
+    padding: 50px;
+    @include xl {
+        padding: 40px;
+    }
+    @include md {
+        padding: 30px;
+    }    
+    @include xxs {
+        padding: 20px;
+    }    
+}
+
+.mb_search_bar {
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    border: 1px solid rgba(3, 26, 38, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 49px;
+    transition: border-color 0.3s ease;
+    font-weight: 500;
+    font-size: 16px;
+    height: 70px;
+    color: $text_color;
+}
+
+
+.mb_search_input {
+    flex-grow: 1;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    outline: none;
+    @include xxs {
+        font-size: 14px;
+    }
+}
+
+.mb_search_input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: $text_style3;
+}
+
+.mb_search_button {
+    background-color: #111827;
+    border: none;
+    color: $white;
+    width: 50px;
+    height: 50px;
+    @include border-radius(6px);
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mb_search_button:hover {
+    background-color: #1f2937;
+}
+
+.mb_section_heading {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 20px;
+    @include xxs {
+        font-size: 20px;
+    }    
+}
+
+.mb_wiki_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mb_grid_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    border: 1px solid rgba(3, 26, 38, 0.1);
+    border-radius: 6px;
+}
+
+.mb_grid_item:hover {
+    border-color: $primary;
+    .mb_item_icon{
+        color: $primary;
+    }
+}
+
+.mb_item_content {
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+.mb_item_title {
+    a{
+        font-weight: 600;
+        font-size: 20px;
+        color: $text_color;
+        @include transition(0.4s);
+        margin: 0 0 5px 0;
+        @include xxs {
+            font-size: 16px;
+        }        
+        &:hover{
+            color: $primary;
+        }
+
+    }
+}
+
+.mb_item_subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    color: $text_style2;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @include lg {
+        white-space: inherit;
+        padding-top: 7px;
+    }
+    @include xxs {
+        font-size: 12px;
+    }    
+}
+
+.mb_item_icon {
+    color: $text_color;
+    font-size: 14px;
+}
+
+.mb_wiki_content_details{
+    padding: 34px 40px 40px 40px;
+    border: 1px solid rgba(3, 26, 38, 0.1);
+    border-radius: 6px;
+    background-color: $white;
+    @include xs {
+        padding: 20px 20px 20px 20px;
+    }
+    .wiki_content_title{
+        h4{
+            font-weight: 600;
+            font-size: 20px;
+            color: $text_color;
+            @include xxs {
+                font-size: 18px;
+            }
+        }
+
+    }
+    p{
+        font-weight: 500;
+        font-size: 16px;
+        color: $text_style2;
+    }
+}
+.objectives_item{
+    ul{
+        margin-top: 20px;
+        @include flex(column, flex-start, flex-start);
+        gap: 36px;
+        li{
+            // margin-bottom: 38px;
+            h5{
+
+                font-weight: 600;
+                font-size: 16px;
+                color: $text_color;
+                padding-left: 15px;
+                position: relative;
+                @include xxs {
+                    font-size: 14px;
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    @include transformY(-50%);
+                    width: 5px;
+                    height: 5px;
+                    @include border-radius(50%);
+                    background-color: $text_color;
+
+                }
+            }
+            p{
+                padding-left: 15px;
+                margin-top: 7px;
+                font-weight: 500;
+                font-size: 16px;
+                color: $text_style2;
+                @include xxs {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.technology_item{
+    > ul{
+        margin-top: 20px;
+        @include flex(column, flex-start, flex-start);
+        gap: 30px;
+        li{
+            h5{
+                font-family: var(--font-family);
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 187%;
+                color: $text_color;
+            }
+            ul{
+                li{
+                    font-weight: 500;
+                    color: $text_style2;
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 5px;
+                    &::before{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 10px;
+                    @include transformY(-50%);
+                    width: 5px;
+                    height: 5px;
+                    @include border-radius(50%);
+                    background-color: $text_color;
+
+                }
+                }
+            }
+        }
+    }
+}
+}

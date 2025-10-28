@@ -1,0 +1,156 @@
+.privacy_policy_area{
+    h3{
+        font-weight: 600;
+        font-size: 32px;
+        letter-spacing: -0.02em;
+        color: #101010;
+        @include xxs {
+            font-size: 24px;
+        }
+    }
+    h4{
+        font-weight: 600;
+        font-size: 20px;
+        color: #101010;
+        @include xxs {
+            font-size: 18px;
+        }
+    }
+    h5{
+        font-weight: 600;
+        font-size: 18px;
+        color: #101010;
+    }
+    p{
+        font-weight: 400;
+        font-size: 18px;
+        color: #6a6e7b;
+        @include xxs {
+            font-size: 14px;
+        }
+    }
+    .heading{
+        &.style_1{
+            h4{
+                font-size: 24px;
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .update_date{
+        margin-top: 9px;
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            color: #6a6e7b;
+            @include xxs {
+                font-size: 12px;
+            }            
+        }
+        span{
+            color: #101010;
+        }
+    }
+        ul{
+            margin-top: 30px;
+            li{
+                font-weight: 400;
+                font-size: 18px;
+                color: #6a6e7b;
+                padding-left: 20px;
+                position: relative;
+                margin-bottom: 20px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 12px;
+                    left: 0px;
+                    width: 6px;
+                    height: 6px;
+                    @include border-radius(50%);
+                    background-color: #6a6e7b;
+                }
+                @include xxs {
+                    font-size: 14px;
+                }
+                span{
+                    color: #101010;;
+                    font-size: 18px;
+                }
+                a{
+                   color: #6a6e7b;
+                   font-size: 18px;
+                   font-size: 400;
+                   @include transition(0.4s);
+                   &:hover{
+                    color: $primary;
+                   }
+                }
+            }
+        }
+
+        .mb_tracking_technologies{
+            .description{
+                ul{
+                    li{
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #6a6e7b;
+                        p{
+                            color: #101010;
+                            display: inline;
+
+                        }
+                    }
+                }
+            }
+            .mb_tracking_item{
+                h4{
+                    font-size: 18px;
+                    position: relative;
+                    padding-left: 20px;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0px;
+                        @include transformY(-50%);
+                        width: 6px;
+                        height: 6px;
+                        @include border-radius(50%);
+                        background-color: #101010;
+                    }
+                }
+            }
+        }
+        .mb_use_personal_data{
+            .heading{
+                p{
+                    color: #101010;
+                }
+            }
+            ul{
+                li{
+                    font-size: 16px;
+                    &::before{
+                        background-color: #101010;
+                    }
+                }
+            }
+        }
+        b{
+            font-weight: 600;
+            font-size: 18px;
+            color: #101010;
+        }
+        .mb_business{
+            li{
+                color: #101010;
+                &::before{
+                    background-color: #101010;
+                }
+            }
+        }
+}

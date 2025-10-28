@@ -1,0 +1,127 @@
+.rb_contact1 {
+    position: relative;
+    .contact_shape {
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        @include lg {
+            position: absolute;
+            bottom: auto;
+            left: auto;
+            right: 4%;
+            top: 33%;
+            img {
+                width: 143.803px;
+                height: 119px;
+                flex-shrink: 0;
+            }
+        }
+        @include md {
+            top: 27%;
+        }
+        @include sm {
+            right: 7%;
+            top: 22%;
+            img {
+                width: 51.963px;
+                height: 43.001px;
+                flex-shrink: 0;
+            }
+        }
+        @include xxs {
+            top: 24%;
+        }
+    }
+    .contact_shape2 {
+        position: absolute;
+        top: -14%;
+        left: 0%;
+        @include xl {
+            display: none;
+        }
+    }
+    .section_padding {
+        .rb_heading_area {
+            padding-top: 40px;
+            @include lg {
+                padding-top: 0;
+            }
+            @include md {
+                .rb_title {
+                    max-width: 422px;
+                }
+            }
+        }
+        border-radius: 24px;
+        background: #FFEED8;
+        padding: 120px 75px;
+        @include xxl {
+            padding: 80px 40px;
+        }
+        @include lg {
+           padding: 60px 40px;
+        }
+        @include md {
+           padding: 40px 32px;
+        }
+        @include sm {
+           padding: 30px 20px;
+        }
+        .rb_contact_area {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            @include xl {
+                flex-direction: column;
+                align-items: start;
+            }
+            @include lg {
+                flex-direction: row;
+            }
+            @include sm {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                @include sm {
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        flex-shrink: 0;
+                    }
+                }
+                a {
+                    color: $text_style2;
+                    font-family: $inter-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px; /* 187.5% */
+                    &:hover {
+                        color: #FF9916;
+                    }
+                    @include md {
+                        font-size: 14px;
+                        line-height: normal;
+                    }
+                    @include xxs {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        .rb_contact_form {
+            padding: 54px 44px;
+            border-radius: 14px;
+            border: 1px solid rgba(3, 26, 38, 0.10);
+            background: $white;
+            @include sm {
+                padding: 20px 20px;
+            }
+        }
+
+    }
+}

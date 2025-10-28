@@ -1,0 +1,2570 @@
+.rb_project1 {
+    position: relative;
+    .section-padding {
+        position: relative;
+        padding: 0px 75px 0px;
+        @include lg {
+            padding: 60px 40px 70px;
+        }
+        @include xs {
+            padding: 35px 30px 35px;
+        }
+        @include xxs {
+           padding: 30px 0px 30px;
+        }
+    }
+    .rb_project1_card {
+        .rb_thumb {
+            position: relative;
+            img {
+                border-radius: 15px;
+                width: 100%;
+                max-height: 520px;
+            }
+            .rb_btn {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                position: absolute;
+                bottom: 7%;
+                left: 4%;
+                @include sm {
+                    bottom: 5%;
+                    left: 2%;
+                }
+                @include xs {
+                    display: none
+                }
+                .item {
+                    @include flex(row, center,center);
+                    border-radius: 6px;
+                    background: $white;
+                    padding: 8px 8px;
+                    height: 40px;
+                    color: $text_color;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    @include sm {
+                        padding: 8px 6px;
+                        height: 35px;
+                        font-size: 14px;
+                    }
+                    img {
+                        padding-right: 8px;
+                        width: fit-content;
+                    }
+                }
+            }
+        }
+        .rb_content {
+            position: absolute;
+            bottom: 4%;
+            left: 3%;
+            border-radius: 10px;
+            background: $white;
+            padding: 20px 16px;
+            @include xxl {
+                bottom: 1%;
+                left: 1%;
+                padding: 19px 12px;
+            }
+            .rb_title {
+                color: $text_color;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include xxxl {
+                    font-size: 14px;
+                }
+            }
+            .rb_desc {
+                color: $text_color;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 150% */
+                @include xxxl {
+                    font-size: 14px;
+                }
+            }
+            .rb_desc2 {
+                color: $text_style2;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+                @include xxxl {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.rb_project_tab {
+    position: relative;
+    .rb_project_content {
+        position: relative;
+    }
+    .rb_tab_buttons {
+        display: flex;
+        gap: 10px;
+        .item {
+            display: inline-flex;
+            height: 40px;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background: var(--P, #FF9916);
+                color: $white;
+            }
+        }
+    }
+    .rb_add_favorite_btn {
+        @include flex(row, end, center);
+        gap: 10px;
+        color: $text_color;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        opacity: 0.7;
+    }
+    .rb_overview_content {
+        .rb_overview_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid $border;
+            @include md {
+                padding: 30px 20px;
+            }
+            .rb_location {
+                .rb_title {
+                    color: $text_color;
+                    font-family: $inter-font;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    @include md {
+                        font-size: 20px;
+                    }
+                    i {
+                        color: rgba(3, 26, 38, 0.40);
+                    }
+                }
+                .rb_text {
+                    color: $text_color;
+                    font-family: $inter-font;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    opacity: 0.7;
+                }
+            }
+            .rb_btn {
+                display: flex;
+                @include flex(row, center, center);
+                width: fit-content;
+                height: 50px;
+                border-radius: 999px;
+                background: var(--P, #FF9916);
+                color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding: 19px 99px;
+                border: none;
+
+                @include md {
+                    padding: 19px 75px;
+                }
+                @include sm {
+                    display: none;
+                }
+                
+            }
+            .rb_btn2 {
+                display: flex;
+                @include flex(row, center, center);
+                width: fit-content;
+                height: 50px;
+                border-radius: 999px;
+                background: var(--P, #FF9916);
+                color: $white;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding: 19px 99px;
+                border: none;
+
+                @include md {
+                    padding: 19px 75px;
+                }
+                @include xxs {
+                    width: 100%;
+                }
+                @media (min-width: 768px) {
+                    display: none !important;
+                }
+
+                
+            }
+
+            .rb_detached {
+                @include sm {
+                    display: none;
+                }
+                h5 {
+                    color: $text_color;
+                    text-align: right;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-bottom: 15px;
+                    @include md {
+                        font-size: 18px;
+                        padding-bottom: 7px;
+                    }
+                }
+                h6 {
+                    color: $text_color;
+                    text-align: right;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    opacity: 0.7;
+                }
+            }
+            .rb_hr {
+                background: rgba(3, 26, 38, 0.12);
+                width: 100%;
+                height: 1px;
+                flex-shrink: 0;
+            }
+            .rb_service_item {
+                @include flex(row, start, center);
+                gap: 15px;
+                .text {
+                    h5 {
+                        color: $text_color;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        opacity: 0.7;
+                        padding-bottom: 5px;
+                    }
+                    h4 {
+                        color: $text_color;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+            .rb_desc {
+                h4 {
+                    color: $text_color;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    @include xxs {
+                        font-size: 20px;
+                    }
+                }
+                p {
+                    color: $text_style2;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px; 
+                }
+                .rb_read_more {
+                    color: #FF9916;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .rb_history_content {
+        .rb_history_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid $border;
+            @include md {
+                padding: 30px 20px;
+            }
+            .rb_history_title {
+                h4 {
+                    color: $text_color;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            .rb_history_desc {
+                color: $text_style2;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .rb_history_inner_card {
+                position: relative;
+                padding: 38px 44px;
+                border-radius: 10px;
+                background: #FFEED8;
+                @include xxl {
+                    padding: 38px 35px;
+                }
+                @include sm {
+                    padding: 38px 17px;
+                }
+                @include xxs {
+                    padding: 20px 8px;
+                }
+                .inner_card_vLine {
+                    position: absolute;
+                    top: 9.5%;
+                    left: 5.5%;
+                    width: 1px;
+                    height: 242px;
+                    flex-shrink: 0;
+                    background: rgba(3, 26, 38, 0.12);
+                    @include xl {
+                        left: 4.5%;
+                    }
+                }
+                .rb_content {
+                    width: 100%;
+                    .rb_flex {
+                        @include xs {
+                            flex-direction: column;
+                        }
+                    }
+                    .rb_date {
+                        color: rgba(3, 26, 38, 0.70);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        @include xs {
+                            font-size: 14px;
+                        }
+                        span {
+                            color: $text_color;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            @include xs {
+                                font-size: 18px;
+                            }
+                        }
+                        .rb_file_tag {
+                            margin-left: 14px;
+                        }
+                    }
+                    .rb_current_view {
+                        padding: 7px 14px;
+                        width: fit-content;
+                        height: 41px;
+                        border-radius: 4px;
+                        background: $white;
+                        box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+                        color: $text_color;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 26px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        -ms-border-radius: 4px;
+                        -o-border-radius: 4px;
+}
+                    .rb_login_to_view {
+                        color: $text_color;
+                        font-size: 15px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        opacity: 0.7;
+                    }
+                    .rb_history_table {
+                        border-radius: 10px;
+                        background: $white;
+                        box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+                        padding: 40px 30px;
+                        .icon {
+                            @include xs {
+                                display: none;
+                            }
+                        }
+                        .content {
+                            h4 {
+                                color: $text_color2;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: normal;
+                                margin-bottom: 8px;
+                                @include xxs {
+                                    font-size: 14px;
+                                }
+                            }
+                            h5 {
+                                color: rgba(3, 26, 38, 0.70);
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 26px; /* 185.714% */
+                                @include xxs {
+                                    font-size: 12px;
+                                }                                
+                            }
+                        }
+                        .rb_element {
+                            display: flex;
+                            gap: 50px;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .rb_fullhistory {
+                color: $primary;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+
+    .rb_miBitcoin_content {
+        .rb_miBitcoin_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid $border;
+            .rb_miBitcoin_title {
+                h4 {
+                    color: $text_color;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            .rb_miBitcoin_desc {
+                color: $text_style2;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            .rb_inner_card {
+                position: relative;
+                display: flex;
+                align-items: end;
+                border-radius: 10px;
+                border: 1px solid $border;
+                .rb_chart_img {
+                    position: absolute;
+                    top: 50%;
+                    left: 69%;
+                    transform: translate(-50%, -50%);
+                }
+                .rb_miBitcoin_list_card {
+                    max-width: 310px;
+                    .rb_value_header {
+                        border-radius: 9px 9px 0 0;
+                        background: #FFEED8;
+                        padding: 18px 60px;
+                        color: $text_color;
+                        text-align: center;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    .rb_content {
+                        border-right: 1px solid rgba(3, 26, 38, 0.12);
+                        .rb_value_list {
+                            @include flex(row, space-between, center);
+                            border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+                            padding: 22px 20px;
+                            color: rgba(3, 26, 38, 0.70);
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                        }
+                    }
+                }
+                .rb_chart {
+                    padding-left: 40px;
+                    padding-bottom: 20px;
+                    display: grid;
+                    grid-template-columns: 60px 1fr;
+                    grid-template-rows: repeat(7, 1fr) 40px;
+                    width: 640px;
+                    max-width: 640px;
+                    height: 500px;
+                    max-height: 500px;
+                    border-left: 1px solid #e5e7eb;
+                    border-bottom: 1px solid #e5e7eb;
+                    position: relative;
+                    /* Y-axis labels */
+                    .y-label {
+                        color: rgba(3, 26, 38, 0.70);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 60px; /* 428.571% */
+                        text-align: right;
+                        padding-right: 10px;
+                        display: flex;
+                        align-items: center;
+                    }
+                
+                    /* X-axis labels */
+                    .x-labels {
+                        grid-column: 2 / 3;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: rgba(3, 26, 38, 0.70);
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 60px; /* 428.571% */
+                        padding-top: 8px;
+                    }
+                
+                }
+            }
+
+        }
+    }
+    .rb_feature_content {
+        .rb_feature_card {
+            padding: 45px 50px;
+            border-radius: 10px;
+            border: 1px solid $border;
+            @include md {
+                padding: 30px 20px;
+            }
+            @include sm {
+                padding: 20px 20px;
+            }
+            .rb_feature_title {
+                h4 {
+                    color: $text_color;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    @include md {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .rb_feature_desc {
+                color: $text_style2;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                @include md {
+                    font-size: 14px;
+                }
+            }
+            .rb_feature_tab {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+                .item {
+                    border-radius: 6px 6px 0 0;
+                    background: #FFEED8;
+                    padding: 14px 18px;
+                    color: $text_color;
+                    font-family: $inter-font;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    @include md {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .rb_feature_faq {
+                .accordion {
+                    width: 100%;
+                    .accordion-item {
+                        border-radius: 6px;
+                        border: 1px solid rgba(3, 26, 38, 0.10);
+                        background: $white;
+                        margin-bottom: 30px;
+                        overflow: hidden; 
+                        @include sm{
+                            margin-bottom: 8px;
+                        }
+                        &.active {
+                            .accordion-header {
+                                background: $white;
+                                h3{
+                                    color: $text_color;
+                                }                  
+
+                                .iconPlus {
+                                    display: none;
+                                }
+                                .iconMinus {
+                                    display: block;
+                                }
+                            }
+                            .accordion-content {
+                                height: auto; 
+                            }
+                        }
+                    }
+
+                    .accordion-header {
+                        @include flex(row, space-between, center);
+                        padding: 15px 24px;
+                        @include sm{
+                            padding: 10px 15px;
+                        }
+                        cursor: pointer;
+                        transition: background 0.3s ease;
+                        .iconMinus {
+                            display: none;
+                        }
+                        h3 {
+                            display: flex;
+                            align-items: center;
+                            gap: 20px;
+                            color: $text_color;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                            @include sm {
+                                font-size: 16px;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: #f0f0f0;
+                        }
+
+                        .icon {
+                            width: 32px;
+                            height: 32px;
+                            line-height: 32px;
+                            text-align: center;
+                            @include border-radius(50%);
+                            background-color: #FFEED8;
+                            transition: transform 0.3s ease;
+                            box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+                            @include sm{
+                                width: 14px;
+                                height: 14px;
+                                line-height: 13px;
+                                font-size: 8px;
+                            }
+                        }
+                    }
+
+                    .accordion-content {
+                        height: 0;
+                        overflow: hidden;
+                        transition: height 0.5s ease-out, padding 0.5s ease-out;
+                        p {
+                            padding: 21px 24px 40px 24px;
+                            margin: 0; 
+                            color: $text_style2;
+                            font-family: $inter-font;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 30px; 
+                            @include sm{
+                                font-size: 8px;
+                                padding: 10px;
+                            }
+                        }
+                        .rb_content_table {
+                            padding: 30px 70px 40px 70px;
+                            @include sm {
+                                padding: 12px 40px 30px 18px;
+                            }
+                            .rb_item {
+                                h6 {
+                                    color: rgba(3, 26, 38, 0.70);
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: 26px;
+                                    padding-bottom: 8px;
+                                }
+                                h5 {
+                                    color: $text_color;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .rb_nearby_listing {
+                .rb_title {
+                    color: $text_color;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    @include md {
+                        font-size: 20px;
+                        padding-top: 20px;
+                    }
+                }
+                .order_table {
+                    .row {
+                        align-items: center;
+                        &.style_1 {
+                            border-radius: 5px 5px 0 0;
+                            padding: 17px 0px;
+                            border-bottom: 1px solid #E5E8EB;
+                            @include breakpoint (max-md){
+                                padding: 17px 0px;
+                            }
+                            @include breakpoint (max-sm){
+                                row-gap: 20px;
+                                padding: 20px 0px 20px;
+                            }
+                            .title{
+                                h4 {
+                                    color: $text_color;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    @include xs {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                        &.style_2 {
+                            padding: 15px 0px 15px;
+                            &:not(:last-child) {
+                                border-bottom: 1px solid #E5E8EB;
+                            }
+                            &:last-child {
+                                border-radius: 0 0 5px 5px;
+                            }
+                            @include breakpoint (max-sm){
+                                row-gap: 20px;
+                            }
+                        }
+                    }
+                    .address,
+                    .amount,
+                    .bed,
+                    .bath,
+                    .sqft,
+                    .lot_sqft {
+                        color: var(--800, #68767D);
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px; /* 150% */
+                        @include breakpoint (max-md){
+                            font-size: 14px;
+                        }
+                        @include breakpoint (max-sm){
+                            font-size: 14px;
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rb_btc_card {
+        border-radius: 10px;
+        border: 1px solid $border;
+        padding: 22px 40px 36px 40px;
+        .rb_btc_text {
+            color: $text_color;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 74px;
+            padding-right: 10px;
+        }
+        .rb_btc_value {
+            color: $text_color;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 74px;
+        }
+        .rb_sale {
+            border-radius: 4px;
+            background: $white;
+            box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+            padding: 5px 10px;
+            margin-left: 25px;
+        }
+        .rb_est {
+            color: $text_color;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            span {
+                color: $text_color;
+                font-size: 8px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+            img {
+                padding-left: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+    .rb_schedule_card {
+        border-radius: 10px;
+        border: 1px solid $border;
+        padding: 20px 40px 36px 40px;
+        .rb_schedule_title {
+            color: $text_color;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px; /* 213.333% */
+        }
+        .rb_schedule_text {
+            color: $text_color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+        }
+        .rb_date_slider {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            .item {
+                border-radius: 10px;
+                border: 1px solid $border;
+                padding: 20px 30px 10px;
+                text-align: center;
+                span {
+                    color: var(--800, #68767D);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px; /* 150% */
+                }
+                h4 {
+                    color: $text_color;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 48px;
+                }
+                &.active {
+                    background: var(--900, #031A26);
+                    border: none;
+                    span {
+                        color: $white;
+                    }
+                    h4 {
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .rb_schedule_btn {
+            border-radius: 999px;
+            background: var(--P, #FF9916);
+            padding: 19px 20px;
+            text-align: center;
+            color: $white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .rb_more_about_property {
+            color: $text_color;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px; /* 213.333% */
+        }
+        .rb_email_agent_btn {
+            border-radius: 6px;
+            border: 1px solid $border;
+            padding: 18px 20px;
+            color: $text_color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-align: center;
+        }
+        .rb_message_sent {
+            color: $text_color;
+            font-size: 16px;
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        .rb_desc {
+            color: $text_color;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            span {
+                text-decoration-line: underline;
+                text-decoration-style: solid;
+                text-decoration-skip-ink: auto;
+                text-decoration-thickness: auto;
+                text-underline-offset: auto;
+                text-underline-position: from-font;
+            }
+        }
+    }
+}
+
+/*--- Monthly Payment Start---*/
+.mb_monthly_payment_area{
+    margin-top: 60px;
+    .mb_monthly_payment_container {
+        position: relative;
+        border: 1px solid #e6e9ea;
+        border-radius: 20px;
+        width: 100%;
+        padding: 50px;
+        @include md {
+            padding: 40px 20px;
+        }
+    }
+    .mb_payment_tag {
+        position: absolute;
+        top: -27px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 9px 20px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000;
+        @include border-radius(10px);
+        background-color: #FFEED8;
+        @include xxs {
+            font-size: 14px;
+        }
+    }
+    .mb_payment_card{
+        .mb_title {
+            font-weight: 700;
+            font-size: 34px;
+            color: $text_color;
+            @include md {
+                font-size: 30px;
+            }
+            @include xxs {
+                font-size: 20px;
+                line-height: 34px;
+            }
+        }
+        .mb_edit_payment{
+            h4{
+                font-weight: 600;
+                font-size: 34px;
+                color: $text_color;
+                img{
+                    margin-right: 8px;
+                    @include xxs {
+                        width: 17%;
+                    }
+                }
+            }
+        }
+        .mb_pricing_area{
+            margin-top: 26px;
+            @include flex(row, space-between, center);
+            h4{
+                font-weight: 600;
+                font-size: 34px;
+                color: $text_color;
+                @include md {
+                    font-size: 20px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
+                .price{
+                    margin-left: 5px;
+                    font-size: 24px;
+                    @include md {
+                        font-size: 18px;
+                    }
+                    @include xxs {
+                        font-size: 14px;
+                    }
+                }
+                .month{
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: $text_color3;
+                    @include xxs {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .mb_section_item{
+            @include flex(row, space-between, center);
+            margin-top: 21px;
+            .mb_label{
+                font-weight: 500;
+                font-size: 22px;
+                color: $text_color;
+                @include md {
+                    font-size: 18px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
+            }
+            .mb_value{
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 22px;
+                color: $text_color;
+                @include md {
+                    font-size: 18px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
+                .mb_usd{
+                    font-size: 14px;
+                }
+            }
+        }
+        .mb_loan_price{
+            margin-top: 13px;
+            @include flex(row, space-between, center);
+            span{
+                font-weight: 400;
+                font-size: 16px;
+                color: $text_color3;
+                @include xxs {
+                    font-size: 12px;
+                }
+            }
+        }
+        .mb_progress_bar {
+            width: 100%;
+            height: 15px;
+            background-color: $text_color;
+            @include border-radius(999px);
+            overflow: hidden;
+            margin-top: 23px;
+            .mb_progress_fill {
+                height: 100%;
+                width: 90%;
+                background: linear-gradient(to right, $primary 90%, #68767d 10%);
+            }
+        }
+        .mb_cost_breakdown {
+            margin-top: 23px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .mb_breakdown_item {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .mb_breakdown_dot {
+                width: 15px;
+                @include border-radius(50%);
+                height: 15px;
+                margin-right: 10px;
+                display: inline-block;
+            }
+            .mb_dot_orange { background-color: $primary; }
+            .mb_dotred { background-color: $text_color; }
+            .mb_dot_darkred { background-color: $text_color; }
+            .mb_dot_gray_light { background-color: #ffebd0; }
+            .mb_dot_gray { background-color: #818c92; }
+            .mb_breakdown_label {
+                flex-grow: 1;
+                font-weight: 400;
+                font-size: 16px;
+                color: $text_color;
+                @include xxs {
+                    font-size: 14px;
+                    line-height: 24px; 
+                }
+                a{
+                    color: $text_color;
+                    text-decoration: underline;
+                    text-decoration-skip-ink: none;
+                    @include transition(0.4s);
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+            .mb_breakdown_value {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: $text_color;
+                @include xxs {
+                    font-size: 14px;
+                    line-height: 24px; 
+                }
+                .mb_usd{
+                    font-size: 12px;
+                    @include xxs {
+                        font-size: 10px;
+                        line-height: 24px; 
+                    }
+                }
+            }
+        }
+        .mb_total_due{
+            margin-top: 33px;
+            @include flex(row, space-between, center);
+            h5{
+                font-weight: 700;
+                font-size: 24px;
+                color: $text_color;
+                @include md {
+                    font-size: 20px;
+                    line-height: 34px; /* 170% */
+                }
+                @include xxs {
+                    font-size: 16px;
+                    line-height: 34px; /* 170% */
+                }
+                span{
+                    font-size: 14px;
+                    font-weight: 500px;
+                    @include xxs {
+                        font-size: 12px;
+                        line-height: 34px; /* 170% */
+                    }
+                }
+            }
+        }
+        .mb_total_due_item{
+            margin-top: 10px;
+            &.style_1{
+                margin-top: 19px;
+            }
+            @include flex(row, space-between, center);
+            .mb_label, .mb_value{
+                font-weight: 400;
+                font-size: 16px;
+                color: $text_color;
+                @include xxs {
+                    font-size: 14px;
+                }
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        .mb_apply_benefits{
+            margin-top: 23px;
+            position: relative;
+            @include flex(row, space-between, center);
+            h5{
+                font-weight: 700;
+                font-size: 24px;
+                color: $text_color;
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+            
+          
+        }
+        .mb_cta_buttons {
+            @include flex(row, flex-start, center);
+            margin-top: 31px;
+            gap: 20px;
+            @include xxs {
+                flex-direction: column;
+                align-items: start;
+            }
+            button {
+                background-color: $primary;
+                color: $white;
+                padding: 12px 30px;
+                border: none;
+                @include border-radius(30px);
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s;
+                font-size: 16px;
+                &:hover {
+                    background-color: darken($primary, 10%);
+                }
+            }
+            a {
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: $text_color;
+                @include transition(0.4s);
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        .mb_disclosure_link{
+            margin-top: 30px;
+            a{
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: underline;
+                @include transition(0.4s);
+                text-decoration-skip-ink: none;
+                color: $text_color;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }    
+}
+/*--- Monthly Payment End---*/
+  .mb_toggle_switch {
+                position: relative;
+                display: inline-block;
+                width: 66px;
+                height: 30px;
+                .mb_toggle_text{
+                position: absolute;
+                top: 50%;
+                @include transformY(-50%);
+                left: 32px;
+                color: $white;
+                font-size: 16px;
+                font-weight: 400;   
+                @include xxs {
+                    font-size: 13px;
+                }                        
+            }
+                input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                }
+                .mb_toggle_slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: $text_color;
+                    transition: .4s;
+                    border-radius: 20px;
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: 24px;
+                        width: 24px;
+                        left: 3px;
+                        bottom: 3px;
+                        background-color: $white;
+                        transition: .4s;
+                        border-radius: 50%;
+                    }
+                }
+                input:checked + .mb_toggle_slider {
+                    background-color: $primary;
+                }          
+                input:checked + .mb_toggle_slider:before {
+                    transform: translateX(35px);
+                    -webkit-transform: translateX(35px);
+                    -moz-transform: translateX(35px);
+                    -ms-transform: translateX(35px);
+                    -o-transform: translateX(35px);
+                }
+                input:checked ~ .mb_toggle_text {
+                    left: 8px;
+                    color: $white !important;
+                }
+            }
+/*--- Costs For home Start---*/
+.costs_home_area{
+@include md {
+    display: none;
+}
+.mb-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.mb-dot-primary { background-color: $primary; }
+.mb-dot-primary1 { background-color: #ffebd0; }
+.mb-dot-text { background-color: $text_color; }
+.mb-dot-text1 { background-color: #818c92; }
+.cost_heading_area{
+    @include flex(row, space-between, center);
+    @include md {
+        flex-direction: column;
+        align-items: start;
+    }
+    h3{
+        font-weight: 700;
+        font-size: 34px;
+        color: $text_color;
+        margin-top: 13px;
+    }
+    .mb_cost_heading{
+        h4{
+            font-weight: 600;
+            font-size: 34px;
+            color: $text_color;
+            span{
+                font-weight: 500;
+                font-size: 15px;
+                color: $text_color3;
+            }
+        }
+    }
+.mb_cost_display{
+    @include flex(column, flex-start, flex-end);
+}
+    .mb-progress-bar {
+    width: 550px;
+  height: 15px;
+  background-color: $text_color;
+  @include border-radius(15px);
+  overflow: hidden;
+  margin-bottom: 20px;
+  @include xxl {
+    width: 424px;
+  }
+  @include xl {
+    width: 580px;
+  }
+  @include lg {
+    width: 432px;
+  }
+
+  .mb-progress-fill {
+    height: 100%;
+    background: linear-gradient(to right, $primary 70%, #68767d 30%);
+    border-radius: 4px;
+    width: 85%;
+    transition: width 0.3s ease-in-out;
+  }
+}
+}
+.mb_view_btn{
+    a{
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $text_color;
+        @include transition(0.4s);
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+.mb_apply_veterans{
+    p{
+        font-weight: 700;
+        font-size: 20px;
+        color: $text_color;
+        img{
+            margin-left: 12px
+        }
+    }
+}
+.mb_item_header{
+    @include flex(row, space-between, center);
+    max-width: 500px;
+    @include xl {
+        max-width: 606px;
+    }
+    @include lg {
+        max-width: 548px;
+    }
+
+}
+.mb_input_box{
+    label{
+        font-weight: 400;
+        font-size: 16px;
+        color: $text_color;
+        margin-bottom: 10px
+    }
+    .mb-subtext{
+        @include flex(row, flex-start, center);
+        gap: 5px;
+        margin-top: 15px;
+    }
+}
+
+
+.mb-container {
+  width: 100%;
+}
+
+.mb-card {
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.mb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mb-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.mb-update-link {
+  font-size: 14px;
+  color: $text_color3;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mb-cost-display {
+  font-size: 32px;
+  font-weight: bold;
+  color: $text_color;
+  margin-bottom: 15px;
+
+  .mb-unit {
+    font-size: 18px;
+    font-weight: normal;
+    color: $text_color3;
+  }
+}
+
+
+
+.mb-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.mb-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mb-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  a{
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: $text_color;
+    @include transition(0.4s);
+    &:hover{
+        color: $primary;
+    }
+  }
+}
+
+.mb-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
+
+
+.mb-label {
+  font-size: 18px;
+  font-weight: 400;
+  color: $text_color;
+  display: flex;
+  align-items: center;
+
+}
+
+.mb-info-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #68767d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: $text_color3;
+  margin-left: 5px;
+  cursor: pointer;
+  &::after {
+    content: '?';
+  }
+}
+
+.mb-input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #cccccc;
+  @include border-radius(10px);
+  height: 50px;
+  padding: 0px 30px;
+
+  .mb-input-prefix {
+    color: $text_color3;
+    margin-right: 5px;
+  }
+
+  .mb-input-field {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .mb-clear-icon {
+    color: $text_color;
+    font-size: 40px;
+    cursor: pointer;
+    font-weight: lighter;
+    line-height: 1;
+  }
+}
+
+.mb-subtext {
+    font-weight: 400;
+    font-size: 16px;
+    color: $text_color;
+}
+
+.mb-slider-range {
+  display: flex;
+  justify-content: space-between;
+  span{
+    font-weight: 400;
+    font-size: 16px;
+    color: $text_color;
+  }
+}
+
+.mb-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  background: #cdd1d4;
+  outline: none;
+  border-radius: 4px;
+  
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: $text_color;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.mb-down-payment-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 50px !important;
+  justify-content: space-between;
+  border: 1px solid #cccccc;
+  @include border-radius(10px);
+  @include xxl {
+    gap: 0;
+  }
+  label{
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text_color;
+  }
+  .mb-input-group{
+    width: 78%;
+    padding: 0px 15px 0px 30px;
+    border: none;
+    border-right: 2px solid $text_color;
+    @include border-radius(10px 0px 0px 10px);
+}
+.mb-percentage-input{
+    border: none;
+    .mb-increment-up{
+        margin-top: 5px;
+    }
+    .mb-increment-down{
+        margin-top: -5px;
+    }
+}
+}
+
+.mb-percentage-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 8px 10px;
+  width: 120px;
+
+  .mb-percent-field {
+    border: none;
+    outline: none;
+    width: 40px;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    height: 46px;
+    @include xxl {
+        width: 22px;
+    }
+  }
+
+  .mb-percent-symbol {
+    color: $text_color3;
+    margin: 0 5px;
+  }
+
+  .mb-increment-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    
+    button {
+      background: none;
+      border: none;
+      font-size:18px;
+      color: $text_color;
+      cursor: pointer;
+      line-height: 1;
+      padding: 2px 0;
+    }
+  }
+}
+
+.mb-select-wrapper {
+  @include flex(row, space-between, center);
+  .nice-select{
+    border: 1px solid #cccccc;
+    padding-left: 30px;
+    width: 281px;
+    height: 50px;
+    @include border-radius(10px);
+    line-height: 50px;
+    .list{
+        width: 100%;
+    }
+    &::after{
+        right: 30px;
+        width: 11px;
+        height: 11px;
+        border-color: $text_color;
+    }
+  }
+  .mb-percentage-input{
+    width: 199px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #cccccc;
+    @include border-radius(10px);
+    input{
+        width: 56px;
+    }
+    .mb-increment-buttons{
+        margin-left: 45px;
+    }
+    .mb-percent-symbol{
+        margin: 0px 30px;
+    }
+  }
+}
+
+
+
+.mb-loan-rate-group {
+  width: 80px;
+  
+  .mb-input-field {
+    text-align: right;
+  }
+}
+
+.mb-link {
+  font-size: 14px;
+  color: $text_color;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+.mb-bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+
+.mb-veterans-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.mb-toggle-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mb-switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .mb-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: green;
+    transition: .4s;
+    border-radius: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
+  input:checked + .mb-slider {
+    background-color: $primary;
+  }
+  input:checked + .mb-slider:before {
+    transform: translateX(20px);
+  }
+}
+
+.mb-toggle-text {
+  font-size: 14px;
+  color: $text_color3;
+  font-weight: bold;
+}
+
+.mb-cta-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mb-view-rates-link {
+  font-size: 14px;
+  color: $text_color3;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.mb-pre-approved-btn {
+  background-color: $primary;
+  color: $white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+}
+
+.mb_btn_wrapper{
+    a{
+        background-color: $primary;
+        @include border-radius(999px);
+        padding: 13px 30px;
+        color: $white;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
+}
+/*--- Costs For home End---*/
+
+
+/*--- Map Start---*/
+.mb_map_block{
+    iframe{
+        @include border-radius(10px);
+    }
+    position: relative;
+    .mb_overly_map_content{
+        @include border-radius(10px);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #00000070;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        @include sm {
+            padding: 30px;
+        }
+        @include xxs {
+            padding: 10px;
+        }
+    }
+    .mb_map_heading{
+        h3{
+            font-weight: 700;
+            font-size: 24px;
+            color: $text_color;
+            @include xs {
+                font-size: 20px;
+                line-height: 34px;
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 16px;
+            color: $text_style2;
+            margin-top: 10px;
+        }
+    }
+    .mb_map_content{
+        margin-top: 35px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+        background: #fff;
+        padding: 25px 30px;
+        @include border-radius(6px);
+        @include sm {
+            margin-top: 15px;
+        }
+    }
+    .mb_location_select{
+        position: relative;
+        .mb_dash{
+            height: 26px;
+            border: 1px dashed rgba(3, 26, 38, 0.24);;
+            position: absolute;
+            top: 13px;
+            left: 4px;
+        }
+        h4{
+            font-weight: 500;
+            font-size: 16px;
+            color: $text_color2;
+            padding-left: 30px;
+            position: relative;
+            &::before{
+                content: '';
+                width: 10px;
+                height: 10px;
+                border: 1px solid $text_color;
+                @include border-radius(50%);
+                position: absolute;
+                top: 50%;
+                @include transformY(-50%);
+                left: 0px;
+            }
+        }
+        p{
+            font-weight: 500;
+            font-size: 14px;
+            color: $text_style3;
+            margin-top: 15px;
+            span{
+                margin-right: 20px;
+            }
+        }
+    }
+    .mb_checkbox{
+
+        input{
+            border: 1px solid rgba(3, 26, 38, 0.2);
+            border-radius: 2px;
+            width: 16px;
+            height: 16px;
+        }
+        label{
+            margin-left: 5px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            color: $text_style3;
+        }
+    }
+
+}
+/*--- Map End---*/
+
+/*--- Virtual Tour Start---*/
+.mb_virtual_tour{
+
+.mb_virtual_tour_block {
+  border: 1px solid $border;
+    border-radius: 10px;
+    padding: 50px;
+    @include md {
+        padding: 30px;
+    }
+    @include xs {
+        padding: 20px;
+    }
+}
+
+.mb_header {
+  margin-bottom: 20px;
+  
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: $text_color;
+    @include xs {
+        font-size: 20px;
+    }
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    color: $text_style2;
+    @include xs {
+        font-size: 14px;
+    }
+  }
+}
+
+.mb_video_card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mb_video_player {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; 
+  
+  .mb_video_thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+.mb_video_controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  box-sizing: border-box;
+  background: rgba(3, 26, 38, 0.4);
+}
+
+.mb_play_button {
+  width: 78px;
+height: 54px;
+  background-color: #ff0000;
+  @include border-radius(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  &::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 26px;
+    border-color: transparent transparent transparent #fff;
+    margin-left: 4px;
+    @include xs {
+        border-width: 10px 0 10px 20px;
+    }
+  }
+  @include xs {
+    width: 59px;
+    height: 40px;
+    flex-shrink: 0;
+    aspect-ratio: 59/40;
+  }
+}
+
+.mb_video_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.mb_channel_info {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.mb_channel_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+    width: 46px;
+    height: 46px;
+  margin-right: 10px;
+}
+
+.mb_channel_name {
+    font-weight: 600;
+    font-size: 20px;
+    color: $white;
+    @include xs {
+        font-size: 12px;
+    }
+}
+
+.mb_action_buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.mb_action_btn {
+    font-weight: 600;
+    font-size: 16px;
+    color: $white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+  @include flex(column, center, center);
+  @include xs {
+    font-size: 10px;
+  }
+}
+
+.mb_watch_on_youtube {
+    font-weight: 600;
+    font-size: 16px;
+    color: $white;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+  backdrop-filter: blur(10px);
+background: rgba(3, 26, 38, 0.6);
+  padding: 12px 20px;
+  @include border-radius(0px 6px 6px 0px);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  @include xs {
+    font-size: 13px;
+  }
+  img{
+    margin-left: 8px;
+  }
+}
+}
+/*--- Virtual Tour End---*/
+
+/*--- Environment risk Start---*/
+.mb_environment_risk{
+   
+.mb_risk_block {
+    border: 1px solid $border;
+    border-radius: 10px;
+    padding: 40px;
+    @include xs {
+        padding: 20px;
+    }
+}
+.mb_risk_header {
+    margin-bottom: 30px;
+    @include xs {
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 24px;
+        color: $text_color;
+        @include xs {
+            font-size: 20px;
+        }
+  }
+}
+.mb_risk_list {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.mb_risk_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px 0px 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  @include xs {
+    padding: 20px 0px 14px 0px;
+  }
+}
+.mb_risk_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.mb_risk_icon {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  @include border-radius(50%);
+  background-color: #ffebd0;
+  text-align: center;
+}
+.mb_risk_title {
+    font-weight: 700;
+    font-size: 16px;
+    color: $text_color;
+  margin-bottom: 2px;
+  @include xs {
+    font-size: 12px;
+  }
+}
+.mb_risk_level {
+  font-weight: 500;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.mb_level_minimal { color: #68767D; }
+.mb_level_moderate { color: $text_color; }
+.mb_risk_description {
+    font-weight: 500;
+    font-size: 15px;
+    color: $text_color3;
+    @include xs {
+        font-size: 10px;
+    }
+}
+.mb_arrow_icon {
+ font-size: 18px;
+ color: $text_color;
+}
+.mb_risk_footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $text_color;
+    opacity: 0.7;
+    @include xs {
+        font-size: 10px;
+    }
+}
+.mb_info_icon {
+  margin-left: 10px;
+}
+}
+/*--- Environment risk End---*/
+
+/*--- Market Insights Start---*/
+.mb_market_insights{
+
+.mb_insights_block {
+    border: 1px solid $border;
+    border-radius: 10px;
+    padding: 50px;
+    @include md {
+        padding: 30px;
+    }
+    @include xs {
+        padding: 20px;
+    }
+    @include xxs {
+        padding: 0;
+        border: none;
+    }
+}
+
+.mb_header {
+  margin-bottom: 37px;
+  @include xxs {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: $text_color;
+    @include xxs {
+        font-size: 20px;
+    }
+  }
+}
+
+.mb_insights_grid {
+    padding: 30px;
+    background-color: #ffeed8;
+    @include border-radius(10px);
+    @include xxs {
+        padding: 20px;
+        border: 1px solid $border;
+        border-radius: 10px;
+        background-color: inherit;
+    }
+   
+  
+}
+
+.mb_insight_card {
+  padding: 15px;
+  background-color: transparent;
+  width: 100%;
+  border-right: 1px solid rgba(3, 26, 38, 0.12); 
+  &.style_1{
+    padding-left: 30px;
+  }
+  &.style_2{
+    border: none;
+  }
+}
+
+.mb_insight_title {
+    font-weight: 500;
+    font-size: 16px;
+    color: $text_color2;
+  margin-bottom: 5px;
+      @include xxs {
+        font-size: 14px;
+    }
+}
+
+.mb_insight_value {
+    font-weight: 700;
+    font-size: 26px;
+    color: $text_color;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+      @include xxs {
+        font-size: 22px;
+    }
+}
+
+.mb_currency {
+    font-weight: 700;
+    font-size: 26px;
+    color: $text_color;
+        @include xxs {
+        font-size: 20px;
+    }
+}
+
+.mb_price {
+  font-weight: 500;
+font-size: 14px;
+    @include xxs {
+        font-size: 12px;
+    }
+}
+
+.mb_insight_date {
+    font-weight: 500;
+    font-size: 14px;
+    color: $text_style3;
+    margin-top: 5px;
+      @include xxs {
+        font-size: 10px;
+    }
+}
+
+.mb_positive_growth {
+    font-weight: 700;
+    font-size: 26px;
+    color: $primary;
+    @include xxs {
+        font-size: 22px;
+    }
+}
+
+.mb_arrow_up {
+    color: $primary;
+  font-size: 18px;
+}
+}
+/*--- Market Insights End---*/
+
+/*--- Broker Info Start---*/
+.mb_broker_info_area{
+    $mb_primary-color: #2c3e50;
+$mb_secondary-color: #7f8c8d;
+$mb_border-color: #ecf0f1;
+$mb_card-bg: #ffffff;
+$mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+.mb_broker_info_block {
+    border: 1px solid $border;
+    border-radius: 10px;
+    padding: 40px;
+    @include md {
+        padding: 30px;
+    }
+}
+
+.mb_agent_info {
+  
+  padding: 20px;
+  @include md {
+    padding: 0;
+  }
+}
+
+.mb_agent_photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.mb_agent_details {
+    margin-top: 25px;
+  .mb_listed_by {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    margin-top: 25px;
+    @include xxs {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .mb_agent_name {
+        color: #000;
+      text-decoration: underline;
+        text-decoration-skip-ink: none;
+        @include transition(0.4s);
+        &:hover{
+            color: $primary;
+        }
+    }
+  }
+
+  .mb_brokerage_name {
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #000;
+    @include xxs {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+  }
+
+  .mb_phone_number {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+        @include xxs {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+  }
+}
+
+.mb_broker_data {
+  display: flex;
+  flex-direction: column;
+}
+
+.mb_data_row {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e9ea;
+  
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.mb_data_label {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+  padding-right: 15px;
+  flex-basis: 40%;
+      @include xxs {
+        font-size: 12px;
+    }
+}
+
+.mb_data_value {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+  text-align: right;
+  flex-basis: 60%;
+      @include xxs {
+        font-size: 12px;
+    }
+}
+
+.mb_copyright_row {
+  .mb_data_value {
+    font-weight: normal;
+    color: $mb_secondary-color;
+    font-size: 12px;
+  }
+}
+}
+/*--- Broker Info End---*/
+
+ .mb_tab_content {
+            display: none;
+        }
+
+        .mb_tab_content.active {
+            display: block;
+        }
+
+
+
+
+
+/*
+
+
+[data-bs-theme="dark"] .banner_slider .heading h2 {
+    color: $white;
+}
+[data-bs-theme="dark"] .banner_slider p {
+    color: $white;
+}
+[data-bs-theme="dark"] .header-wrap .main-menu ul li a {
+	color: white;
+}
+
+[data-bs-theme="dark"] .sticky_top.header-1 .header-wrap .main-menu ul li a.search i{
+	color: black !important;
+}
+[data-bs-theme="dark"] #header-1.sticky_top .main-menu ul li.menu-item-has-children::before {
+	color: black !important;
+}
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../img/bg.png') no-repeat center center;
+    background-size: cover; 
+  
+
+    */
+
+

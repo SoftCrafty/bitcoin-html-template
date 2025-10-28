@@ -1,0 +1,723 @@
+
+// Heading Area Start
+.rb_heading_area {
+    .rb_subtitle {
+        margin-bottom: 22px;
+        display: inline-flex;
+        gap: 8px;
+        padding: 6px 30px;
+        border-radius: 100px;
+        border: 1px solid $border;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #F2F2F2 100%);
+        color: $text_color2;
+        font-family: $inter-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        &.style1 {
+            color: $text_color;
+            text-transform: uppercase;
+            background: none;
+        }
+        @include md {
+            font-size: 12px;
+        }
+        @include sm {
+            margin-bottom: 12px;
+        }
+    }
+    .rb_title {
+        color: $text_color2;
+        font-family: $inter-font;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px; 
+        &.style1 {
+            color: $text_color;
+        }
+        @include md {
+            font-size: 30px;
+            line-height: 40px; /* 133.333% */
+        }
+    }
+    .rb_desc {
+        color: rgba(37, 37, 37, 0.60);
+        font-family: $inter-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px;
+        &.styel1 {
+            color: $text_style2;
+        }
+        @include md {
+            font-size: 16px;
+            line-height: 26px; /* 162.5% */
+        }
+    }
+}
+// Heading Area End
+
+// Common Input css Start
+.common_input {
+    position: relative;
+    .form-group {
+        label {
+            display: block;
+            color: $text_color;
+            font-family: $inter-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px; 
+            margin-bottom: 13px;
+            @include md {
+                font-size: 16px;
+                line-height: 30px; 
+            }
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 14px 0px;
+            height: 54px;
+            border: none;
+            border-bottom: 1px solid rgba(3, 26, 38, 0.14);
+
+            color: $text_color;
+            font-family: $inter-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            opacity: 0.7;
+            &::placeholder{
+                color: $text_color;
+            }
+            &:focus {
+                outline: none;
+            }
+            @include md {
+                font-size: 14px;
+            }
+        }
+        textarea {
+            height: 122px;
+            resize: vertical;
+        }
+        input[type="date"] {
+            cursor: pointer;
+            &::-webkit-calendar-picker-indicator {
+                opacity: 0;
+                display: none;
+                -webkit-appearance: none;
+            }
+            &::-webkit-inner-spin-button,
+            &::-webkit-clear-button {
+                display: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .nice-select,
+        select {
+            width: 100%;
+            padding: 14px 0px;
+            height: 54px;
+            border: none;
+            border-bottom: 1px solid rgba(3, 26, 38, 0.14);
+
+            color: $text_color;
+            font-family: $inter-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            /* Remove default arrow styles for consistency */
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            /* Add custom arrow */
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 12px 8px;
+            cursor: pointer;
+            @include md {
+                font-size: 14px;
+            }
+        }
+        .nice-select:after {
+            width: 7px;
+            height: 7px;
+        }
+        select:focus {
+            outline: none;
+        }
+
+
+        .gender-options {
+            display: flex;
+            gap: 20px;
+            padding: 14px 30px;
+            height: 54px;
+            border-radius: 5px;
+            background: var(--100, #EBF3ED);
+            align-items: center;
+            // @include breakpoint (max-xsmall){
+            //     padding: 14px 15px;
+            // }
+            label {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                margin: 0;
+                color: var(--800, #626262);
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; 
+            }
+    
+            input[type="radio"] {
+                display: flex;
+                width: 20px;
+                height: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                flex-shrink: 0;
+                border-radius: 50%; 
+                border: 1px solid var(--900, #1F1F1F);
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+
+
+        .password-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            &.style_1{
+                input{
+                    &::placeholder{
+                        font-size: 50px;
+                        letter-spacing: 5px;
+                        color: black;
+                    }
+
+                }
+            }
+        }
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            color: #626262;
+            font-size: 18px;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+    }
+}
+
+.common_input_2 {
+    position: relative;
+    .form-group {
+        label {
+            display: block;
+            color: $text_color;
+            font-family: $inter-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 30px; 
+            margin-bottom: 13px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            height: 46px;
+            border-radius: 6px;
+            border: 1px solid $border;
+
+            color: $text_color;
+            font-family: $inter-font;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 26px; 
+            opacity: 0.7;
+            &::placeholder{
+                color: $text_color;
+                opacity: 0.7;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        textarea {
+            height: 122px;
+            resize: vertical;
+        }
+        input[type="date"] {
+            cursor: pointer;
+            &::-webkit-calendar-picker-indicator {
+                opacity: 0;
+                display: none;
+                -webkit-appearance: none;
+            }
+            &::-webkit-inner-spin-button,
+            &::-webkit-clear-button {
+                display: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .nice-select,
+        select {
+            width: 100%;
+            padding: 14px 0px;
+            height: 54px;
+            border-radius: 5px;
+            border: none;
+            border-bottom: 1px solid rgba(3, 26, 38, 0.14);
+
+            color: $text_color;
+            font-family: $inter-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            /* Remove default arrow styles for consistency */
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            /* Add custom arrow */
+            // background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3e%3cpath fill='%23626262' d='M6 8L0 0h12z'/%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 12px 8px;
+            cursor: pointer;
+        }
+        .nice-select:after {
+            width: 7px;
+            height: 7px;
+        }
+        select:focus {
+            outline: none;
+        }
+
+
+        .gender-options {
+            display: flex;
+            gap: 20px;
+            padding: 14px 30px;
+            height: 54px;
+            border-radius: 5px;
+            background: var(--100, #EBF3ED);
+            align-items: center;
+            // @include breakpoint (max-xsmall){
+            //     padding: 14px 15px;
+            // }
+            label {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                margin: 0;
+                color: var(--800, #626262);
+                font-family: Roboto;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; 
+            }
+    
+            input[type="radio"] {
+                display: flex;
+                width: 20px;
+                height: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                flex-shrink: 0;
+                border-radius: 50%; 
+                border: 1px solid var(--900, #1F1F1F);
+                background: transparent;
+                cursor: pointer;
+            }
+        }
+
+
+        .password-input-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            &.style_1{
+                input{
+                    &::placeholder{
+                        font-size: 50px;
+                        letter-spacing: 5px;
+                        color: black;
+                    }
+
+                }
+            }
+        }
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            color: #626262;
+            font-size: 18px;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+    }
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .checkbox-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $text_color;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; 
+        opacity: 0.7;
+    }
+
+    .checkbox-left input[type="checkbox"] {
+        border-radius: 2px;
+        border: 1px solid $border;
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+}
+// Common Input css End
+
+
+// List css 
+.rb_list {
+    ul {
+        li {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: rgba(37, 37, 37, 0.90);
+            font-family: $inter-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; 
+        }
+    }
+}
+
+// Arrow icon
+.rb_arrow_slider_btn {
+    .item_1 {
+        @include flex(row, center, center);
+        position: absolute;
+        top: 42%;
+        left: 3%;      
+        width: 46px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 46px;
+        background: $white;
+    }
+    .item_2 {
+        @include flex(row, center, center);
+        position: absolute;
+        top: 42%;
+        right: 3%;      
+        width: 46px;
+        height: 46px;
+        flex-shrink: 0;
+        border-radius: 46px;
+        background: $white;
+    }
+    button {
+        &:hover {
+            background-color: #FF9916;
+            i {
+                color: $white;
+            }
+        }
+    }
+}
+
+// Video icon
+.rb_video_icon {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // img {
+    //     @include breakpoint (max-lg){
+    //         width: 70%;
+    //     }
+    // }
+} 
+
+// Pagination with Number
+.rb_page_nav_wrap {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        li {
+            .page-numbers {
+                display: flex;
+                width: 44px;
+                height: 44px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 6px;
+                border: 1px solid rgba(3, 26, 38, 0.10);
+                background: rgba(255, 255, 255, 0.00);
+                color: $text_color;
+                font-family: $inter-font;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                opacity: 0.7;
+
+                // @media (max-width: 767px) {
+                //     margin-top: 10px;
+                //     width: 50px;
+                //     height: 50px;
+                //     font-size: 14px;
+                // }
+  
+                i {
+                    color: $text_color;
+                    font-size: 15px;
+                    font-style: normal;
+                }
+  
+                &:hover {
+                    background: $primary;
+                    color: $white;
+                    i {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tab css start
+.nav-pills {
+    border-radius: 50px;
+    border: 1px solid rgba(3, 26, 38, 0.10);
+    background: #FFEED8;
+    display: flex; 
+    display: inline-block;
+
+  .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: $text_color;
+    font-family: $inter-font;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+    border: 0;
+    text-align: center;
+    padding: 8px 32px;
+    height: 54px;
+    transition: all 0.3s ease;
+    border-radius: 0; 
+    @include md {
+        height: 40px;
+        padding: 8px 26px;
+        font-size: 12px;
+    }
+    @include xxs {
+        height: 38px;
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+  
+    &.active {
+        color: $text_color;
+        border-radius: 100px;
+        background: $white;
+        height: 50px;
+        padding: 8px 30px;
+        margin-left: 2px;
+        @include md {
+            height: 40px;
+            padding: 8px 24px;
+            margin-left: 0;
+        }
+        @include xxs {
+            height: 38px;
+            padding: 6px 14px;
+        }
+    }
+  
+    &:first-child.active {
+      border-radius: 30px;
+
+    }
+  
+    &:last-child.active {
+      border-radius: 30px;
+    }
+  }
+}		
+// Tab css end
+
+// Faq Section Start
+.rb_faq_section {
+    .container {
+        max-width: 1760px;
+    }
+    .accordion {
+        width: 100%;
+        .accordion-item {
+            border-radius: 14px;
+            border: 1px solid rgba(3, 26, 38, 0.10);
+            margin-bottom: 30px;
+            overflow: hidden; 
+            @include sm{
+                margin-bottom: 8px;
+            }
+            &.active {
+                .accordion-header {
+                    background: $white;
+                    border-bottom: 1px solid rgba(3, 26, 38, 0.10);
+                    h3{
+                        color: $text_color;
+                    }                    
+
+                    .icon {
+                        transform: rotate(180deg); 
+                        background-color: #FF9916;
+                        color: $white;
+                    }
+                }
+                .accordion-content {
+                    height: auto; 
+                }
+            }
+        }
+
+        .accordion-header {
+            @include flex(row, space-between, center);
+            padding: 15px 24px;
+            @include md {
+                padding: 8px 20px;
+            }
+            cursor: pointer;
+                transition: background 0.3s ease;
+            h3{
+                color: $text_color;
+                font-family: $inter-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include md {
+                    font-size: 14px;
+                }
+                @include xxs {
+                    font-size: 12px;
+                }
+            }
+
+            &:hover {
+                background-color: #f0f0f0;
+            }
+
+            .icon {
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                text-align: center;
+                @include border-radius(50%);
+                background-color: #FFEED8;
+                transition: transform 0.3s ease;
+                box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+                @include md {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    font-size: 12px;
+                }
+                @include sm {
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .accordion-content {
+            height: 0;
+            overflow: hidden;
+            transition: height 0.5s ease-out, padding 0.5s ease-out;
+            p {
+                padding: 21px 24px 40px 24px;
+                margin: 0; 
+                color: $text_style2;
+                font-family: $inter-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; 
+                @include md {
+                    padding: 15px 20px 25px 20px;
+                    color: $text_style2;
+                    font-size: 12px;
+                    line-height: 22px; 
+                }
+            }
+        }
+    }
+}
+// Faq Section End

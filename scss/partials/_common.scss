@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $inter-font;
+}
+a {
+    text-decoration: none;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+.text-right{
+    text-align: right !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.mb_count_properties{
+           border: 1px solid rgba(3, 26, 38, 0.1);
+           border-radius: 100px;
+           padding: 4px 12px;
+           width: fit-content;
+           min-width: 136px;
+           span{
+               font-weight: 500;
+               font-size: 14px;
+               color: $text_color;
+               display: inline-block;
+               &:first-child{
+                   padding-left: 8px;
+                   position: relative;
+                   &::before{
+                       content: "";
+                       position: absolute;
+                       top: 50%;
+                       @include transformY(-50%);
+                       left: 0px;
+                       width: 4px;
+                       height: 4px;
+                       background-color: #0bb230;
+                       @include border-radius(50%);
+                   }
+               }
+           }
+           &.style_1{
+               border: 1px solid rgba(255, 255, 255, 0.2);
+               backdrop-filter: blur(10px);
+               background: rgba(255, 255, 255, 0.14);
+               min-width: 124px;
+               padding: 2px;
+               gap: 4px;
+               @include flex(row, center, center);
+               span{
+                   &:nth-child(1){
+                       padding-left: 10px;
+
+                   }
+                    color: $white;
+                    font-size: 14px;
+                    font-weight: 500;
+                   &::before{
+                       background-color: $primary;
+                   }
+               }
+           }
+       }
+
+
+       .mb_choose_option{
+        @include flex(row, flex-start, center);
+        gap: 10px;
+        input{
+            cursor: pointer;
+        }
+        label{
+            font-weight: 600;
+            font-size: 18px;
+            color: $text_color;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            padding-left: 30px;
+        }
+
+
+
+
+input[type="radio"] {
+  display: none;
+}
+
+
+
+label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid  #bcb88f; 
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::before {
+  background-color: transparent; 
+}
+
+label::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: $primary;
+  border-radius: 50%;
+  display: none; 
+}
+
+input[type="radio"]:checked + label::after {
+  display: block;
+}
+       }

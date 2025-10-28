@@ -1,0 +1,197 @@
+.heading_area{
+    .sub_heading{
+        h4{
+            width: fit-content;
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: $white;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 100px;
+            padding: 10px 30px 10px 40px;
+            background: linear-gradient(180deg, #031a26 0%, #153140 100%);
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 50%;
+                @include transformY(-50%);
+                left: 30px;
+                width: 4px;
+                height: 4px;
+                background-color: $white;
+                @include border-radius(50%);
+            }
+            @include md {
+                font-size: 12px;
+            }
+        }
+        h5{
+            font-weight: 500;
+            font-size: 16px;
+            color: $text_style2;
+            @include xxs {
+                font-size: 14px;
+            }
+        }
+        &.style_01{
+            h4{
+                border: 1px solid $border;
+                background: $white;
+                color: $text_color;
+                &::before{
+                    background-color: $text_color;
+                }
+            }
+        }
+    }
+    .heading{
+        h1{
+            font-weight: 700;
+            font-size: 60px;
+            color: $text_color;
+            @include xl {
+                font-size: 52px;
+                br {
+                    display: none;
+                }
+            }
+            @include lg {
+                font-size: 42px;
+            }
+            @include md {
+                font-size: 36px;
+                line-height: 46px; /* 127.778% */
+            }
+            @include xxs {
+                font-size: 30px;
+                line-height: 40px; /* 127.778% */
+            }
+        }
+        h2{
+            font-weight: 700;
+            font-size: 50px;
+            color: $white;
+            @include md {
+                font-size: 30px;
+                line-height: 40px; /* 133.333% */
+            }
+        }
+        h3{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 160%;
+            color: $text_color;
+            @include sm {
+                font-size: 30px;
+            }
+            @include xxs {
+                font-size: 20px;
+            }
+
+            span{
+                margin-right: 10px;
+            }
+        }
+        &.style_01{
+            h2{
+                color: $text_color;
+            }
+            h3{
+                font-weight: 700;
+            }
+            
+        }
+        &.style_02{
+            h2{
+                color: $text_color;
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+        }
+
+    }
+}
+.describtion{
+    p{
+        font-weight: 500;
+        font-size: 18px;
+        color: $text_style2;
+        @include md {
+            font-size: 16px;
+            line-height: 26px; /* 162.5% */
+        }
+    }
+}
+
+
+
+@media (min-width:1200px){
+    .min_br{
+        display: none;
+    }
+}
+@include nesthubmax{
+  .nestmax_br_none{
+        display: none;
+    }
+}
+@include nesthub{
+    .nest_br_none{
+        display: none;
+    }
+}
+@include md{
+    .md_br_none{
+        display: none;
+    }
+    .sm-none{
+        display: none;
+    }
+}
+@include sm{
+    .sm_br_none{
+        display: none !important;
+    }
+    .sm_br{
+        display: block !important;
+    }
+    .sm-none{
+        display: none;
+    }
+}
+
+
+
+.highlight_describtion{
+    padding: 20px;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+    background: $white;
+    border-radius: 5px;
+    width: 100%;
+    padding: 30px;
+    border-left: 2px solid $primary;
+    @include sm{
+        padding: 10px 20px 15px 15px;
+        margin-top: 20px !important;
+    }
+    strong{
+        font-weight: 400;
+        font-size: 18px;
+        @include sm{
+            font-size: 10px;
+        }
+        color: $text_style2;
+    }
+    p{
+        font-weight: 400;
+        font-size: 14px;
+        @include sm{
+            font-size: 10px;
+        }
+        color: $text_style2;
+        margin-top: 5px;
+    }
+
+}

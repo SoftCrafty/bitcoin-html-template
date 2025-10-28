@@ -1,0 +1,557 @@
+ /*---Sidebar Start---*/
+    .mb_property_sidebar{
+        ul{
+            width: 100%;
+            @include flex(column, flex-start, flex-start);
+            padding-bottom: 15px;
+            @include md {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            li{
+                padding: 13px 24px;
+                width: 100%;
+                font-weight: 500;
+                display: block;
+                font-size: 16px;
+                color: $text_style3;
+                border-radius: 6px;
+                max-width: 265px;
+                span{
+                    margin-right: 10px;
+                    color: $text_style3;
+                    font-size: 20px;
+                }
+                &.active{
+                    border: 1px solid $border;
+                    color: $text_color;
+                    span{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    /*---Sidebar End---*/
+.mb_post_property{
+    .select_card{
+        width: 100%;
+        select{
+            color: $text_style2;
+        }
+        &::after{
+            color: $text_style2;
+
+        }
+    }
+}
+.mb_post_property_wrapper{
+    border: 1px solid rgba(3, 26, 38, 0.1);
+    border-radius: 10px;
+    background: $white;
+    padding: 56px 50px 70px 50px;
+    @include lg {
+        padding: 30px 30px 40px 30px;
+    }
+    @include xxs {
+        padding: 25px 15px 40px 15px;
+    }
+    .heading_area {
+        .heading {
+            h3 {
+                @include md {
+                    font-size: 35px;
+                }
+                @include xs {
+                    font-size: 26px;
+                }
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .mb_radio_custom {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border: 1px solid #D1D5DB;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        
+        &:checked {
+            border-color:  rgba(3, 26, 38, 0.2);
+            background-color: $white;
+            
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 10px;
+                height: 10px;
+                background-color: $primary;
+                border-radius: 50%;
+            }
+        }
+    }
+    
+    .mb_card_option {
+        transition: all 0.3s ease;
+        cursor: pointer;
+        text-align: center;
+        position: relative;
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        border-radius: 10px;
+        width: 100%;
+        height: 180px;
+        @include flex(column, center, center);
+        gap: 19px;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        &.mb_selected {
+            box-shadow: 0 10px 15px -3px rgba(55, 54, 53, 0.3), 0 4px 6px -2px rgba(249, 115, 22, 0.1);
+        }
+        
+        .mb_card_radio_container {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        
+        .mb_icon_svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            display: block;
+            margin: 0 auto 0.75rem;
+        }
+    }
+
+}
+
+.mb_property_location{
+    border: 1px solid rgba(3, 26, 38, 0.1);
+    @include border-radius(10px);
+
+}
+.mb_property_location_content{
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+    gap: 30px;
+    
+    .mb_single_input{
+        width: 100%;
+        @include flex(column, flex-start, flex-start);
+        gap: 12px;
+        width: calc(33.33% - 30px);
+    }
+    label{
+        font-weight: 500;
+        font-size: 15px;
+        color: $text_color;
+        span{
+            color: $primary;
+        }
+    }
+    input{
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        border-radius: 10px;
+        height: 46px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 15px;
+        color: $text_color;
+        outline: none;
+        padding-left: 20px;
+        &::placeholder{
+            color: $text_style2;
+            
+        }
+    }
+}
+.mb_property_common{
+    padding: 50px;
+    background-color: $white;
+    @include border-radius(10px);
+    border: 1px solid rgba(3, 26, 38, 0.1);
+    @include lg {
+        padding: 30px 30px 40px 30px;
+    }
+    @include xxs {
+        padding: 25px 15px 40px 15px;
+    }
+    .heading_area {
+        .heading {
+            h3 {
+                @include md {
+                    font-size: 35px;
+                }
+                @include xs {
+                    font-size: 26px;
+                }
+                @include xxs {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .mb_title{
+        h4{
+            font-weight: 600;
+            font-size: 24px;
+            color: $text_color;
+        }
+    }
+     .mb_single_input{
+        width: 100%;
+        @include flex(column, flex-start, flex-start);
+        gap: 12px;
+        width: calc(33.33% - 30px);
+        @include sm {
+            width: 100%;
+        }
+        &.style_1{
+            width: 63.67%;
+            @include sm {
+                width: 100%;
+            }
+        }
+        .nice-select{
+            width: 100%;
+            border: 1px solid rgba(3, 26, 38, 0.1);
+            @include border-radius(10px);
+            background-color: $white;
+            height: 46px;
+            .current{
+                font-weight: 500;
+                font-size: 16px;
+                
+                color: $text_style2;
+            }
+            .list{
+                width: 100% ;
+            }
+        }
+    }
+    label{
+        font-weight: 500;
+        font-size: 15px;
+        color: $text_color;
+        span{
+            color: $primary;
+        }
+    }
+    input{
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        border-radius: 10px;
+        height: 46px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 15px;
+        color: $text_color;
+        outline: none;
+        padding: 0px 20px;
+        @include xxs {
+            font-size: 14px;
+        }
+        &::placeholder{
+            opacity: 0.7;
+            
+        }
+    }
+    .mb_dubble_input{
+        width: calc(33.33% - 30px);
+        @include flex(row, center, center);
+        @include border-radius(10px);
+        background-color: $white;
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        @include sm {
+            width: 100%;
+        }
+        input{
+            border: none;
+
+        }
+        .nice-select{
+            background: #ffeed8;
+            border: 1px solid transparent;
+            height: 46px;
+            @include border-radius(0px 10px 10px 0px);
+            border-right: 1px solid rgba(3, 26, 38, 0.1);
+            .current{
+                font-weight: 500;
+                font-size: 18px;
+                color: $text_style2;
+                sub{
+                    font-size: 12px;
+                }
+            }
+}
+
+    }
+    .mb_title{
+        h4{
+            font-weight: 600;
+            font-size: 24px;
+            color: $text_color;
+        }
+    }
+}
+.mb_single_listing{
+    p{
+        border: 1px solid $border;
+        border-radius: 10px;
+        width: 100%;
+        padding: 25px;
+        color: $text_style2;
+        font-family: $inter-font;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 187.5% */
+        @include xxs {
+            font-size: 14px;
+        }
+        a{
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: $text_color;
+            &:hover{
+                color: $primary;
+            }
+        }
+
+    }
+}
+.mb_maps {
+    iframe{
+        border-radius: 10px !important;
+        -webkit-border-radius: 10px !important;
+        -moz-border-radius: 10px !important;
+        -ms-border-radius: 10px !important;
+        -o-border-radius: 10px !important;
+        @include sm {
+            height: 480px;
+        }
+    }
+}
+.mb_property_info{
+    textarea{
+        border-radius: 10px;
+        padding: 20px 27px;
+        height: 250px;
+        background-color: $white;
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        width: 100%;
+        margin-top: 20px;
+        @include xxs {
+            height: 120px;
+        }
+    }
+    .mb_check_box{
+        padding-bottom: 35px;
+        border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+        @include flex(row, flex-start, center);
+        gap: 10px;
+       input{
+        border: 1px solid rgba(3, 26, 38, 0.24);
+        border-radius: 4px;
+        width: 20px;
+        height: 20px;
+       }
+       label{
+        font-weight: 500;
+        font-size: 16px;
+        color: $text_style2;
+       }
+    }
+}
+.mb_photo_media{
+    .mb_section_header {
+        font-weight: 600;
+    }
+    
+    .mb_card_media {
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        border-radius: 14px;
+        width: 100%;
+        height: 210px;
+        transition: all 0.3s ease;
+        background-color: $white;
+        @include flex(column, center, center);
+        gap: 8px;
+        cursor: pointer;
+        
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    }
+    
+    .mb_card_media {
+        .mb_icon{
+            width: 60px;
+            height: 50px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    
+    .mb_card_media .mb_card_title {
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        color: $text_color;
+        margin-top: 25px;
+    }
+    
+    .mb_card_media .mb_card_text {
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: $text_style2;
+    }
+
+}
+.mb_features_amenities{
+    .mb_title {
+        h3{
+            font-weight: 600;
+            font-size: 24px;
+            color: $text_color;
+        }
+    }
+}
+.mb_tour_schedule{
+
+    
+    $light-bg: #FDF9F3;
+    $border-color: #E5E7EB;
+    $primary-orange: #F97316;
+    $black: #1F2937;
+    $text-color: #6B7280;
+    $day-bg-hover: #FEF3F0;
+    $day-bg-selected: $primary-orange;
+    $day-border-selected: #F56516;
+    $white: #ffffff;
+
+    .mb_body {
+        font-family: 'Inter', sans-serif;
+        background-color: $light-bg;
+    }
+
+    .mb_main_container {
+        background-color: #ffffff;
+        border-radius: 1.5rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        &.fix_padding {
+            @include sm {
+                padding: 0 !important;
+            }
+        }
+    }
+
+    .mb_section_header {
+        font-weight: 600;
+    }
+
+    .mb_calendar_container {
+        border: 1px solid $border-color;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        @include xxs {
+            padding: 14px;
+        }
+    }
+
+    .mb_calendar_header {
+        border: 1px solid $border-color;
+        border-radius: 0.75rem;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        @include md {
+            margin-bottom: 15px;
+        }
+    }
+    
+    .mb_calendar_header span {
+        font-size: 1.1rem;
+        font-weight: 500;
+        @include sm {
+            font-size: 12px;
+        }
+    }
+
+    .mb_day_label {
+        color: $text-color;
+        font-weight: 500;
+        text-align: center;
+        @include xs {
+            font-size: 14px;
+        }
+    }
+
+    .mb_day_grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 1.25rem 0.5rem;
+        text-align: center;
+    }
+    
+    .mb_day {
+        width: 2.25rem;
+        height: 2.25rem;
+        line-height: 2.25rem;
+        border-radius: 9999px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        font-weight: 500;
+        color: $black;
+        @include xs {
+            font-size: 12px;
+        }
+
+        &:hover {
+            background-color: $day-bg-hover;
+        }
+
+        &.mb_selected {
+            background-color: $day-bg-selected;
+            color: $white;
+        }
+
+        &.mb_inactive {
+            color: #A0AEC0;
+            cursor: not-allowed;
+        }
+    }
+
+    .mb_btn_listing {
+        background-color: $black;
+        color: $white;
+        font-weight: 600;
+        padding: 1rem 1.5rem;
+        border-radius: 0.75rem;
+        border: none;
+        transition: background-color 0.2s ease-in-out;
+
+        &:hover {
+            background-color: #4B5563;
+        }
+    }
+}
+        
+        
+        

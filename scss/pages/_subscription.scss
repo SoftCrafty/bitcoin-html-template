@@ -1,0 +1,1236 @@
+.mb_listing_card{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    .mb_image_area{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        width: 100%;
+        height: 282px;
+        @include transition(0.4s);
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        img{
+            @include transition(0.4s);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include border-radius(20px)
+        }
+        &:hover{
+            img{
+                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+
+            }
+}
+        .play_btn{
+            span{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                @include transform(-50%,-50%);
+                @include border-radius(50%);
+                width: 40px ;
+                height: 40px;
+                cursor: pointer;
+                display: block;
+                text-align: center;
+                line-height: 40px;
+                color: $white;
+                font-size:14px;
+                background-color: $primary;
+                box-shadow: 0 2px 10px 0 rgba(30, 30, 47, 0.1), 0 4px 3px 0 rgba(30, 30, 47, 0.12);
+                &:hover{
+                    color: $white;
+                    background-color: $primary;
+                    @include transition(0.4s)
+                }
+                &::before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color:#ffffff73;
+                    @include border-radius(50%);
+                    animation: pulse 1.5s infinite ease-out;
+                }
+            }
+        }
+        .heart{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: $white;
+        }
+        .update{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            span{
+                font-weight: 400;
+                font-size: 14px;
+                color: $text_color3;
+                padding: 5px 15px;
+                background-color: $white;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+            }
+        }
+
+        
+    }
+    h3{
+        a{
+            font-weight: 600;
+            font-size: 24px;
+            color: $text_color;
+            @include transition(0.4s);
+            @include xxs {
+                font-size: 20px;
+            }
+            &:hover{
+                color: $primary;
+            }
+
+        }
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .mb_address{
+        @include flex(row, space-between, center);
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $text_color3;
+            @include xxs {
+                font-size: 14px;
+            }
+            span{
+                color: $text_color;
+                margin-right: 10px;
+            }
+        }
+    }
+    .mb_list_price{
+        margin-top: 20px;
+        @include flex(row, space-between, center);
+        h4{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 142%;
+            color: $text_color;
+            @include xxs {
+                font-size: 18px;
+            }
+            span{
+                font-weight: 500;
+                font-size: 14px;
+            }
+        }
+    }
+    .mb_overly{
+        width: 100%;
+        height: 100%;
+        background: rgba(3, 26, 38, 0.7);
+        @include border-radius(20px);
+        position: absolute;
+        top: 0px;
+        @include transition(0.7s);
+        left: 0px;
+        z-index: 100;
+        @include flex(row, center, center);
+        opacity: 0;
+        visibility: hidden;
+        button{
+            border-radius: 40px;
+            padding: 4px 4px 4px 20px;
+            font-weight: 600;
+            background-color: $white;
+            font-size: 16px;
+            color: $text_color;
+            span{
+                background-color: $text_color;
+                @include border-radius(50%);
+                width: 36px;
+                height: 36px;
+                line-height: 33px;
+                text-align: center;
+                display: inline-block;
+                margin-left: 10px;
+}
+        }
+    }
+    &:hover{
+        .mb_overly{
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+
+.mb_account-cards-section {
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    flex-grow: 1;
+}
+
+.mb_card-grid {
+    @include flex(row, flex-start, center);
+    gap: 30px;
+    flex-wrap: wrap;
+    .mb_card{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 270px;
+        height: 170px;
+        @include transition(0.4s);
+        @include flex(column, center, center);
+        gap: 15px;
+        cursor: pointer;
+        @include xl {
+            width: 204px;
+        }
+        @include lg {
+            width: 260px;
+        }
+        @include md {
+            width: 225px;
+        }
+        @include xs {
+            width: 212px;
+        }
+        @include xxs {
+            width: 100%;
+        }
+        span{
+            color: $primary;
+            img{
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+        }
+        p{
+
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            color: $text_color;
+            @include xxs {
+                font-size: 16px;
+            }
+        }
+         &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-color: transparent;
+    }
+    }
+}
+
+.mb_adding_btn{
+    @include flex(row, flex-end, center);
+    gap: 20px;
+    @include md {
+        margin-top: 30px;
+    }
+    @include sm {
+        flex-direction: column;
+        align-items: start;
+        margin-top: 60px;
+    }
+}
+.mb_action_links {
+    margin-top: 66px;
+    @include md {
+        margin-top: 30px;
+    }
+
+    li {
+        margin-bottom: 10px;
+        padding-left: 20px;
+        position: relative;
+        &::before{
+            content: "";
+            width: 6px;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            @include transformY(-50%);
+            height: 6px;
+            background-color: $primary;
+            @include border-radius(50%);
+        }
+        
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration-skip-ink: none;
+            color: $text_style3;
+            text-decoration: none;
+            @include transition(0.4s);
+
+            &.active {
+                text-decoration: underline;
+                color: $primary;
+            }
+            &:hover {
+                text-decoration: underline;
+                color: $primary;
+            }
+        
+        }
+    }
+}
+
+
+
+/*---Notification Start---*/
+.mb_notification_area{
+
+    .mb_notifications_container {
+        width: 100%;
+    }
+
+    .mb_notification_item {
+        @include flex(row, space-between, center);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 35px 40px;
+        @include transition(0.5s);
+        margin-bottom: 14px;
+        @include xxs {
+            padding: 30px 20px;
+        }
+    }
+
+    .notification-item:hover {
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+
+    .notification-text h3 {
+        font-weight: 600;
+        font-size: 24px;
+        color: $text_color;
+        @include xxs {
+            padding-bottom: 10px;
+            font-size: 18px;
+        }
+    }
+
+    .notification-text p {
+        font-weight: 500;
+        margin-top: 5px;
+        font-size: 18px;
+        line-height: 167%;
+        color: $text_style2;
+        @include xxs {
+            font-size: 14px;
+        }
+    }
+
+    .mb_toggle_switch_container {
+        position: relative;
+        display: inline-block;
+        width: 75px; 
+        height: 41px; 
+        @include xxs {
+            width: 70px;
+            height: 38px;
+            flex-shrink: 0;
+        }
+    }
+    
+    .mb_toggle_switch_container input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    
+    .mb_toggle_slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #c8b092;
+        transition: .4s;
+        border-radius: 20px;
+    }
+    
+    .mb_toggle_slider:before {
+        position: absolute;
+        content: "";
+        height: 27px; 
+        width: 27px;
+        left: 8px;
+        top: 8px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+        @include xxs {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+    }
+    
+    input:checked + .mb_toggle_slider {
+        background-color: $primary; 
+    }
+    
+    input:checked + .mb_toggle_slider:before {
+        transform: translateX(32px);
+        -webkit-transform: translateX(32px);
+        -moz-transform: translateX(32px);
+        -ms-transform: translateX(32px);
+        -o-transform: translateX(32px);
+}
+}
+/*---Notification Start---*/
+
+/*---Change Password Start---*/
+.mb_change_password{
+    .mb_change_pass{
+        @include flex(column, center, flex-start);
+        
+    }
+    label {
+        width: 100%;
+        font-weight: 500;
+        font-size: 15px;
+        color: $text_color;
+        margin-bottom: 13px;
+        span{
+            opacity: 0.7;
+            margin-left: 5px;
+        }
+    }
+    
+    input {
+        width: 100%;
+        border: 1px solid $border;
+        border-radius: 6px;
+        padding: 11px 25px;
+        font-weight: 400;
+        font-size: 15px;
+        color: $text_color;
+        @include xxs {
+            font-size: 14px;
+        }
+        &::placeholder{
+            color: $text_color;
+            opacity: 0.7;
+            position: relative;
+            list-style: disc;
+            
+        }
+    }
+    
+    input:focus {
+        border-color: $primary;
+        outline: none;
+    }
+    
+    .form-text {
+        font-size: 0.875rem;
+        color: #6b7280;
+        margin-top: 0.25rem;
+    }
+    
+    .update-button {
+        width: 100%;
+        background-color: $text_color;
+        border: none;
+        height: 46px;
+        line-height: 46px;
+        transition: background-color 0.2s ease-in-out;
+        font-weight: 600;
+        font-size: 16px;
+        @include border-radius(6px);
+        color: $white;
+    }
+    
+    .update-button:hover {
+        background-color: #2d3748;
+    }
+
+}
+/*---Change Password Start---*/
+
+/*---Saved Listing Start---*/
+.mb_saved_listing{
+    .mb_saved_listing_slider{
+        text-align: left;
+    }
+    .saved_list_btn{
+        button{
+        background-color: $primary;
+        border: none;
+        @include border-radius(40px);
+        padding: 0px 30px;
+        height: 44px;
+        font-weight: 600;
+        font-size: 16px;
+        color: $white;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $text_color;
+        }
+        }
+
+    }
+    .slick-slide{
+        margin: 0px 10px;
+        text-align: left;
+    }
+    .mb_seved_listing{
+        @include flex(row, center, center);
+        gap: 8px;
+        margin-top: 60px;
+        li{
+            height: 100%;
+            @include flex(row, center, center);
+            height: 20px;
+        }
+        button{
+            width: 12px;
+            height: 12px;
+            color: transparent;
+            border: none;
+            background: $text_color;
+            opacity: 0.1;
+            @include transition(0.5s);
+            @include border-radius(50%);
+        }
+        .slick-active{
+            button{
+                @include border-radius(10px);
+                height: 12px;
+                width: 30px;
+                background: $primary;
+                opacity: 1;
+            }
+        }
+    
+    }
+}
+/*---Saved Listing End---*/
+
+/*---Map Start---*/
+.mb_map_area{
+    height: 462px;
+    iframe{
+        @include border-radius(20px)
+    }
+}
+/*---Map End---*/
+
+/*---Saved Searches Start---*/
+.mb_saved_serach{
+  .mb_result_alphabetical{
+    @include flex(row, space-between, center);
+    .mb_result{
+        span{
+            font-weight: 400;
+            font-size: 16px;
+            color: $text_color3;
+            @include xxs {
+                font-size: 14px
+            }
+        }
+    }
+    
+    .mb_alphabetic{
+        @include flex(center, center, center);
+        gap: 10px;
+        h5{
+            font-weight: 600;
+            font-size: 24px;
+            color: $text_color;
+            @include xxs {
+                font-size: 16px
+            }            
+        }
+        .mb_arrow_btn{
+            span{
+                @include flex(column, center, center);
+                i{
+                    cursor: pointer;
+                    @include transition(0.4s);
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+  }
+  .mb_cabins_sale{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    @include flex(row, space-between, center);
+    @include sm {
+        padding: 30px;
+    }
+    @include xs {
+        padding: 23px 20px;
+        flex-direction: column;
+        row-gap: 38px;
+        align-items: start;
+    }
+    .mb_cabin_tag{
+        h4{
+            font-weight: 600;
+            font-size: 24px;
+            color: $text_color;
+            @include xxs {
+                font-size: 20px
+            }            
+            span{
+                margin-right: 10px;
+            }
+        }
+        .mb_tag{
+            @include flex(row, flex-start, center);
+            gap: 10px;
+            margin-top: 29px;
+            @include xs {
+                margin-top: 20px;
+            }
+            h5{
+                font-weight: 600;
+                font-size: 24px;
+                color: #000;
+                @include xxs {
+                    font-size: 20px
+                }                
+            }
+            ul{
+                @include flex(row, flex-start, center);
+                gap: 10px;
+                li{
+                    a{
+                        font-weight: 400;
+                        font-size: 21px;
+                        color: $text_color;
+                        @include transition(0.4s);
+                        @include xxs {
+                            font-size: 16px
+                        }                        
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+  .mb_btn_area{
+    @include flex(row, center, center);
+    gap: 20px;
+    .nice-select{
+        border: none;
+        padding: 0px 30px;
+        height: 44px;
+        line-height: 44px;
+        background-color: $primary;
+        @include border-radius(40px);
+        font-weight: 600;
+        font-size: 16px;
+        color: $white;
+        .current{
+            color: $white;
+        }
+        &::after{
+            border-color: $white !important;
+        }
+    }
+    .mb_cross{
+        font-size: 30px;
+        color: $text_color;
+    }
+  }
+}
+/*---Saved Searches End---*/
+
+/*---My Profile Start---*/
+.mb_my_profile_area{
+
+
+.mb_profile_card {
+    padding: 41px 60px 60px 60px;
+    border: 1px solid rgba(3, 26, 38, 0.1);
+    border-radius: 20px;
+    @include xxl {
+        padding: 40px 40px 40px 40px;
+    }
+    @include xxs {
+        padding: 20px 25px 25px 25px;
+    }
+}
+
+.mb_profile_heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.mb_profile_left {
+    @include flex(column, center, flex-start);
+    border-right: 1px solid #e6e9ea;
+    @include md {
+        align-items: center;
+        padding-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #e6e9ea;        
+    }
+    .mb_btn_area{
+        @include flex(column, center, center);
+        width: fit-content;
+    }
+}
+
+.mb_profile_picture {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    @include lg {
+        width: 315px;
+        height: 315px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.mb_edit_button {
+    padding: 10px 30px;
+    background: #ffebd0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    @include border-radius(10px);
+    border: none;
+    @include xxs {
+        font-size: 18px;
+    }
+}
+
+
+.mb_professional_toggle {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .mb_switch {
+        position: relative;
+        display: inline-block;
+        width: 66px;
+        height: 30px;
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    
+    .mb_slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:  #031a26;;
+        transition: .4s;
+        border-radius: 20px;
+        &:before {
+            position: absolute;
+            content: "";
+            height: 24px;
+            width: 24px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+    }
+    
+    input:checked + .mb_slider {
+        background-color: $primary;
+    }
+    
+    input:checked + .mb_slider:before {
+        transform: translateX(35px);
+        -webkit-transform: translateX(35px);
+        -moz-transform: translateX(35px);
+        -ms-transform: translateX(35px);
+        -o-transform: translateX(35px);
+    }
+    
+    .mb_professional_text {
+        font-weight: 400;
+        font-size: 16px;
+        color: $text_color;
+        @include xxs {
+            font-size: 14px;
+        }        
+    }
+}
+
+
+.mb_profile_right {
+    flex-grow: 1;
+    padding-left: 75px;
+    padding-right: 60px;
+    @include md {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.mb_profile_form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        gap: 30;
+    }
+}
+
+.mb_form_group {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.mb_label {
+    font-weight: 600;
+    font-size: 18px;
+    color: $text_color;
+    margin-bottom: 10px;
+}
+
+.mb_input{
+    width: 100%;
+    padding: 11px 0px;
+    border: none;
+    border-bottom: 1px solid rgba(3, 26, 38, 0.14);
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 16px;
+    color: $text_color;
+    &::placeholder{
+        color: $text_color;
+        opacity: 0.7;
+        
+    }
+    &:focus {
+        outline: none;
+        border-color: $primary;
+    }
+    
+}
+.nice-select{
+    padding: 0px !important;
+    border: none;
+    border-bottom: 1px solid rgba(3, 26, 38, 0.14);
+    height: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    color: $text_color;
+    width: 100%;
+    .list{
+        width: 100%;
+
+    }
+    .current{
+        color: $text_color;
+        opacity: 0.7;
+    }
+}
+
+.mb_update_button {
+    @include md {
+        margin-top: 20px !important;
+    }
+    button{
+        background-color: $primary;
+        border: none;
+        padding: 11px 23px;
+        font-weight: 600;
+        font-size: 16px;
+        color: $white;
+        @include border-radius(999px);
+        &:hover {
+            background-color: $text_color;
+        }
+    }
+    grid-column: span 2;
+    margin-top: 18px;
+}
+
+.mb_terms_text {
+    font-weight: 400;
+    font-size: 16px;
+    color: $text_color3;
+    grid-column: span 2;
+    margin-top: -15px;
+    @include md {
+        margin-top: 5px;
+    }
+    @include xxs {
+        font-size: 12px;
+    }    
+    
+    a {
+        color: $text_color3;
+        @include transition(0.4s);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+
+.mb_account_link {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    margin-top: 43px;
+    @include xxs {
+        margin-top: 30px;
+    }    
+    a {
+        color: #000;
+        text-decoration: none;
+        @include transition(0.4s);
+        &:hover {
+            text-decoration: underline;
+            color: $primary;
+        }
+    }
+}
+}
+/*---My Profile End---*/
+
+/*---Sign Up Start---*/
+.mb_sign_up_area{
+
+.select_card{
+    width: 100% !important;
+}
+// Card Container
+.mb_mls_card {
+  padding: 60px;
+  @include border-radius(20px);
+  border: 1px solid rgba(3, 26, 38, 0.1);
+  @include xl {
+    padding: 40px;
+  }
+  @include lg {
+    padding: 30px;
+  }
+  @include xs {
+    padding: 20px;
+  }
+}
+
+.mb_mls_left {
+  padding-right: 40px;
+  @include md {
+    padding-right: 0;
+  }
+}
+
+
+
+.mb_mls_subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    color: $text_color3;
+    margin-top: 14px;
+  margin-bottom: 30px;
+      @include xxs {
+        font-size: 14px;
+    }  
+}
+
+.mb_user_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 25px 40px;
+  margin-bottom: 30px;
+  background: #e6e9ea;
+  @include lg {
+    border-radius: 20px;
+    padding: 18px 16px;
+  }
+    span{
+        font-weight: 600;
+        font-size: 20px;
+        color: $text_color;
+        @include lg {
+            font-size: 18px;
+        }
+        @include xxs {
+            font-size: 14px;
+        }
+    }
+    a{
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: $text_color;
+        @include transition(0.4s);
+        @include lg {
+            font-size: 18px;
+        } 
+        @include xxs {
+            font-size: 14px;
+        }               
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+
+
+.mb_section_title {
+    font-weight: 500;
+    font-size: 20px;
+    color: $text_color;
+    margin-bottom: 29px;
+    @include xxs {
+        font-size: 16px;
+    }
+}
+
+.mb_radio_group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.mb_radio_label {
+  display: flex;
+  align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    color: $text_color3;
+  cursor: pointer;
+  margin-bottom: 2px;
+  @include xxs {
+    font-size: 14px;
+  }
+}
+
+.mb_radio_input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #cdd1d4;
+  border-radius: 50%;
+  margin-right: 10px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+
+  &:checked {
+    border: 3px solid $primary;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10px;
+      height: 10px;
+      background-color: $white;
+      border-radius: 50%;
+    }
+  }
+}
+
+// Form Elements
+.mb_form_group {
+  @include flex(column, flex-start, flex-start);
+  margin-bottom: 28px;
+  .nice-select{
+    width: 100%;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    @include xs {
+        height: 50px;
+        line-height: 50px;
+    }
+    .list{
+        width: 100%;
+    }
+    &::after{
+        width: 10px;
+        height: 10px;
+        border-color: $text_color;
+        margin-right: 20px;
+
+    }
+
+  }
+  label{
+    font-weight: 600;
+    font-size: 18px;
+    color: $text_color;
+    margin-bottom: 15px;
+    span{
+        margin-left: 1px;
+    }
+    @include xxs {
+        font-size: 16px;
+    }    
+  }
+}
+
+
+.mb_form_input,
+.mb_form_select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid red;
+  border-radius: 8px;
+  font-size: 14px;
+  color: green;
+  appearance: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 15px center;
+  background-size: 18px;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+}
+
+.mb_form_input::placeholder {
+  color: yellow;
+}
+
+.mb_helper_text {
+    font-weight: 400;
+    font-size: 16px;
+    color: $text_color3;
+    margin-top: 18px;
+    @include xxs {
+        font-size: 14px;
+    }      
+}
+
+.mb_verify_btn {
+    margin-top: 39px;
+  button{ 
+    width: 100%;
+  padding: 15px;
+  background-color: $primary;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+    @include xxs {
+        font-size: 14px;
+    }    
+  &:hover{
+    background-color: $text_color;
+  }
+  }
+}
+.mb_mls_right{
+    max-width: 820px;
+    width: 100%;
+    height: 969px;
+    position: relative;
+    @include md {
+        height: auto;
+    }
+.mb_cross{
+    position: absolute;
+    top: 30px;
+    span{
+        width: 34px;
+        height: 34px;
+        display: block;
+        line-height: 34px;
+        cursor: pointer;
+        @include border-radius(50%);
+        background-color: $white;
+        text-align: center;
+        line-height: center;
+        color: $text_color;
+        font-weight: 900;
+        font-size: 16px;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+    right: 30px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @include border-radius(20px);
+
+}
+}
+
+}
+/*---Sign Up End---*/

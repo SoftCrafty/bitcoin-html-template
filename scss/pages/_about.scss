@@ -1,0 +1,377 @@
+/*---Inner Page Hero Section Start---*/
+.mb_inner_page_hero{
+    height: 470px;
+    background-color: #FFEED8;
+    @include border-radius(24px);
+    @include flex(row, flex-start, center);
+    position: relative;
+    margin: 10px 10px 0 10px;
+    overflow: hidden;
+    @include xxs {
+        height: 400px;
+        margin: 5px 5px 0 5px;
+    }
+    .mb_inner_content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 90px;
+        @include md {
+            align-items: center;            
+        }
+        @include xs {
+            margin-top: 140px;
+        }
+        .heading {
+            h1 {
+                @include md {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .mb_blur_circle{
+		width: 671px;
+		height: 671px;
+		@include border-radius(50%);
+		background-color: #f6b663;
+		filter: blur(200px);
+		-webkit-filter: blur(200px);
+		position: absolute;
+		top: -490px;
+		left: 46%;
+		@include transformX(-50%);
+}
+    .container{
+        height: 100%;
+    }
+    .row{
+        height: 100%;
+        height: 470px
+    }
+    ul{
+        @include flex(row, flex-start, center);
+        gap: 10px;
+        border: 1px solid rgba(34, 34, 34, 0.12);
+        border-radius: 100px;
+        padding: 5px 20px;
+        background: #f4d9b6;
+        width: fit-content;
+        @include xxs {
+            padding: 5px 5px;
+        }
+        li{
+            a{
+                font-weight: 600;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: $text_color;
+                @include transition(0.4s);
+                span{
+                    margin-right: 10px;
+                }
+                &:hover{
+                    color: $primary;
+                }
+                @include xxs {
+                    font-size: 14px;
+                    line-height: 26px; 
+                }
+            }
+        }
+    }
+    .heading{
+        h1{
+            font-weight: 600;
+            font-size: 80px;
+            color: $text_color;
+            margin-top: 20px;
+            @include md {
+                font-size: 60px;
+            }
+            @include xxs {
+                font-size: 44px;
+                line-height: 54px;
+            }
+        }
+    }
+    .bitcoin{
+        position: absolute;
+        bottom: 52px;
+        left: 0px;
+        @include md {
+            display: none;
+        }
+    }
+    .shape{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        @include md {
+            width: 48%;
+            img {
+                width: 100%;
+            }
+        }
+        @include xxs {
+            bottom: 33%;
+            width: 60%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// About1 css start
+.rb_about1 {
+    .container {
+        max-width: 1754px;
+    }
+    .rb_thumb {
+        img {
+            @include xxl {
+                width: 100%;
+            }
+        }
+    }
+    .rb_heading_area {
+        .rb_title {
+            font-size: 40px;
+            @include md {
+                font-size: 30px;
+                line-height: 40px; /* 133.333% */
+            }
+        }
+    }
+    .rb_list {
+        margin-top: 45px;
+        @include lg {
+            margin-top: 20px;
+        }
+        ul>li {
+            color: rgba(37, 37, 37, 0.90);
+            font-family: $inter-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; 
+            @include lg {
+                margin-bottom: 10px;
+                font-size: 16px;
+                line-height: 26px; 
+            }
+        }
+    }
+    .mission_card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        padding: 99px 77px 198px;
+        border-radius: 10px;
+        background: $text_color;
+        @include xxl {
+            padding: 99px 30px 186px;
+        }
+        @include xl {
+            padding: 99px 77px 198px;
+        }
+        .icon {
+            display: flex;
+            justify-content: center;
+        }
+        h4 {
+            color: $white;
+            font-family: $inter-font;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100px; /* 416.667% */
+        }
+        p {
+            color: rgba(255, 255, 255, 0.60);
+            text-align: center;
+            font-family: $inter-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px; /* 166.667% */
+        }
+    }
+    .rb_arrow_btn {
+        display: flex;
+        gap: 48px;
+        .icon {
+            i {
+                font-size: 20px;
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+    .left-arrow {
+        position: absolute;
+        bottom: 15%;
+        left: 39%;
+        z-index: 10;
+        i {
+            font-size: 24px;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+    .right-arrow {
+        position: absolute;
+        bottom: 15%;
+        right: 39%;
+        z-index: 10;
+        i {
+            font-size: 24px;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+}
+// About1 css end
+
+
+// About2 css start
+.rb_about2 {
+    position: relative;
+    .rb_heading_area {
+        max-width: 630px;
+    }
+    .rb_content {
+        max-width: 530px;
+        .item {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            .icon {
+                width: 80px;
+                height: 80px;
+                @include xs {
+                    width: 57px;
+                    height: 57px;
+                    flex-shrink: 0;
+                    aspect-ratio: 1/1;
+                }
+                img {
+                    border-radius: 100px;
+                    border: 1px solid #E6E8E9;
+                    background: $white;
+                    padding: 23px 18px;
+                    @include xs {
+                        padding: 16px 12px;
+                    }
+                }
+            }
+            .rb_title {
+                color: $text_color;
+                font-family: $inter-font;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px; /* 136.364% */
+                @include md {
+                    font-size: 18px;
+                }
+            }
+            .rb_desc {
+                color: $text_style2;
+                font-family: $inter-font;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 26px; /* 162.5% */
+                @include md {
+                    font-size: 12px;
+                }
+            }
+            &.style1 {
+                .icon {
+                    img {
+                        padding: 18px 22px;
+                        @include xs {
+                            padding: 12px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .rb_btn_area {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @include sm {
+            flex-direction: column;
+            align-items: start;
+        }
+        .rb_profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .item {
+                span:not(:first-child) {
+                    margin-left: -18px;
+                }
+
+                .plus_icon {
+                    display: flex;
+                    width: 44px;
+                    height: 44px;
+                    flex-shrink: 0;
+                    background: #121C27;
+                    padding: 13px;
+                    border-radius: 24px;
+                }
+                &.style1 {
+                    display: flex;
+                    align-items: center;
+                }
+                .rb_title {
+                    color: $text_color;
+                    font-family: $inter-font;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    padding-bottom: 5px;
+                    @include md {
+                        font-size: 16px;
+                    }
+                }
+                .rb_desc {
+                    color: $text_style2;
+                    font-family: $inter-font;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 26px; /* 185.714% */
+                    text-transform: uppercase;
+                    @include md {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .rb_thumb {
+        position: relative;
+        border-radius: 20px;
+        width: fit-content;
+        @include md {
+            width: 100%;
+        }
+        img {
+            border-radius: 20px;
+            @include md {
+                width: 100%;
+            }
+        }
+    }
+}
+// About2 css end

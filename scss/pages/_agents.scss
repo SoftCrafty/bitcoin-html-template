@@ -1,0 +1,406 @@
+.mb_agents_area{
+
+    .heading{
+        h2{
+            font-weight: 700;
+            font-size: 40px;
+            color: $text_color;
+            @include sm {
+                font-size: 32px;
+            }
+            @include xxs {
+                font-size: 20px;
+                line-height: 40px; 
+            }
+        }
+    }
+    .mb_title{
+        h4{
+                font-weight: 600;
+                font-size: 24px;
+                color: $text_color;
+        }
+    }
+    .mb_agent_search{
+        @include flex(row, flex-start, center);
+        gap: 20px;
+        input{
+            border: 1px solid $border;
+            border-radius: 6px;
+            width: 450px;
+            height: 50px;
+            padding: 0px 25px;
+            outline: none;
+            color: $text_style2;
+            font-family: $inter-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include xs {
+                width: 388px;
+            }
+            @include xxs {
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+        select{
+            height: 50px;
+            line-height: 50px;
+            width: 450px !important;
+            color: $text_style2;
+            font-family: $inter-font;
+            font-size: 16px;
+            font-weight: 500;
+            @include xs {
+                width: 388px;
+            }
+            @include xxs {
+                font-size: 14px;
+                width: 100%;
+            }
+
+            @include border-radius(6px);
+            .list{
+                width: 100%;
+            }
+        }
+        .fix_agent {
+            @include md {
+                flex-direction: column;
+            }
+        }
+        .search_icon{
+            @include md {
+                align-self: self-start;
+            }
+            span{
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                @include border-radius(50%);
+                background-color: $primary;
+                color: $white;
+                display: inline-block;
+                cursor: pointer;
+
+            }
+        }
+    }
+    .mb_create_account{
+        @include flex(row, center, center);
+        p{
+            border: 1px solid $border;
+            max-width: 410px;
+            padding: 30px;
+            border-radius: 6px;
+            a{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 178%;
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+                color: $primary;
+            }
+        }
+    }
+    h6{
+        font-weight: 600;
+        font-size: 18px;
+        color: $text_style3;
+    }
+    .mb_for_you{
+        h6{
+            color: $text_color;
+            i{
+                margin-right: 10px;
+            }
+        }
+    }
+    .mb_agent_owner_card{
+        border: 1px solid $border;
+        border-radius: 10px;
+        width: 100%;
+        padding: 24px 30px 35px 30px;
+        @include transition(0.4s);
+        h4{
+            font-weight: 600;
+            font-size: 24px;
+            color: $text_color;
+        }
+        .mb_owner_name{
+            p{
+                font-weight: 500;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: $text_color;
+                opacity: 0.7;
+            }
+
+        }
+        .mb_location{
+            p{
+                opacity: 0.7;
+                font-weight: 500;
+                font-size: 15px;
+                color: $text_color;
+            }
+        }
+        .mb_owner_image{
+            @include flex(row, center, center);
+            .owner_img{
+                width: 150px;
+                height: 150px;
+                @include border-radius(50%);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    @include border-radius(50%);
+                    object-fit: cover;
+                }
+            }
+        }
+        .mb_owner_btn{
+            a{
+                font-weight: 600;
+                font-size: 16px;
+                color: $text_color;
+                @include transition(0.5s);
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+
+        &:hover{
+            transform: scale(1.02);
+            -webkit-transform: scale(1.02);
+            -moz-transform: scale(1.02);
+            -ms-transform: scale(1.02);
+            -o-transform: scale(1.02);
+}
+    }
+    .row{
+        &.style_01{
+            
+            gap: 30px;
+            .col-lg-4{
+                width: calc(33.33% - 20px);
+            }
+        }
+    }
+
+}
+
+.agent_details_area{
+    .mb_braham_pigeo{
+        @include flex(row, flex-start, column);
+        gap: 34px;
+        @include sm {
+            flex-direction: column;
+        }
+        .mb_image{
+            width: 310px;
+            height: 310px;
+            @include sm {
+                width: 100%;
+                height: auto;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                @include border-radius(10px)
+            }
+        }
+        .mb_braham_contains{
+            
+            .mb_braham_heading{
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+                h4{
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: $text_color;
+                }
+                p{
+                    font-family: var(--font-family);
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 167%;
+                    color: $text_style2;
+                }
+                
+            }
+            ul{
+                margin-top: 24px;
+
+                li{
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: $text_color;
+                    @include flex(row, flex-start, center);
+                    margin-bottom: 10px;
+                    p{
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: $text_color;
+                        width: 184px;
+                        @include xxs {
+                            width: 138px;
+                        }
+                    }
+                    span,a{
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: $text_color;
+                        i{
+                            color:  #ffb124;
+                            opacity: 1;
+                        }
+                    }
+                    a{
+                        @include transition(0.4s);
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mb_current_listing{
+        .heading{
+            h3{
+                font-weight: 600;
+                font-size: 16px;
+                color: $text_color; 
+                position: relative;
+                display: inline-block;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: -380px;
+                    min-width: 370px;
+                    max-width: 100%;  
+                    height: 1px;
+                    background-color: rgba(3, 26, 38, 0.12);
+                }
+            }
+        }
+    }
+    .mb_listing_card {
+        @include lg {
+            border: none;
+            padding: 0;
+        }
+    }
+    .agent_details_sidebar{
+        padding: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        @include xxs {
+            padding: 20px;
+        }
+        .send_specific{
+            p{
+                font-weight: 500;
+                font-size: 18px;
+                color: $text_color;
+                padding: 21px 30px;
+                border: 1px solid $border;
+                border-radius: 10px;
+                @include xxs {
+                    font-size: 16px;
+                }
+            }
+        }
+        .mb_contact_braham{
+            input{
+                border: 1px solid $border;
+                border-radius: 6px;
+                width:100%;
+                padding: 10px 20px;
+                margin-bottom: 23px;
+                outline: none;
+                color: $text_color;
+                font-family: $inter-font;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px; /* 173.333% */
+                @include xxs {
+                    font-size: 14px;
+                }
+                
+                &::placeholder{
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: $text_color;
+                    opacity: 0.7;
+                }
+                
+            }
+            textarea{
+                height: 130px;
+                border-radius: 6px;
+                border: 1px solid $border;
+                padding: 18px 20px;
+                width: 100%;
+                outline: none;
+
+            }
+            button{
+                background: $text_color;
+                padding: 9px;
+                width: 100%;
+                margin-top: 29px;
+                font-weight: 600;
+                font-size: 16px;
+                color: $white;
+                @include border-radius(6px);
+                @include xxs {
+                    font-size: 14px;
+                }
+            }
+            .description{
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: $text_color;
+                    @include xxs {
+                        font-size: 14px;
+                    }
+                    span{
+                        font-weight: 500;
+                    }
+                }
+            }
+.read-more-container {
+    overflow: hidden;
+    position: relative;
+    max-height: 120px; /* Adjust height to your liking */
+    transition: max-height 0.5s ease;
+
+    &.expanded {
+        max-height: 1000px; /* Sufficiently large value */
+    }
+
+    .read-more-btn {
+        display: inline-block;
+        cursor: pointer;
+        color: blue;
+        text-decoration: none;
+        background-color: $white;
+        padding-left: 5px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+        }
+    }
+}

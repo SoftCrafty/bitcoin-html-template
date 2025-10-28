@@ -1,0 +1,235 @@
+// Service1 css start
+.rb_service1 {
+    position: relative;
+    .rb_service_shape1 {
+        position: absolute;
+        top: -9%;
+        left: 4%;
+        @include xxxl {
+            display: none;
+        }
+    }
+    .rb_service_shape2 {
+        position: absolute;
+        bottom: -35%;
+        right: 3%;
+        @include xxxl {
+            display: none;
+        }
+    }
+    .row.style1 {
+        --bs-gutter-y: 4rem;
+        --bs-gutter-x: 4rem;
+        border-top: 1px solid rgba(3, 26, 38, 0.12);
+        margin-top: 0;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        @include sm {
+            --bs-gutter-y: 2rem;
+            --bs-gutter-x: 2rem;
+        }
+    }
+    .service_card {
+        display: flex;
+        gap: 22px;
+        .icon {
+            img {
+                @include md {
+                    width: 64px;
+                    height: 64px;
+                    flex-shrink: 0;
+                    aspect-ratio: 1/1;
+                }
+                @include xxs {
+                    width: 54px;
+                    height: 54px;
+                    flex-shrink: 0;
+                    aspect-ratio: 1/1;
+                }
+            }
+        }
+        .content {
+            .rb_title {
+                color: $text_color;
+                font-family: $inter-font;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                @include md {
+                    font-size: 20px;
+                }
+                @include xxs {
+                    font-size: 16px;
+                }
+            }
+            .rb_desc {
+                color: $text_style2;
+                font-family: $inter-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 166.667% */
+                @include xxs {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+.rb_counter1 {
+    .counter_box {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 70px;
+        border-radius: 14px;
+        background: #FFEED8;
+        padding: 52px 100px;
+        @include lg {
+            gap: 115px;
+        }
+        .counter_item {
+            width: 175px;
+            .rb_numb {
+                color: $text_color;
+                font-family: $inter-font;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 64px; /* 128% */
+            }
+            .rb_text {
+                color: $text_style2;
+                font-family: $inter-font;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px; /* 166.667% */
+            }
+        }
+    }
+}
+// Service1 css end
+
+
+// Step Slider Start
+.rb_step_slider {
+    position: relative;
+    background: $text_color;
+    padding: 120px 0 130px;
+    @include md {
+        padding: 100px 0 100px;
+    }
+    @include sm {
+        padding: 95px 0 95px;
+    }
+
+    .left-arrow{
+        @include md{
+            display: none !important;
+        }
+        @include sm{
+            display: none !important;
+        }
+        border-radius: 50%;
+        border: 1px solid $border;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: #020626;
+        position: absolute;
+        top: 45%;
+        left: -65px;
+        @include transformY(-50%);
+        background-color: $white;
+        z-index: 10;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+   .right-arrow{
+        @include md{
+            display: none !important;
+        }
+        @include sm{
+            display: none !important;
+        }
+        border: 1px solid $border;
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        display: block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        color: #020626;
+        cursor: pointer;
+        position: absolute;
+        background-color: $white;
+        top: 45%;
+        @include transformY(-50%);
+        right: -65px;   
+        z-index: 10;
+        @include transition(0.4s);
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
+    }
+    .shape {
+        position: absolute;
+        top: 46.7%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1638px;
+        height: 1px;
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.10);
+    }
+    .step_item {
+        max-width: 291px;
+        .rb_step_numb {
+            color: $white;
+            font-family: $inter-font;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 20px;
+        }
+        .rb_step_title {
+            color: $white;
+            font-family: $inter-font;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 25px;
+        }
+        .icon {
+            padding-bottom: 30px;
+        }
+        .rb_step_desc {
+            color: rgba(255, 255, 255, 0.60);
+            font-family: $inter-font;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; 
+        }
+    }
+}
+// Step Slider End

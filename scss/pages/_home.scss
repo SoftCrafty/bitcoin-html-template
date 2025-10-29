@@ -3,6 +3,16 @@
     @include md {
         padding-top: 8px;
     }
+    .describtion{
+        p{
+            line-height: 30px;
+        }
+    }
+    .heading{
+        h1{
+            line-height: 74px;
+        }
+    }
     .mb_hero_bg{
         height: 959px;
         background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);
@@ -26,7 +36,6 @@
         .mb_hero_contain{
             height: 100%;
             width: 100%;
-            background-color: red;
             @include flex(row, flex-start, center);
             
             
@@ -319,7 +328,7 @@
 
 /*--blockquote Start---*/
 .mb_blockquote_section{
-    padding: 130px 0px 107px 0px;
+    padding: 137px 0px 107px 0px;
     position: relative;
     @include xxs {
         padding: 70px 0px 36px 0px;
@@ -332,6 +341,7 @@
             bottom: -60px;
             img {
                 width: 70%;
+
             }
         }
         @include md {
@@ -357,18 +367,22 @@
         .mb_profile_image{
             width: 300px;
             height: 140px;
+
             @include border-radius(100px);
             img{
                 @include border-radius(100px);
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+                margin-top: 10px;
             }
+        
         }
         blockquote{
             font-style: italic;
             font-weight: 500;
             font-size: 34px;
+            line-height: 54px;
             text-align: center;
             color: $text_style3;
             margin-top: 40px;

@@ -528,26 +528,7 @@
         
 
 
-        // Header h1 Animate
-        // function textAnimation() {
-        //     const blogNewsContains = document.querySelectorAll(".heading h1");
-        //     if (blogNewsContains.length > 0) {
-        //         gsap.from(blogNewsContains, {
-        //             scrollTrigger: {
-        //                 trigger: ".header_area",
-        //                 start: "top 80%",
-        //                 toggleActions: "play none none reverse",
-        //             },
-        //             opacity: 0,
-        //             y: 50,
-        //             duration: 1.5,
-        //             stagger: 0.3,
-        //         });
-        //     }
-        // }
-        // textAnimation()
-      
-        // Counting
+       
         $(".about_count").each(function () {
             let counter = $(this);
             let targetValue = counter.data("count").toString().replace(/\D/g, "");
@@ -732,6 +713,9 @@
             }
         });
 
+        $(".tk_select_wrapper").on("click", function(){
+            $(".tk_select_wrapper").toggleClass("active")
+        })
         // Nice Select
         // if($.fn.niceSelect){
         //     $('select').niceSelect();

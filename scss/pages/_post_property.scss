@@ -556,6 +556,7 @@
 .rb_dropdown_1{
     .select_card{
         select{
+            width: fit-content !important;
             cursor: pointer;
             border-radius: 30px;
             -webkit-border-radius: 30px;

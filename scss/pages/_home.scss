@@ -110,6 +110,10 @@
                         height: 40px;
                         line-height: 37px;
                     }
+                    @include sm{
+                        height: 50px;
+                        padding-right: 5px;
+                    }
                     input{
                         border-radius: 50px;
                         width: 90%;
@@ -146,6 +150,12 @@
                             width: 30px;
                             height: 30px;
                             line-height: 30px;
+                        }
+                        @include sm{
+                            width: 40px;
+                            height: 40px;
+                            line-height: 40px;
+
                         }
                     }
                 }

@@ -28318,6 +28318,10 @@ header {
           max-width: 330px;
           height: 40px;
           line-height: 37px; } }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .mb_hero_area .mb_hero_bg .mb_search_bar form {
+          height: 50px;
+          padding-right: 5px; } }
       .mb_hero_area .mb_hero_bg .mb_search_bar form input {
         border-radius: 50px;
         width: 90%;
@@ -28357,6 +28361,11 @@ header {
             width: 30px;
             height: 30px;
             line-height: 30px; } }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .mb_hero_area .mb_hero_bg .mb_search_bar form button {
+            width: 40px;
+            height: 40px;
+            line-height: 40px; } }
     @media only screen and (min-width: 0px) and (max-width: 575px) {
       .mb_hero_area .mb_hero_bg .mb_search_bar {
         margin-bottom: 80px;
@@ -30814,6 +30823,7 @@ header {
     background-color: #4B5563; }
 
 .rb_dropdown_1 .select_card select {
+  width: fit-contentgit  !important;
   cursor: pointer;
   border-radius: 30px;
   -webkit-border-radius: 30px;

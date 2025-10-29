@@ -28225,6 +28225,15 @@ header {
     line-height: 30px; }
   .mb_hero_area .heading h1 {
     line-height: 74px; }
+    @media only screen and (min-width: 992px) and (max-width: 1024px) {
+      .mb_hero_area .heading h1 {
+        line-height: 60px; } }
+    @media only screen and (max-width: 991px) {
+      .mb_hero_area .heading h1 {
+        line-height: 50px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_hero_area .heading h1 {
+        line-height: 40px; } }
   .mb_hero_area .mb_hero_bg {
     height: 959px;
     background: linear-gradient(180deg, #ffbb64 0%, #ffcc8b 100%);

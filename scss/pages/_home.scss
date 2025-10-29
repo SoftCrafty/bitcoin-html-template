@@ -11,6 +11,15 @@
     .heading{
         h1{
             line-height: 74px;
+            @include nesthub{
+                line-height: 60px;
+            }
+            @include md{
+                line-height: 50px;
+            }
+            @include sm{
+                line-height: 40px;
+            }
         }
     }
     .mb_hero_bg{

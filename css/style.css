@@ -38113,7 +38113,7 @@ ul.children {
   .rb_blog1 .rb_blog_card .rb_thumb {
     overflow: hidden;
     border-radius: 14px;
-    height: 240px; }
+    max-height: 240px; }
     .rb_blog1 .rb_blog_card .rb_thumb img {
       width: 100%;
       border-radius: 14px;
@@ -38370,7 +38370,7 @@ ul.children {
       position: relative;
       overflow: hidden;
       border-radius: 14px;
-      height: 230px; }
+      max-height: 230px; }
       .rb_blog2 .rb_blog_card .rb_thumb img {
         width: 100%;
         border-radius: 14px;

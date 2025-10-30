@@ -30823,7 +30823,7 @@ header {
     background-color: #4B5563; }
 
 .rb_dropdown_1 .select_card select {
-  width: fit-contentgit  !important;
+  width: fit-content !important;
   cursor: pointer;
   border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -38112,7 +38112,8 @@ ul.children {
   transition: all 0.4s ease; }
   .rb_blog1 .rb_blog_card .rb_thumb {
     overflow: hidden;
-    border-radius: 14px; }
+    border-radius: 14px;
+    height: 240px; }
     .rb_blog1 .rb_blog_card .rb_thumb img {
       width: 100%;
       border-radius: 14px;
@@ -38368,7 +38369,8 @@ ul.children {
     .rb_blog2 .rb_blog_card .rb_thumb {
       position: relative;
       overflow: hidden;
-      border-radius: 14px; }
+      border-radius: 14px;
+      height: 230px; }
       .rb_blog2 .rb_blog_card .rb_thumb img {
         width: 100%;
         border-radius: 14px;
@@ -38618,7 +38620,8 @@ ul.children {
     position: relative; }
     .rb_testimonial1 .rb_testi_card .rb_thumb {
       border-radius: 14px;
-      position: relative; }
+      position: relative;
+      height: 384px; }
       .rb_testimonial1 .rb_testi_card .rb_thumb::before {
         content: '';
         position: absolute;

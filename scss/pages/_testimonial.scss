@@ -26,6 +26,7 @@
         .rb_thumb {
             border-radius: 14px;
             position: relative;
+            height: 384px;
             &::before {
                 content: '';
                 position: absolute;

@@ -38621,7 +38621,7 @@ ul.children {
     .rb_testimonial1 .rb_testi_card .rb_thumb {
       border-radius: 14px;
       position: relative;
-      height: 384px; }
+      max-height: 384px; }
       .rb_testimonial1 .rb_testi_card .rb_thumb::before {
         content: '';
         position: absolute;
@@ -38630,7 +38630,9 @@ ul.children {
         background: linear-gradient(180deg, rgba(3, 26, 38, 0) 0%, #031A26 100%); }
       .rb_testimonial1 .rb_testi_card .rb_thumb img {
         width: 100%;
-        border-radius: 14px; }
+        max-height: 384px;
+        border-radius: 14px;
+        object-fit: cover; }
     .rb_testimonial1 .rb_testi_card .rb_content {
       position: absolute;
       bottom: 0;

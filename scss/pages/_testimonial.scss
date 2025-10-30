@@ -26,7 +26,8 @@
         .rb_thumb {
             border-radius: 14px;
             position: relative;
-            height: 384px;
+            max-height: 384px;
+
             &::before {
                 content: '';
                 position: absolute;
@@ -36,7 +37,9 @@
             }
             img {
                 width: 100%;
+                max-height: 384px;
                 border-radius: 14px;
+                object-fit: cover;
             }
         }
         .rb_content {

@@ -142,3 +142,36 @@ input[type="radio"]:checked + label::after {
   display: block;
 }
        }
+
+#mb_buy:checked + label[for="mb_buy"] {
+  color: #031A26; 
+}
+
+#mb_rent:checked + label[for="mb_rent"] {
+  color: #031A26;
+}
+
+#mb_buy1:checked + label {
+  color: #031A26; 
+}
+
+
+#mb_rent1:checked + label {
+  color: #031A26;
+}
+#rb_buy:checked + label {
+  color: #031A26; 
+}
+
+
+#rb_rent:checked + label {
+  color: #031A26;
+}
+
+.mb_buy label, .mb_rent label {
+  color: rgba(3, 26, 38, 0.6); 
+  cursor: pointer; 
+}
+
+
+

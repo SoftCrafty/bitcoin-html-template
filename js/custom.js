@@ -521,13 +521,12 @@
                 $('.mb_tab').removeClass('active');
                 $('.mb_tab_content').removeClass('active');
 
-                // Add active class to the clicked tab and its content
                 $(this).addClass('active');
                 $(tabTarget).addClass('active');
             });       
         
 
-
+        
        
         $(".about_count").each(function () {
             let counter = $(this);

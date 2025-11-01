@@ -26410,6 +26410,28 @@ p {
   .mb_choose_option input[type="radio"]:checked + label::after {
     display: block; }
 
+#mb_buy:checked + label[for="mb_buy"] {
+  color: #031A26; }
+
+#mb_rent:checked + label[for="mb_rent"] {
+  color: #031A26; }
+
+#mb_buy1:checked + label {
+  color: #031A26; }
+
+#mb_rent1:checked + label {
+  color: #031A26; }
+
+#rb_buy:checked + label {
+  color: #031A26; }
+
+#rb_rent:checked + label {
+  color: #031A26; }
+
+.mb_buy label, .mb_rent label {
+  color: rgba(3, 26, 38, 0.6);
+  cursor: pointer; }
+
 /*------------------------------------
       3.4 Mobile menu
 ----------------------------------*/
@@ -28525,6 +28547,10 @@ header {
           .mb_hero_area .mb_hero_bg .mb_bitcoin img {
             width: 35%; } }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .d_sm_block {
+    display: block !important; } }
+
 /*--Branding Start---*/
 .mb_branding_area .mb_branding_wrapper {
   display: flex;
@@ -30131,9 +30157,10 @@ header {
           line-height: 26px; } }
   .mb_inner_page_hero .heading h1 {
     font-weight: 600;
-    font-size: 80px;
+    font-size: 84px;
     color: #031a26;
-    margin-top: 20px; }
+    margin-top: 20px;
+    line-height: 74px; }
     @media only screen and (max-width: 991px) {
       .mb_inner_page_hero .heading h1 {
         font-size: 60px; } }
@@ -30169,13 +30196,11 @@ header {
 @media only screen and (max-width: 1599px) {
   .rb_about1 .rb_thumb img {
     width: 100%; } }
-.rb_about1 .rb_heading_area .rb_title {
-  font-size: 40px; }
-  @media only screen and (max-width: 991px) {
-    .rb_about1 .rb_heading_area .rb_title {
-      font-size: 30px;
-      line-height: 40px;
-      /* 133.333% */ } }
+@media only screen and (max-width: 991px) {
+  .rb_about1 .rb_heading_area .rb_title {
+    font-size: 30px;
+    line-height: 40px;
+    /* 133.333% */ } }
 .rb_about1 .rb_list {
   margin-top: 45px; }
   @media only screen and (max-width: 1199px) {
@@ -31078,7 +31103,10 @@ header {
     height: 38px;
     padding: 0 10px;
     padding-right: 30px;
-    background-color: transparent; }
+    background-color: transparent;
+    font-size: 15px !important; }
+    .select_card.language select option {
+      font-size: 15px; }
   .select_card::after {
     content: '\f107';
     font-family: "FontAwesome";
@@ -35977,6 +36005,12 @@ ul.children {
       font-weight: 500;
       line-height: 28px; }
 
+.agent_title h3 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #031a26;
+  margin-bottom: 27px; }
+
 .mb_agents_area .heading h2 {
   font-weight: 700;
   font-size: 40px;
@@ -36472,7 +36506,8 @@ ul.children {
           font-size: 30px; } }
       .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 span {
         font-weight: 500;
-        font-size: 15px; }
+        font-size: 15px;
+        margin-left: 8px; }
         @media only screen and (min-width: 0px) and (max-width: 479px) {
           .mb_pricing_membership_area .mb_pricing_card .mb_card_heading h3 span {
             font-size: 14px; } }
@@ -36880,9 +36915,6 @@ ul.children {
       border-top: none; } }
 
 .mb_listing_card {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  padding: 20px;
   position: relative; }
   .mb_listing_card .mb_image_area {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -38482,7 +38514,9 @@ ul.children {
             .rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item span {
               font-size: 12px; } }
         .rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item img {
-          padding-right: 8px; }
+          padding-right: 8px;
+          width: 34px;
+          height: 34px; }
           @media only screen and (max-width: 991px) {
             .rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item img {
               width: 24px;

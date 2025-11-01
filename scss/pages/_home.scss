@@ -309,7 +309,11 @@
         }
     }
 }
-
+.d_sm_block{
+    @include sm{
+        display: block !important;
+    }
+}
 /*--Branding Start---*/
 .mb_branding_area{
     .mb_branding_wrapper{

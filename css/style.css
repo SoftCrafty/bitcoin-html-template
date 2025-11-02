@@ -37867,13 +37867,15 @@ ul.children {
       padding: 20px; } }
 .mb_sign_up_area .mb_mls_left {
   padding-right: 40px; }
-  .mb_sign_up_area .mb_mls_left .heading {
-    font-size: 48px; }
+  .mb_sign_up_area .mb_mls_left .heading_area .heading h3 {
+    font-size: 48px !important;
+    font-weight: 600 !important;
+    line-height: 66px; }
     @media only screen and (max-width: 991px) {
-      .mb_sign_up_area .mb_mls_left .heading {
+      .mb_sign_up_area .mb_mls_left .heading_area .heading h3 {
         font-size: 28px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .mb_sign_up_area .mb_mls_left .heading {
+      .mb_sign_up_area .mb_mls_left .heading_area .heading h3 {
         font-size: 24px; } }
   @media only screen and (max-width: 991px) {
     .mb_sign_up_area .mb_mls_left {

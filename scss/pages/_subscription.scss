@@ -1013,14 +1013,21 @@
 
 .mb_mls_left {
   padding-right: 40px;
-  .heading{
-    font-size: 48px;
-    @include md{
-        font-size: 28px;
-    }
-    @include sm{
-        font-size: 24px;
-    }
+  .heading_area{
+      .heading{
+       h3{
+         font-size: 48px !important;
+        font-weight: 600 !important;
+        line-height: 66px;
+        @include md{
+            font-size: 28px;
+        }
+        @include sm{
+            font-size: 24px;
+        }
+       }
+      }
+
   }
   @include md {
     padding-right: 0;

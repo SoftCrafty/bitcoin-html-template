@@ -161,9 +161,23 @@
         display: none;
     }
 }
+// .mb_saved_listing .mb_saved_listing_slider {
+//     background: green;
+//     display: flex;
 
+// }
 
+.mb_saved_listing {
+    .heading_area{
+        .heading{
+            h3{
+                font-weight: 700 !important;
+    
+            }
+        }
 
+    }
+}
 .highlight_describtion{
     padding: 20px;
     box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);

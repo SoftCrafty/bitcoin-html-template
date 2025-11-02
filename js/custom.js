@@ -372,6 +372,7 @@
             autoplaySpeed: 4000,
             speed: 3000,
             dots: true,
+            centerMode: false,
             
             dotsClass: "mb_seved_listing",
             infinite: true,

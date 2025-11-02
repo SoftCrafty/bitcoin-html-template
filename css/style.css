@@ -27532,6 +27532,9 @@ header {
 
   .sm-none {
     display: none; } }
+.mb_saved_listing .heading_area .heading h3 {
+  font-weight: 700 !important; }
+
 .highlight_describtion {
   padding: 20px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
@@ -33704,7 +33707,6 @@ header {
   .mb_login_area .mb_social_link i {
     margin-right: 8px; }
 .mb_login_area .mb_no_account {
-  text-align: center;
   margin-top: 30px; }
   .mb_login_area .mb_no_account span {
     color: var(800, #68767D);
@@ -34091,6 +34093,13 @@ header {
         @media only screen and (min-width: 0px) and (max-width: 479px) {
           .blog-area .blog-posts .single-post-item .post-content-wrapper .post-content p strong {
             font-size: 20px; } }
+    .blog-area .blog-posts .single-post-item .post-content-wrapper .post-content .key_trends h3 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 130%;
+      text-transform: capitalize;
+      color: #07000e;
+      margin-bottom: 30px; }
     .blog-area .blog-posts .single-post-item .post-content-wrapper .post-content .key_trends ul li {
       display: flex;
       flex-direction: row;
@@ -34099,7 +34108,8 @@ header {
       gap: 15px;
       margin-bottom: 30px; }
       .blog-area .blog-posts .single-post-item .post-content-wrapper .post-content .key_trends ul li p {
-        margin: 0px !important; }
+        margin: 0px !important;
+        font-size: 16px !important; }
     .blog-area .blog-posts .single-post-item .post-content-wrapper .post-content .different_property h3 {
       font-weight: 700;
       font-size: 32px;
@@ -34398,6 +34408,39 @@ header {
           font-style: normal;
           transition: all 0.5s ease-out;
           text-decoration: underline !important; }
+
+.author_meta_area h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.01em;
+  color: #07000e;
+  margin-bottom: 20px; }
+
+.pagination_area {
+  margin-top: 20px; }
+  .pagination_area ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    .pagination_area ul li a {
+      border: 1px solid #ececec;
+      border-radius: 999px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 24px;
+      display: inline-block;
+      letter-spacing: -0.01em;
+      color: #031a26;
+      transition: all 0.4s ease; }
+      .pagination_area ul li a:hover {
+        background-color: #ff9916;
+        color: #fff; }
 
 .blog-area .sidebar .widge {
   box-shadow: 0 20px 80px 0 rgba(8, 8, 8, 0.05);
@@ -36916,6 +36959,10 @@ ul.children {
 
 .mb_listing_card {
   position: relative; }
+  .mb_listing_card.style_1 {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 20px; }
   .mb_listing_card .mb_image_area {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -37044,7 +37091,7 @@ ul.children {
         .mb_listing_card .mb_list_price h4 {
           font-size: 18px; } }
       .mb_listing_card .mb_list_price h4 span {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 14px; }
   .mb_listing_card .mb_overly {
     width: 100%;
@@ -37089,6 +37136,26 @@ ul.children {
   .mb_listing_card:hover .mb_overly {
     opacity: 1;
     visibility: visible; }
+
+.mb_saved_serach .heading_area .heading h3 {
+  font-weight: 700; }
+.mb_saved_serach .select_card {
+  cursor: pointer; }
+  .mb_saved_serach .select_card select {
+    cursor: pointer;
+    background-color: #ff9916;
+    color: #ffffff;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border: none;
+    padding-left: 30px;
+    padding-right: 40px; }
+  .mb_saved_serach .select_card::after {
+    color: #ffffff;
+    right: 20px; }
 
 .mb_account-cards-section {
   flex-grow: 1; }
@@ -37206,6 +37273,8 @@ ul.children {
         color: #ff9916; }
 
 /*---Notification Start---*/
+.mb_notification_area .heading_area .heading h3 {
+  font-weight: 700; }
 .mb_notification_area .mb_notifications_container {
   width: 100%; }
 .mb_notification_area .mb_notification_item {
@@ -37347,8 +37416,10 @@ ul.children {
 
 /*---Change Password Start---*/
 /*---Saved Listing Start---*/
-.mb_saved_listing .mb_saved_listing_slider {
-  text-align: left; }
+.mb_saved_listing .slick-list {
+  margin-left: 0; }
+.mb_saved_listing .slick-track {
+  margin-left: 0 !important; }
 .mb_saved_listing .saved_list_btn button {
   background-color: #ff9916;
   border: none;
@@ -37796,6 +37867,14 @@ ul.children {
       padding: 20px; } }
 .mb_sign_up_area .mb_mls_left {
   padding-right: 40px; }
+  .mb_sign_up_area .mb_mls_left .heading {
+    font-size: 48px; }
+    @media only screen and (max-width: 991px) {
+      .mb_sign_up_area .mb_mls_left .heading {
+        font-size: 28px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .mb_sign_up_area .mb_mls_left .heading {
+        font-size: 24px; } }
   @media only screen and (max-width: 991px) {
     .mb_sign_up_area .mb_mls_left {
       padding-right: 0; } }
@@ -37962,7 +38041,7 @@ ul.children {
     color: #ffffff;
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease; }

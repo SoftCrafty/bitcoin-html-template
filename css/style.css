@@ -33709,7 +33709,7 @@ header {
 .mb_login_area .mb_no_account {
   margin-top: 30px; }
   .mb_login_area .mb_no_account span {
-    color: var(800, #68767D);
+    color: #68767d;
     font-family: "Inter", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -33968,11 +33968,14 @@ header {
   margin-bottom: 60px; }
   .blog-area .blog-posts .single-post-item .post-content-wrapper {
     background: #ffffff;
+    transition: all 0.4s ease;
     border-radius: 0px 0px 20px 20px;
     -moz-border-radius: 0px 0px 20px 20px;
     -webkit-border-radius: 0px 0px 20px 20px;
     -ms-border-radius: 0px 0px 20px 20px;
     -o-border-radius: 0px 0px 20px 20px; }
+    .blog-area .blog-posts .single-post-item .post-content-wrapper:hover {
+      background-color: #ffebd0; }
     .blog-area .blog-posts .single-post-item .post-content-wrapper.style_1 {
       padding: 40px;
       border: 1px solid rgba(3, 26, 38, 0.1); }
@@ -34052,6 +34055,7 @@ header {
       .blog-area .blog-posts .single-post-item .post-content-wrapper .post-heading.style_1 {
         padding-top: 0px !important; }
       .blog-area .blog-posts .single-post-item .post-content-wrapper .post-heading .post-title a {
+        transition: all 0.4s ease;
         color: #031a26;
         font-family: "Inter", sans-serif;
         font-size: 42px;

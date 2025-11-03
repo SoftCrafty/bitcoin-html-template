@@ -1591,6 +1591,7 @@
         }
         .mb_agent_contact{
             @include flex(column, center, flex-start);
+            width: 30%;
         }
         .mb_agent_number{
             @include flex(row, flex-start, center);

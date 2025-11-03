@@ -29765,7 +29765,8 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start; }
+      align-items: flex-start;
+      width: 30%; }
     .mb_our_agents .mb_our_agents_card .mb_agent_number {
       display: flex;
       flex-direction: row;

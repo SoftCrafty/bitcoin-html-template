@@ -313,3 +313,29 @@
     }
 
 }
+
+.mb-search-container{
+	.input-group{
+		    background: #fff;
+    padding: 5px;
+	position: relative;
+	}
+	input{
+		    background: rgba(3, 26, 38, 0.06);
+    padding: 11px 16px 11px 46px;
+    border-radius: 30px;
+	font-weight: 500;
+	font-size: 15px;
+	color: #000;
+	border: none;
+	&::placeholder{
+		color: rgba(3, 26, 38, 0.6);
+	}
+	}
+	span{
+		position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 22px;
+	}
+   }     

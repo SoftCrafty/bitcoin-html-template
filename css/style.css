@@ -31131,6 +31131,26 @@ header {
 .mb_map_search .mb_single_filter select {
   width: max-content !important; }
 
+.mb-search-container .input-group {
+  background: #fff;
+  padding: 5px;
+  position: relative; }
+.mb-search-container input {
+  background: rgba(3, 26, 38, 0.06);
+  padding: 11px 16px 11px 46px;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #000;
+  border: none; }
+  .mb-search-container input::placeholder {
+    color: rgba(3, 26, 38, 0.6); }
+.mb-search-container span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 22px; }
+
 .mb_contact_us .mb_contact_container {
   box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.1);
   background: #fff;

@@ -173,11 +173,13 @@
             right: 0px;
             z-index: 4;
             @include border-radius(0px 0px 20px 0px);
-            text-align: end;             
+            text-align: end;    
+
            img{
              width:fit-content;
             height: fit-content;
             object-fit: contain;
+            float: right;
             @include border-radius(0px 0px 20px 0px);
             @include xxxl {
                 width: 90%;

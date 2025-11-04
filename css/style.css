@@ -28412,6 +28412,7 @@ header {
         width: fit-content;
         height: fit-content;
         object-fit: contain;
+        float: right;
         border-radius: 0px 0px 20px 0px;
         -moz-border-radius: 0px 0px 20px 0px;
         -webkit-border-radius: 0px 0px 20px 0px;

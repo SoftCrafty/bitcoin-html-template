@@ -31143,11 +31143,7 @@ header {
     background: #fff;
     padding: 5px;
     position: relative;
-    border-radius: 30px;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 30px !important;
     display: flex;
     gap: 10px; }
   .mb-search-container input {
@@ -31157,11 +31153,7 @@ header {
     font-weight: 500;
     font-size: 15px;
     color: #000;
-    border-radius: 30px;
-    -moz-border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 30px !important;
     border: none; }
     .mb-search-container input::placeholder {
       color: rgba(3, 26, 38, 0.6); }
@@ -31173,7 +31165,7 @@ header {
   .mb-search-container button {
     background: rgba(3, 26, 38, 0.06);
     padding: 11px 16px;
-    border-radius: 30px;
+    border-radius: 30px !important;
     font-weight: 500;
     font-size: 16px;
     color: #031a26; }

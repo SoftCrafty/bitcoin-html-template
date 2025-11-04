@@ -325,7 +325,7 @@
 		    background: #fff;
     padding: 5px;
 	position: relative;
-    @include border-radius(30px);
+    border-radius: 30px !important;
         display: flex;
     gap: 10px;
 
@@ -337,11 +337,11 @@
     font-weight: 500;
     font-size: 15px;
     color: #000;
-    @include border-radius(30px);
+    border-radius: 30px !important;
     border: none;
     &::placeholder
-{
-		color: rgba(3, 26, 38, 0.6);
+    {
+        color: rgba(3, 26, 38, 0.6);
 	}
 	}
 	span{
@@ -349,11 +349,11 @@
     top: 50%;
     transform: translateY(-50%);
     left: 22px;
-	}
-    button{
-        background: rgba(3, 26, 38, 0.06);
+}
+button{
+    background: rgba(3, 26, 38, 0.06);
     padding: 11px 16px;
-    border-radius: 30px;
+    border-radius: 30px !important;
     font-weight: 500;
     font-size: 16px;
     color: #031a26;

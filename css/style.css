@@ -30606,7 +30606,8 @@ header {
         -moz-border-radius: 10px;
         -webkit-border-radius: 10px;
         -ms-border-radius: 10px;
-        -o-border-radius: 10px; }
+        -o-border-radius: 10px;
+        padding: 20px; }
     .mb_property_common .mb_single_input .nice-select {
       border: 1px solid rgba(3, 26, 38, 0.1);
       width: 100%;
@@ -30682,6 +30683,21 @@ header {
     font-weight: 600;
     font-size: 24px;
     color: #031a26; }
+
+.mb_environment_risk .mt-20 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px; }
+.mb_environment_risk .theme-btn {
+  color: white;
+  background: #ff9916;
+  padding: 13px 30px;
+  border-radius: 10px;
+  border: none; }
+  .mb_environment_risk .theme-btn:hover {
+    background-color: #F56516; }
 
 .mb_single_listing p {
   border: 1px solid rgba(3, 26, 38, 0.12);

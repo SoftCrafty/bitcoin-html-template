@@ -315,6 +315,23 @@
         }
     }
 }
+.mb_environment_risk {
+    .mt-20{
+        @include flex(row, flex-end, center);
+        gap: 20px;
+    }
+    .theme-btn{
+            color: white;
+            background: #ff9916;
+            padding: 13px 30px;
+            border-radius: 10px;
+            border: none;
+            &:hover{
+                background-color: #f564169b;
+            }
+
+    }
+}
 .mb_single_listing{
     p{
         border: 1px solid $border;

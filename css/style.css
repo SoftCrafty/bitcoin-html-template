@@ -36615,7 +36615,12 @@ ul.children {
     padding: 0px 20px;
     height: 44px;
     background: transparent;
-    border: none; }
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; }
     .mb_pricing_membership_area .tk_pricing_tap button.active {
       background-color: #fff; }
 .mb_pricing_membership_area .mb_pricing_card {

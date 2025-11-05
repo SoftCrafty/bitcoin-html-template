@@ -23,6 +23,8 @@
             height: 44px;
             background: transparent;
             border: none;
+            @include flex(row, center, center);
+            gap: 8px;
             &.active{
                 background-color: #fff;
             }

@@ -30597,6 +30597,8 @@ header {
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .mb_property_common .mb_single_input.style_1 {
           width: 100%; } }
+    .mb_property_common .mb_single_input.style_2 {
+      width: 100% !important; }
     .mb_property_common .mb_single_input .nice-select {
       width: 100%;
       border: 1px solid rgba(3, 26, 38, 0.1);

@@ -227,10 +227,16 @@
         }
         &.style_2{
             width: 100% !important;
+            textarea{
+                width: 100%;
+                border: 1px solid rgba(3, 26, 38, 0.1);
+                @include border-radius(10px);
+                padding: 20px;
+            }
         }
         .nice-select{
-            width: 100%;
             border: 1px solid rgba(3, 26, 38, 0.1);
+            width: 100%;
             @include border-radius(10px);
             background-color: $white;
             height: 46px;

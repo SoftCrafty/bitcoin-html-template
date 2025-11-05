@@ -231,7 +231,8 @@
                 width: 100%;
                 border: 1px solid rgba(3, 26, 38, 0.1);
                 @include border-radius(10px);
-                padding: 20px;
+                padding: 20px !important;
+
             }
         }
         .nice-select{

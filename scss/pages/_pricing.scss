@@ -1,8 +1,39 @@
 .mb_pricing_membership_area{
+    .tk_individuals_content,
+.tk_agents_content {
+  display: none;
+}
+
+.tk_individuals_content.active,
+.tk_agents_content.active {
+  display: block;
+}
+    .tk_pricing_tap{
+        border: 1px solid rgba(3, 26, 38, 0.1);
+        border-radius: 50px;
+        width: fit-content;
+        height: 54px;
+        padding: 0px 5px;
+        background: #ffeed8;
+        margin-bottom: 30px;
+        @include flex(row, flex-start, center);
+        button{
+            border-radius: 100px;
+            padding: 0px 20px;
+            height: 44px;
+            background: transparent;
+            border: none;
+            &.active{
+                background-color: #fff;
+            }
+        }
+    }
     .mb_pricing_card{
         border: 1px solid $border;
         border-radius: 10px;
         width: 100%;
+        height: 100%;
+
         .mb_card_heading{
             border-radius: 10px 10px 0 0;
             background: #ffeed8;
@@ -36,7 +67,7 @@
             }
         }
         .mb_card_body{
-            padding: 40px 44px;
+            padding: 20px 44px;
             @include xxs {
                 padding: 30px 30px;
             }
@@ -82,7 +113,7 @@
                 ul{
                     
                     li{
-                        @include flex(row, flex-start, center);
+                        @include flex(row, flex-start, flex-start);
                         gap: 11px;
                         font-weight: 500;
                         font-size: 16px;

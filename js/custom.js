@@ -34,6 +34,36 @@
             });
         });
 
+        $(document).ready(function () {
+            const $individualsContent = $('.tk_individuals_content');
+            const $agentsContent = $('.tk_agents_content');
+
+            const $individualsBtn = $('.tk_individuals_btn');
+            const $agentsBtn = $('.tk_agent_btn');
+
+            function switchTab(clickedButton, targetContent) {
+                $individualsContent.removeClass('active');
+                $agentsContent.removeClass('active');
+
+                $individualsBtn.removeClass('active');
+                $agentsBtn.removeClass('active');
+
+                clickedButton.addClass('active');
+                targetContent.addClass('active');
+            }
+
+            $individualsBtn.on('click', function () {
+                switchTab($(this), $individualsContent);
+            });
+
+            $agentsBtn.on('click', function () {
+                switchTab($(this), $agentsContent);
+            });
+
+
+            $individualsBtn.click();
+
+        });
 
         //>> Sidebar Toggle Js Start <<//
         $(".offcanvas__close,.offcanvas__overlay").on("click", function () {
@@ -764,6 +794,8 @@
             });
         }
         filterCard()
+
+           
     });
     // Preloader
     $(window).on("load", function () {

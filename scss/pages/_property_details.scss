@@ -105,23 +105,26 @@
 }
 
 .rb_project_tab {
-    position: relative;
-    .rb_project_content {
-        position: relative;
+    .rb_project_content {  
     }
     .rb_tab_buttons {
-        display: flex;
+        // display: flex;
         gap: 10px;
+        position: sticky !important;
+        top: 0px !important;
+        z-index: 9999999;
+        overflow: visible !important; 
+    overflow-y: visible !important;
         .item {
             display: inline-flex;
-            height: 40px;
+            // height: 40px;
             padding: 10px 20px;
             justify-content: center;
             align-items: center;
             flex-shrink: 0;
             border-radius: 5px;
             cursor: pointer;
-            &:hover {
+            &.active {
                 background: var(--P, #FF9916);
                 color: $white;
             }
@@ -2528,13 +2531,13 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 /*--- Broker Info End---*/
 
- .mb_tab_content {
-            display: none;
-        }
+//  .mb_tab_content {
+//             display: none;
+//         }
 
-        .mb_tab_content.active {
-            display: block;
-        }
+//         .mb_tab_content.active {
+//             display: block;
+//         }
 
 
 

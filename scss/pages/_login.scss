@@ -130,7 +130,7 @@
 
 .mb_social_login {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 10px;
     @include xs {
         flex-direction: column;

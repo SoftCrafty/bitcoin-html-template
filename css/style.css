@@ -31507,753 +31507,752 @@ header {
         .rb_project1 .rb_project1_card .rb_content .rb_desc2 {
           font-size: 14px; } }
 
-.rb_project_tab {
-  position: relative; }
-  .rb_project_tab .rb_project_content {
-    position: relative; }
-  .rb_project_tab .rb_tab_buttons {
+.rb_project_tab .rb_tab_buttons {
+  gap: 10px;
+  position: sticky !important;
+  top: 0px !important;
+  z-index: 9999999;
+  overflow: visible !important;
+  overflow-y: visible !important; }
+  .rb_project_tab .rb_tab_buttons .item {
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    cursor: pointer; }
+    .rb_project_tab .rb_tab_buttons .item.active {
+      background: var(--P, #FF9916);
+      color: #fff; }
+.rb_project_tab .rb_add_favorite_btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  color: #031a26;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  opacity: 0.7; }
+.rb_project_tab .rb_overview_content .rb_overview_card {
+  padding: 45px 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12); }
+  @media only screen and (max-width: 991px) {
+    .rb_project_tab .rb_overview_content .rb_overview_card {
+      padding: 30px 20px; } }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
+    color: #031a26;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+    @media only screen and (max-width: 991px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
+        font-size: 20px; } }
+    .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title i {
+      color: rgba(3, 26, 38, 0.4); }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_text {
+    color: #031a26;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7; }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
     display: flex;
-    gap: 10px; }
-    .rb_project_tab .rb_tab_buttons .item {
-      display: inline-flex;
-      height: 40px;
-      padding: 10px 20px;
-      justify-content: center;
-      align-items: center;
-      flex-shrink: 0;
-      border-radius: 5px;
-      cursor: pointer; }
-      .rb_project_tab .rb_tab_buttons .item:hover {
-        background: var(--P, #FF9916);
-        color: #fff; }
-  .rb_project_tab .rb_add_favorite_btn {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    color: #031a26;
-    font-size: 15px;
+    width: fit-content;
+    height: 50px;
+    border-radius: 999px;
+    background: var(--P, #FF9916);
+    color: #fff;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    opacity: 0.7; }
-  .rb_project_tab .rb_overview_content .rb_overview_card {
-    padding: 45px 50px;
-    border-radius: 10px;
-    border: 1px solid rgba(3, 26, 38, 0.12); }
+    padding: 19px 99px;
+    border: none; }
     @media only screen and (max-width: 991px) {
-      .rb_project_tab .rb_overview_content .rb_overview_card {
-        padding: 30px 20px; } }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
-      color: #031a26;
-      font-family: "Inter", sans-serif;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal; }
-      @media only screen and (max-width: 991px) {
-        .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
-          font-size: 20px; } }
-      .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title i {
-        color: rgba(3, 26, 38, 0.4); }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_text {
-      color: #031a26;
-      font-family: "Inter", sans-serif;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      opacity: 0.7; }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
-      display: flex;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: fit-content;
-      height: 50px;
-      border-radius: 999px;
-      background: var(--P, #FF9916);
-      color: #fff;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      padding: 19px 99px;
-      border: none; }
-      @media only screen and (max-width: 991px) {
-        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
-          padding: 19px 75px; } }
-      @media only screen and (min-width: 0px) and (max-width: 767px) {
-        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
-          display: none; } }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
-      display: flex;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      width: fit-content;
-      height: 50px;
-      border-radius: 999px;
-      background: var(--P, #FF9916);
-      color: #fff;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      padding: 19px 99px;
-      border: none; }
-      @media only screen and (max-width: 991px) {
-        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
-          padding: 19px 75px; } }
-      @media only screen and (min-width: 0px) and (max-width: 479px) {
-        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
-          width: 100%; } }
-      @media (min-width: 768px) {
-        .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
-          display: none !important; } }
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
+        padding: 19px 75px; } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
         display: none; } }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 50px;
+    border-radius: 999px;
+    background: var(--P, #FF9916);
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 19px 99px;
+    border: none; }
+    @media only screen and (max-width: 991px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+        padding: 19px 75px; } }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+        width: 100%; } }
+    @media (min-width: 768px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn2 {
+        display: none !important; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached {
+      display: none; } }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
+    color: #031a26;
+    text-align: right;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 15px; }
+    @media only screen and (max-width: 991px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
+        font-size: 18px;
+        padding-bottom: 7px; } }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h6 {
+    color: #031a26;
+    text-align: right;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7; }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_hr {
+    background: rgba(3, 26, 38, 0.12);
+    width: 100%;
+    height: 1px;
+    flex-shrink: 0; }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 15px; }
+    .rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item .text h5 {
       color: #031a26;
-      text-align: right;
-      font-size: 20px;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.7;
+      padding-bottom: 5px; }
+    .rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item .text h4 {
+      color: #031a26;
+      font-size: 16px;
       font-style: normal;
       font-weight: 600;
-      line-height: normal;
-      padding-bottom: 15px; }
-      @media only screen and (max-width: 991px) {
-        .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h5 {
-          font-size: 18px;
-          padding-bottom: 7px; } }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_detached h6 {
-      color: #031a26;
-      text-align: right;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      opacity: 0.7; }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_hr {
-      background: rgba(3, 26, 38, 0.12);
-      width: 100%;
-      height: 1px;
-      flex-shrink: 0; }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item {
-      display: flex;
-      flex-direction: row;
-      justify-content: start;
-      align-items: center;
-      gap: 15px; }
-      .rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item .text h5 {
-        color: #031a26;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        opacity: 0.7;
-        padding-bottom: 5px; }
-      .rb_project_tab .rb_overview_content .rb_overview_card .rb_service_item .text h4 {
-        color: #031a26;
+      line-height: normal; }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc h4 {
+    color: #031a26;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc h4 {
+        font-size: 20px; } }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc p {
+    color: rgba(3, 26, 38, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc .rb_read_more {
+    color: #FF9916;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; }
+.rb_project_tab .rb_history_content .rb_history_card {
+  padding: 45px 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12); }
+  @media only screen and (max-width: 991px) {
+    .rb_project_tab .rb_history_content .rb_history_card {
+      padding: 30px 20px; } }
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_title h4 {
+    color: #031a26;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_desc {
+    color: rgba(3, 26, 38, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; }
+  .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+    position: relative;
+    padding: 38px 44px;
+    border-radius: 10px;
+    background: #FFEED8; }
+    @media only screen and (max-width: 1599px) {
+      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+        padding: 38px 35px; } }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+        padding: 38px 17px; } }
+    @media only screen and (min-width: 0px) and (max-width: 479px) {
+      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
+        padding: 20px 8px; } }
+    .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
+      position: absolute;
+      top: 9.5%;
+      left: 5.5%;
+      width: 1px;
+      height: 242px;
+      flex-shrink: 0;
+      background: rgba(3, 26, 38, 0.12); }
+      @media only screen and (max-width: 1399px) {
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
+          left: 4.5%; } }
+    .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content {
+      width: 100%; }
+      @media only screen and (min-width: 0px) and (max-width: 575px) {
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_flex {
+          flex-direction: column; } }
+      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
+        color: rgba(3, 26, 38, 0.7);
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: normal; }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc h4 {
-      color: #031a26;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal; }
-      @media only screen and (min-width: 0px) and (max-width: 479px) {
-        .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc h4 {
-          font-size: 20px; } }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc p {
-      color: rgba(3, 26, 38, 0.6);
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 30px; }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_desc .rb_read_more {
-      color: #FF9916;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal; }
-  .rb_project_tab .rb_history_content .rb_history_card {
-    padding: 45px 50px;
-    border-radius: 10px;
-    border: 1px solid rgba(3, 26, 38, 0.12); }
-    @media only screen and (max-width: 991px) {
-      .rb_project_tab .rb_history_content .rb_history_card {
-        padding: 30px 20px; } }
-    .rb_project_tab .rb_history_content .rb_history_card .rb_history_title h4 {
-      color: #031a26;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal; }
-    .rb_project_tab .rb_history_content .rb_history_card .rb_history_desc {
-      color: rgba(3, 26, 38, 0.6);
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal; }
-    .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
-      position: relative;
-      padding: 38px 44px;
-      border-radius: 10px;
-      background: #FFEED8; }
-      @media only screen and (max-width: 1599px) {
-        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
-          padding: 38px 35px; } }
-      @media only screen and (min-width: 0px) and (max-width: 767px) {
-        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
-          padding: 38px 17px; } }
-      @media only screen and (min-width: 0px) and (max-width: 479px) {
-        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card {
-          padding: 20px 8px; } }
-      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
-        position: absolute;
-        top: 9.5%;
-        left: 5.5%;
-        width: 1px;
-        height: 242px;
-        flex-shrink: 0;
-        background: rgba(3, 26, 38, 0.12); }
-        @media only screen and (max-width: 1399px) {
-          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .inner_card_vLine {
-            left: 4.5%; } }
-      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content {
-        width: 100%; }
         @media only screen and (min-width: 0px) and (max-width: 575px) {
-          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_flex {
-            flex-direction: column; } }
-        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
-          color: rgba(3, 26, 38, 0.7);
-          font-size: 16px;
+          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
+            font-size: 14px; } }
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
+          color: #031a26;
+          font-size: 20px;
           font-style: normal;
           font-weight: 600;
           line-height: normal; }
           @media only screen and (min-width: 0px) and (max-width: 575px) {
-            .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date {
+            .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
+              font-size: 18px; } }
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_file_tag {
+          margin-left: 14px; }
+      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_current_view {
+        padding: 7px 14px;
+        width: fit-content;
+        height: 41px;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+        color: #031a26;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px; }
+      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_login_to_view {
+        color: #031a26;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        opacity: 0.7; }
+      .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table {
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+        padding: 40px 30px; }
+        @media only screen and (min-width: 0px) and (max-width: 575px) {
+          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .icon {
+            display: none; } }
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h4 {
+          color: #252525;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin-bottom: 8px; }
+          @media only screen and (min-width: 0px) and (max-width: 479px) {
+            .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h4 {
               font-size: 14px; } }
-          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
-            color: #031a26;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal; }
-            @media only screen and (min-width: 0px) and (max-width: 575px) {
-              .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date span {
-                font-size: 18px; } }
-          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_date .rb_file_tag {
-            margin-left: 14px; }
-        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_current_view {
-          padding: 7px 14px;
-          width: fit-content;
-          height: 41px;
-          border-radius: 4px;
-          background: #fff;
-          box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
-          color: #031a26;
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h5 {
+          color: rgba(3, 26, 38, 0.7);
           font-size: 14px;
           font-style: normal;
           font-weight: 500;
           line-height: 26px;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          -ms-border-radius: 4px;
-          -o-border-radius: 4px; }
-        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_login_to_view {
-          color: #031a26;
-          font-size: 15px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          opacity: 0.7; }
-        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table {
-          border-radius: 10px;
-          background: #fff;
-          box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
-          padding: 40px 30px; }
-          @media only screen and (min-width: 0px) and (max-width: 575px) {
-            .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .icon {
-              display: none; } }
-          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h4 {
-            color: #252525;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            margin-bottom: 8px; }
-            @media only screen and (min-width: 0px) and (max-width: 479px) {
-              .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h4 {
-                font-size: 14px; } }
-          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h5 {
-            color: rgba(3, 26, 38, 0.7);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 26px;
-            /* 185.714% */ }
-            @media only screen and (min-width: 0px) and (max-width: 479px) {
-              .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h5 {
-                font-size: 12px; } }
-          .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .rb_element {
-            display: flex;
-            gap: 50px;
-            justify-content: center;
-            align-items: center; }
-    .rb_project_tab .rb_history_content .rb_history_card .rb_fullhistory {
-      color: #ff9916;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal; }
-  .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card {
-    padding: 45px 50px;
-    border-radius: 10px;
-    border: 1px solid rgba(3, 26, 38, 0.12); }
-    .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_miBitcoin_title h4 {
-      color: #031a26;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal; }
-    .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_miBitcoin_desc {
-      color: rgba(3, 26, 38, 0.6);
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal; }
-    .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card {
-      position: relative;
-      display: flex;
-      align-items: end;
-      border-radius: 10px;
-      border: 1px solid rgba(3, 26, 38, 0.12); }
-      .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart_img {
-        position: absolute;
-        top: 50%;
-        left: 69%;
-        transform: translate(-50%, -50%); }
-      .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card {
-        max-width: 310px; }
-        .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_value_header {
-          border-radius: 9px 9px 0 0;
-          background: #FFEED8;
-          padding: 18px 60px;
-          color: #031a26;
-          text-align: center;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 600;
-          line-height: normal; }
-        .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_content {
-          border-right: 1px solid rgba(3, 26, 38, 0.12); }
-          .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_content .rb_value_list {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(3, 26, 38, 0.12);
-            padding: 22px 20px;
-            color: rgba(3, 26, 38, 0.7);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal; }
-      .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart {
-        padding-left: 40px;
-        padding-bottom: 20px;
-        display: grid;
-        grid-template-columns: 60px 1fr;
-        grid-template-rows: repeat(7, 1fr) 40px;
-        width: 640px;
-        max-width: 640px;
-        height: 500px;
-        max-height: 500px;
-        border-left: 1px solid #e5e7eb;
-        border-bottom: 1px solid #e5e7eb;
-        position: relative;
-        /* Y-axis labels */
-        /* X-axis labels */ }
-        .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart .y-label {
-          color: rgba(3, 26, 38, 0.7);
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 60px;
-          /* 428.571% */
-          text-align: right;
-          padding-right: 10px;
+          /* 185.714% */ }
+          @media only screen and (min-width: 0px) and (max-width: 479px) {
+            .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .content h5 {
+              font-size: 12px; } }
+        .rb_project_tab .rb_history_content .rb_history_card .rb_history_inner_card .rb_content .rb_history_table .rb_element {
           display: flex;
+          gap: 50px;
+          justify-content: center;
           align-items: center; }
-        .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart .x-labels {
-          grid-column: 2 / 3;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          color: rgba(3, 26, 38, 0.7);
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 60px;
-          /* 428.571% */
-          padding-top: 8px; }
-  .rb_project_tab .rb_feature_content .rb_feature_card {
-    padding: 45px 50px;
+  .rb_project_tab .rb_history_content .rb_history_card .rb_fullhistory {
+    color: #ff9916;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; }
+.rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card {
+  padding: 45px 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12); }
+  .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_miBitcoin_title h4 {
+    color: #031a26;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+  .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_miBitcoin_desc {
+    color: rgba(3, 26, 38, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; }
+  .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card {
+    position: relative;
+    display: flex;
+    align-items: end;
     border-radius: 10px;
     border: 1px solid rgba(3, 26, 38, 0.12); }
-    @media only screen and (max-width: 991px) {
-      .rb_project_tab .rb_feature_content .rb_feature_card {
-        padding: 30px 20px; } }
-    @media only screen and (min-width: 0px) and (max-width: 767px) {
-      .rb_project_tab .rb_feature_content .rb_feature_card {
-        padding: 20px 20px; } }
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_title h4 {
-      color: #031a26;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal; }
-      @media only screen and (max-width: 991px) {
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_title h4 {
-          font-size: 20px; } }
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_desc {
-      color: rgba(3, 26, 38, 0.6);
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal; }
-      @media only screen and (max-width: 991px) {
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_desc {
-          font-size: 14px; } }
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_tab {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      border-bottom: 1px solid rgba(3, 26, 38, 0.12); }
-      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_tab .item {
-        border-radius: 6px 6px 0 0;
+    .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart_img {
+      position: absolute;
+      top: 50%;
+      left: 69%;
+      transform: translate(-50%, -50%); }
+    .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card {
+      max-width: 310px; }
+      .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_value_header {
+        border-radius: 9px 9px 0 0;
         background: #FFEED8;
-        padding: 14px 18px;
+        padding: 18px 60px;
         color: #031a26;
-        font-family: "Inter", sans-serif;
-        font-size: 16px;
+        text-align: center;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: normal; }
-        @media only screen and (max-width: 991px) {
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_tab .item {
-            font-size: 14px; } }
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion {
-      width: 100%; }
-      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item {
-        border-radius: 6px;
-        border: 1px solid rgba(3, 26, 38, 0.1);
-        background: #fff;
-        margin-bottom: 30px;
-        overflow: hidden; }
-        @media only screen and (min-width: 0px) and (max-width: 767px) {
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item {
-            margin-bottom: 8px; } }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header {
-          background: #fff; }
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header h3 {
-            color: #031a26; }
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .iconPlus {
-            display: none; }
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .iconMinus {
-            display: block; }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-content {
-          height: auto; }
-      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header {
+      .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_content {
+        border-right: 1px solid rgba(3, 26, 38, 0.12); }
+        .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_miBitcoin_list_card .rb_content .rb_value_list {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(3, 26, 38, 0.12);
+          padding: 22px 20px;
+          color: rgba(3, 26, 38, 0.7);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal; }
+    .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart {
+      padding-left: 40px;
+      padding-bottom: 20px;
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      grid-template-rows: repeat(7, 1fr) 40px;
+      width: 640px;
+      max-width: 640px;
+      height: 500px;
+      max-height: 500px;
+      border-left: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e5e7eb;
+      position: relative;
+      /* Y-axis labels */
+      /* X-axis labels */ }
+      .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart .y-label {
+        color: rgba(3, 26, 38, 0.7);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px;
+        /* 428.571% */
+        text-align: right;
+        padding-right: 10px;
         display: flex;
-        flex-direction: row;
+        align-items: center; }
+      .rb_project_tab .rb_miBitcoin_content .rb_miBitcoin_card .rb_inner_card .rb_chart .x-labels {
+        grid-column: 2 / 3;
+        display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 24px;
-        cursor: pointer;
-        transition: background 0.3s ease; }
-        @media only screen and (min-width: 0px) and (max-width: 767px) {
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header {
-            padding: 10px 15px; } }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .iconMinus {
+        color: rgba(3, 26, 38, 0.7);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 60px;
+        /* 428.571% */
+        padding-top: 8px; }
+.rb_project_tab .rb_feature_content .rb_feature_card {
+  padding: 45px 50px;
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12); }
+  @media only screen and (max-width: 991px) {
+    .rb_project_tab .rb_feature_content .rb_feature_card {
+      padding: 30px 20px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .rb_project_tab .rb_feature_content .rb_feature_card {
+      padding: 20px 20px; } }
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_title h4 {
+    color: #031a26;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+    @media only screen and (max-width: 991px) {
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_title h4 {
+        font-size: 20px; } }
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_desc {
+    color: rgba(3, 26, 38, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; }
+    @media only screen and (max-width: 991px) {
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_desc {
+        font-size: 14px; } }
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_tab {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid rgba(3, 26, 38, 0.12); }
+    .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_tab .item {
+      border-radius: 6px 6px 0 0;
+      background: #FFEED8;
+      padding: 14px 18px;
+      color: #031a26;
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal; }
+      @media only screen and (max-width: 991px) {
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_tab .item {
+          font-size: 14px; } }
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion {
+    width: 100%; }
+    .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item {
+      border-radius: 6px;
+      border: 1px solid rgba(3, 26, 38, 0.1);
+      background: #fff;
+      margin-bottom: 30px;
+      overflow: hidden; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item {
+          margin-bottom: 8px; } }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header {
+        background: #fff; }
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header h3 {
+          color: #031a26; }
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .iconPlus {
           display: none; }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header h3 {
-          display: flex;
-          align-items: center;
-          gap: 20px;
-          color: #031a26;
-          font-size: 20px;
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-header .iconMinus {
+          display: block; }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-item.active .accordion-content {
+        height: auto; }
+    .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 24px;
+      cursor: pointer;
+      transition: background 0.3s ease; }
+      @media only screen and (min-width: 0px) and (max-width: 767px) {
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header {
+          padding: 10px 15px; } }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .iconMinus {
+        display: none; }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header h3 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: #031a26;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header h3 {
+            font-size: 16px; } }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header:hover {
+        background-color: #f0f0f0; }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .icon {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: #FFEED8;
+        transition: transform 0.3s ease;
+        box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05); }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .icon {
+            width: 14px;
+            height: 14px;
+            line-height: 13px;
+            font-size: 8px; } }
+    .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content {
+      height: 0;
+      overflow: hidden;
+      transition: height 0.5s ease-out, padding 0.5s ease-out; }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content p {
+        padding: 21px 24px 40px 24px;
+        margin: 0;
+        color: rgba(3, 26, 38, 0.6);
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content p {
+            font-size: 8px;
+            padding: 10px; } }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table {
+        padding: 30px 70px 40px 70px; }
+        @media only screen and (min-width: 0px) and (max-width: 767px) {
+          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table {
+            padding: 12px 40px 30px 18px; } }
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table .rb_item h6 {
+          color: rgba(3, 26, 38, 0.7);
+          font-size: 14px;
           font-style: normal;
-          font-weight: 600;
-          line-height: normal; }
-          @media only screen and (min-width: 0px) and (max-width: 767px) {
-            .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header h3 {
-              font-size: 16px; } }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header:hover {
-          background-color: #f0f0f0; }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .icon {
-          width: 32px;
-          height: 32px;
-          line-height: 32px;
-          text-align: center;
-          border-radius: 50%;
-          -moz-border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-          background-color: #FFEED8;
-          transition: transform 0.3s ease;
-          box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05); }
-          @media only screen and (min-width: 0px) and (max-width: 767px) {
-            .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-header .icon {
-              width: 14px;
-              height: 14px;
-              line-height: 13px;
-              font-size: 8px; } }
-      .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content {
-        height: 0;
-        overflow: hidden;
-        transition: height 0.5s ease-out, padding 0.5s ease-out; }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content p {
-          padding: 21px 24px 40px 24px;
-          margin: 0;
-          color: rgba(3, 26, 38, 0.6);
-          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          line-height: 26px;
+          padding-bottom: 8px; }
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table .rb_item h5 {
+          color: #031a26;
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
-          line-height: 30px; }
-          @media only screen and (min-width: 0px) and (max-width: 767px) {
-            .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content p {
-              font-size: 8px;
-              padding: 10px; } }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table {
-          padding: 30px 70px 40px 70px; }
-          @media only screen and (min-width: 0px) and (max-width: 767px) {
-            .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table {
-              padding: 12px 40px 30px 18px; } }
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table .rb_item h6 {
-            color: rgba(3, 26, 38, 0.7);
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 26px;
-            padding-bottom: 8px; }
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_feature_faq .accordion .accordion-content .rb_content_table .rb_item h5 {
-            color: #031a26;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal; }
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .rb_title {
-      color: #031a26;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal; }
-      @media only screen and (max-width: 991px) {
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .rb_title {
-          font-size: 20px;
-          padding-top: 20px; } }
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row {
-      align-items: center; }
-      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
-        border-radius: 5px 5px 0 0;
-        padding: 17px 0px;
-        border-bottom: 1px solid #E5E8EB; }
-        @media (max-width: 767px) {
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
-            padding: 17px 0px; } }
-        @media (max-width: 575px) {
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
-            row-gap: 20px;
-            padding: 20px 0px 20px; } }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 .title h4 {
-          color: #031a26;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
           line-height: normal; }
-          @media only screen and (min-width: 0px) and (max-width: 575px) {
-            .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 .title h4 {
-              font-size: 14px; } }
-      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2 {
-        padding: 15px 0px 15px; }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2:not(:last-child) {
-          border-bottom: 1px solid #E5E8EB; }
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2:last-child {
-          border-radius: 0 0 5px 5px; }
-        @media (max-width: 575px) {
-          .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2 {
-            row-gap: 20px; } }
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
-    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
-      color: var(800, #68767D);
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-      /* 150% */ }
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .rb_title {
+    color: #031a26;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal; }
+    @media only screen and (max-width: 991px) {
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .rb_title {
+        font-size: 20px;
+        padding-top: 20px; } }
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row {
+    align-items: center; }
+    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
+      border-radius: 5px 5px 0 0;
+      padding: 17px 0px;
+      border-bottom: 1px solid #E5E8EB; }
       @media (max-width: 767px) {
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
-          font-size: 14px; } }
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
+          padding: 17px 0px; } }
       @media (max-width: 575px) {
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
-        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
-          font-size: 14px;
-          line-height: 23px; } }
-  .rb_project_tab .rb_btc_card {
-    border-radius: 10px;
-    border: 1px solid rgba(3, 26, 38, 0.12);
-    padding: 22px 40px 36px 40px; }
-    .rb_project_tab .rb_btc_card .rb_btc_text {
-      color: #031a26;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 74px;
-      padding-right: 10px; }
-    .rb_project_tab .rb_btc_card .rb_btc_value {
-      color: #031a26;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 74px; }
-    .rb_project_tab .rb_btc_card .rb_sale {
-      border-radius: 4px;
-      background: #fff;
-      box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
-      padding: 5px 10px;
-      margin-left: 25px; }
-    .rb_project_tab .rb_btc_card .rb_est {
-      color: #031a26;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal; }
-      .rb_project_tab .rb_btc_card .rb_est span {
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 {
+          row-gap: 20px;
+          padding: 20px 0px 20px; } }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 .title h4 {
         color: #031a26;
-        font-size: 8px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: normal; }
-      .rb_project_tab .rb_btc_card .rb_est img {
-        padding-left: 40px;
-        cursor: pointer; }
-  .rb_project_tab .rb_schedule_card {
-    border-radius: 10px;
-    border: 1px solid rgba(3, 26, 38, 0.12);
-    padding: 20px 40px 36px 40px; }
-    .rb_project_tab .rb_schedule_card .rb_schedule_title {
+        @media only screen and (min-width: 0px) and (max-width: 575px) {
+          .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_1 .title h4 {
+            font-size: 14px; } }
+    .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2 {
+      padding: 15px 0px 15px; }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2:not(:last-child) {
+        border-bottom: 1px solid #E5E8EB; }
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2:last-child {
+        border-radius: 0 0 5px 5px; }
+      @media (max-width: 575px) {
+        .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .row.style_2 {
+          row-gap: 20px; } }
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
+  .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
+    color: var(800, #68767D);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */ }
+    @media (max-width: 767px) {
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
+        font-size: 14px; } }
+    @media (max-width: 575px) {
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .address,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .amount,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bed,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .bath,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .sqft,
+      .rb_project_tab .rb_feature_content .rb_feature_card .rb_nearby_listing .order_table .lot_sqft {
+        font-size: 14px;
+        line-height: 23px; } }
+.rb_project_tab .rb_btc_card {
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  padding: 22px 40px 36px 40px; }
+  .rb_project_tab .rb_btc_card .rb_btc_text {
+    color: #031a26;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px;
+    padding-right: 10px; }
+  .rb_project_tab .rb_btc_card .rb_btc_value {
+    color: #031a26;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 74px; }
+  .rb_project_tab .rb_btc_card .rb_sale {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 1px 4px 0 rgba(3, 26, 38, 0.13);
+    padding: 5px 10px;
+    margin-left: 25px; }
+  .rb_project_tab .rb_btc_card .rb_est {
+    color: #031a26;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; }
+    .rb_project_tab .rb_btc_card .rb_est span {
       color: #031a26;
-      font-size: 30px;
+      font-size: 8px;
       font-style: normal;
-      font-weight: 700;
-      line-height: 64px;
-      /* 213.333% */ }
-    .rb_project_tab .rb_schedule_card .rb_schedule_text {
-      color: #031a26;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px; }
-    .rb_project_tab .rb_schedule_card .rb_date_slider {
-      display: flex;
-      justify-content: space-between;
-      gap: 15px; }
-      .rb_project_tab .rb_schedule_card .rb_date_slider .item {
-        border-radius: 10px;
-        border: 1px solid rgba(3, 26, 38, 0.12);
-        padding: 20px 30px 10px;
-        text-align: center; }
-        .rb_project_tab .rb_schedule_card .rb_date_slider .item span {
-          color: var(800, #68767D);
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: 24px;
-          /* 150% */ }
-        .rb_project_tab .rb_schedule_card .rb_date_slider .item h4 {
-          color: #031a26;
-          font-size: 22px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: 48px; }
-        .rb_project_tab .rb_schedule_card .rb_date_slider .item.active {
-          background: #031A26;
-          border: none; }
-          .rb_project_tab .rb_schedule_card .rb_date_slider .item.active span {
-            color: #fff; }
-          .rb_project_tab .rb_schedule_card .rb_date_slider .item.active h4 {
-            color: #fff; }
-    .rb_project_tab .rb_schedule_card .rb_schedule_btn {
-      border-radius: 999px;
-      background: var(--P, #FF9916);
-      padding: 19px 20px;
-      text-align: center;
-      color: #fff;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
+      font-weight: 500;
       line-height: normal; }
-    .rb_project_tab .rb_schedule_card .rb_more_about_property {
-      color: #031a26;
-      font-size: 30px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 64px;
-      /* 213.333% */ }
-    .rb_project_tab .rb_schedule_card .rb_email_agent_btn {
-      border-radius: 6px;
+    .rb_project_tab .rb_btc_card .rb_est img {
+      padding-left: 40px;
+      cursor: pointer; }
+.rb_project_tab .rb_schedule_card {
+  border-radius: 10px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  padding: 20px 40px 36px 40px; }
+  .rb_project_tab .rb_schedule_card .rb_schedule_title {
+    color: #031a26;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 213.333% */ }
+  .rb_project_tab .rb_schedule_card .rb_schedule_text {
+    color: #031a26;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; }
+  .rb_project_tab .rb_schedule_card .rb_date_slider {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; }
+    .rb_project_tab .rb_schedule_card .rb_date_slider .item {
+      border-radius: 10px;
       border: 1px solid rgba(3, 26, 38, 0.12);
-      padding: 18px 20px;
-      color: #031a26;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
+      padding: 20px 30px 10px;
       text-align: center; }
-    .rb_project_tab .rb_schedule_card .rb_message_sent {
-      color: #031a26;
-      font-size: 16px;
-      text-align: center;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px; }
-    .rb_project_tab .rb_schedule_card .rb_desc {
-      color: #031a26;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px; }
-      .rb_project_tab .rb_schedule_card .rb_desc span {
-        text-decoration-line: underline;
-        text-decoration-style: solid;
-        text-decoration-skip-ink: auto;
-        text-decoration-thickness: auto;
-        text-underline-offset: auto;
-        text-underline-position: from-font; }
+      .rb_project_tab .rb_schedule_card .rb_date_slider .item span {
+        color: var(800, #68767D);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        /* 150% */ }
+      .rb_project_tab .rb_schedule_card .rb_date_slider .item h4 {
+        color: #031a26;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 48px; }
+      .rb_project_tab .rb_schedule_card .rb_date_slider .item.active {
+        background: #031A26;
+        border: none; }
+        .rb_project_tab .rb_schedule_card .rb_date_slider .item.active span {
+          color: #fff; }
+        .rb_project_tab .rb_schedule_card .rb_date_slider .item.active h4 {
+          color: #fff; }
+  .rb_project_tab .rb_schedule_card .rb_schedule_btn {
+    border-radius: 999px;
+    background: var(--P, #FF9916);
+    padding: 19px 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; }
+  .rb_project_tab .rb_schedule_card .rb_more_about_property {
+    color: #031a26;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 213.333% */ }
+  .rb_project_tab .rb_schedule_card .rb_email_agent_btn {
+    border-radius: 6px;
+    border: 1px solid rgba(3, 26, 38, 0.12);
+    padding: 18px 20px;
+    color: #031a26;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center; }
+  .rb_project_tab .rb_schedule_card .rb_message_sent {
+    color: #031a26;
+    font-size: 16px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; }
+  .rb_project_tab .rb_schedule_card .rb_desc {
+    color: #031a26;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; }
+    .rb_project_tab .rb_schedule_card .rb_desc span {
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-skip-ink: auto;
+      text-decoration-thickness: auto;
+      text-underline-offset: auto;
+      text-underline-position: from-font; }
 
 /*--- Monthly Payment Start---*/
 .mb_monthly_payment_area {
@@ -33604,12 +33603,6 @@ header {
   font-size: 12px; }
 
 /*--- Broker Info End---*/
-.mb_tab_content {
-  display: none; }
-
-.mb_tab_content.active {
-  display: block; }
-
 /*
 
 
@@ -33745,7 +33738,7 @@ header {
     color: #68767d; }
 .mb_login_area .mb_social_login {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px; }
   @media only screen and (min-width: 0px) and (max-width: 575px) {
     .mb_login_area .mb_social_login {

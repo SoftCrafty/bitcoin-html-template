@@ -82,14 +82,14 @@
             $(".body-overlay").removeClass("opened");
         });
         //>> Sticky Menu <<//
-        windowOn.on('scroll', function () {
-            var scroll = windowOn.scrollTop();
-            if (scroll < 300) {
-                $("#header-sticky").removeClass("sticky_top");
-            } else {
-                $("#header-sticky").addClass("sticky_top");
-            }
-        });
+        // windowOn.on('scroll', function () {
+        //     var scroll = windowOn.scrollTop();
+        //     if (scroll < 300) {
+        //         $("#header-sticky").removeClass("sticky_top");
+        //     } else {
+        //         $("#header-sticky").addClass("sticky_top");
+        //     }
+        // });
         //>> offcanvas bar <<//
         $(".tp-offcanvas-toogle").on('click', function () {
             $(".tp-offcanvas").addClass("tp-offcanvas-open");
@@ -98,6 +98,93 @@
         $(".tp-offcanvas-close-toggle,.tp-offcanvas-overlay").on('click', function () {
             $(".tp-offcanvas").removeClass("tp-offcanvas-open");
             $(".tp-offcanvas-overlay").removeClass("tp-offcanvas-overlay-open");
+        });
+
+
+        $(document).ready(function () {
+            // Offset for 'active' state activation (300px from top)
+            const activeOffset = 300;
+
+            // Target elements
+            const $tabButtons = $('.mb_tab');
+            const $tabContents = $('.mb_tab_content');
+
+            // 1. Function to manage the 'active' class based on scroll position
+            function updateActiveButtonOnScroll() {
+                let currentActiveButtonTarget = null;
+                let found = false;
+
+                // Iterate through content sections to find the one near the top
+                $tabContents.each(function () {
+                    const $content = $(this);
+                    // Check if the content section exists (it must have an ID)
+                    if ($content.attr('id')) {
+                        // Get the content section's position relative to the viewport top
+                        const contentTop = $content.offset().top - $(window).scrollTop();
+
+                        // If the content is past the activeOffset point (i.e., at or above 300px from top)
+                        // and it is still visible on the screen (contentTop < windowHeight)
+                        if (contentTop <= activeOffset && contentTop + $content.height() > 0) {
+                            currentActiveButtonTarget = '#' + $content.attr('id');
+                            found = true;
+                            return false; // Exit the loop (we only need the topmost one)
+                        }
+                    }
+                });
+
+                // Remove active class from all buttons
+                $tabButtons.removeClass('active');
+
+                // Add active class to the corresponding button
+                if (currentActiveButtonTarget) {
+                    // Find the button with the matching data-tab-target
+                    $tabButtons.filter(`[data-tab-target="${currentActiveButtonTarget}"]`).addClass('active');
+                } else {
+                    // If no content meets the criteria, optionally set the first button as active
+                    // or leave none active, depending on desired behavior. 
+                    // Here, we leave it inactive.
+                }
+            }
+
+            // Bind the function to the scroll event
+            $(window).on('scroll', updateActiveButtonOnScroll);
+
+            // Run once on load to set the initial state
+            updateActiveButtonOnScroll();
+
+            // 2. Button click handler for smooth scrolling and active class
+            $tabButtons.on('click', function (e) {
+                e.preventDefault();
+                const targetId = $(this).data('tab-target');
+
+                // Remove active class from all buttons and add to the clicked one
+                $tabButtons.removeClass('active');
+                $(this).addClass('active');
+
+                if (targetId && targetId !== '#') {
+                    // Get the target content element
+                    const $targetContent = $(targetId);
+
+                    if ($targetContent.length) {
+                        // Calculate the scroll position needed: 
+                        // content's absolute top position - activeOffset (300px)
+                        const scrollPosition = $targetContent.offset().top - activeOffset;
+
+                        // Smooth scroll to the calculated position
+                        $('html, body').animate({
+                            scrollTop: scrollPosition
+                        }, 500); // 500ms for smooth animation
+                    }
+                }
+            });
+
+            // 3. (Optional but recommended) Ensure initial content visibility/active state
+            // If you want the first valid tab content to be active on page load:
+            const initialTargetId = $tabButtons.first().data('tab-target');
+            if (initialTargetId && initialTargetId !== '#') {
+                // Find the button with the matching data-tab-target
+                $tabButtons.filter(`[data-tab-target="${initialTargetId}"]`).addClass('active');
+            }
         });
 
         // Header Menu Hover Effect
@@ -546,15 +633,15 @@
          
         }
         // costsHome()
-            $('.mb_tab').on('click', function () {
-                var tabTarget = $(this).data('tab-target');
+            // $('.mb_tab').on('click', function () {
+            //     var tabTarget = $(this).data('tab-target');
 
-                $('.mb_tab').removeClass('active');
-                $('.mb_tab_content').removeClass('active');
+            //     $('.mb_tab').removeClass('active');
+            //     $('.mb_tab_content').removeClass('active');
 
-                $(this).addClass('active');
-                $(tabTarget).addClass('active');
-            });       
+            //     $(this).addClass('active');
+            //     $(tabTarget).addClass('active');
+            // });       
         
 
         

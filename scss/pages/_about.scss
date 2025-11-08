@@ -376,3 +376,98 @@
     }
 }
 // About2 css end
+
+// Trusted-professional section
+
+.Trusted-professional{
+
+    .mb_our_agent_shape {
+        position: absolute;
+        top: 0;
+        left: 2%;
+        @include xxl {
+            display: none
+        }
+    }
+
+    .heading_area{
+        margin-bottom: 60px;
+        .heading {
+            max-width: 960px;
+            margin: auto;
+            text-align: center;
+        }
+        p{
+            max-width: 580px;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+
+    .trasted-item{
+        border: 1px solid #031A2624;
+        padding: 40px;
+        transition: all 0.4s;
+        min-height: 550px;
+
+        @include lg{
+            min-height: 510px;
+            padding: 25px;
+        }
+
+        @include md{
+            min-height: 460px;
+        }
+        @include sm{
+            min-height: auto;
+            padding: 35px 30px;
+        }
+
+        &:hover{
+            border-color: #FF9916;
+        }
+
+
+        .trasted-content{
+            margin-top: 180px;
+
+            @include xl{
+                margin-top: 150px;
+            }
+
+            @include lg{
+                margin-top: 120px;
+            }
+            h4{
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 1;
+                color: #031A26;
+                margin-bottom: 18px;
+
+                @include lg{
+                    font-size: 20px;
+                }
+            }
+
+            ul {
+                padding-left: 18px;
+                li{
+                    font-family: "Inter", sans-serif;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #031A2699;
+                    list-style-type: disc;
+                    margin-bottom: 8px;
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

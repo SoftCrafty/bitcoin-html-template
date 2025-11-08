@@ -19,9 +19,7 @@ $font-family: "Outfit", sans-serif;
         .post-content-wrapper {
           background: $white;
           @include transition(0.4s);
-          &:hover{
-            background-color: #ffebd0;
-          }
+          
           &.style_1{
             padding: 40px;
             border: 1px solid rgba(3, 26, 38, 0.1);

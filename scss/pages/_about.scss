@@ -248,7 +248,7 @@
         max-width: 530px;
         .item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 24px;
             .icon {
                 width: 80px;

@@ -30074,6 +30074,77 @@ header {
   .add-pb-10 {
     padding-bottom: 12px; } }
 
+/*---Need Expert Help Start---*/
+.tk_need_expert_help {
+  margin: 140px 0px; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .tk_need_expert_help {
+      margin-top: 60px;
+      margin-bottom: 60px; } }
+  .tk_need_expert_help .tk_need_help_wrapper {
+    border-radius: 14px;
+    background: #ffeed8;
+    padding: 50px 70px;
+    position: relative; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .tk_need_expert_help .tk_need_help_wrapper {
+        padding: 20px; } }
+    .tk_need_expert_help .tk_need_help_wrapper h4 {
+      font-weight: 600;
+      font-size: 34px;
+      color: #031a26; }
+    .tk_need_expert_help .tk_need_help_wrapper p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color: rgba(3, 26, 38, 0.6);
+      margin-top: 7px; }
+      @media only screen and (min-width: 992px) and (max-width: 1024px) {
+        .tk_need_expert_help .tk_need_help_wrapper p br {
+          display: none; } }
+    .tk_need_expert_help .tk_need_help_wrapper .tk_btn_area {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 14px;
+      margin-top: 30px;
+      flex-wrap: wrap; }
+  .tk_need_expert_help .tk_need_help_img {
+    position: absolute;
+    bottom: 0px;
+    right: 70px;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .tk_need_expert_help .tk_need_help_img {
+        width: 197px;
+        height: 130px;
+        right: 0px; }
+        .tk_need_expert_help .tk_need_help_img img {
+          -webkit-user-select: none !important;
+          -moz-user-select: none !important;
+          -ms-user-select: none !important;
+          user-select: none !important;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; } }
+
+/*---Need Expert Help End---*/
+.tk_btn {
+  margin-top: 15px; }
+  .tk_btn a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #031a26;
+    transition: all 0.4s ease; }
+    .tk_btn a span {
+      margin-left: 6px; }
+    .tk_btn a:hover {
+      color: #ff9916; }
+
 /*---Inner Page Hero Section Start---*/
 .mb_inner_page_hero {
   height: 470px;
@@ -30292,7 +30363,7 @@ header {
     max-width: 530px; }
     .rb_about2 .rb_content .item {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 24px; }
       .rb_about2 .rb_content .item .icon {
         width: 80px;
@@ -38301,6 +38372,52 @@ ul.children {
       @media only screen and (min-width: 0px) and (max-width: 767px) {
         .rb_contact1 .section_padding .rb_contact_form {
           padding: 20px 20px; } }
+  .rb_contact1 .btn_wrapper button {
+    padding: 6px 4px 8px 30px;
+    background-color: #031a26;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.4s ease;
+    border: none; }
+    .rb_contact1 .btn_wrapper button span {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      background-color: #ffffff;
+      color: #031a26;
+      border-radius: 50%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      margin-left: 12px;
+      display: inline-block; }
+      .rb_contact1 .btn_wrapper button span i {
+        transition: all 0.4s ease;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg); }
+    .rb_contact1 .btn_wrapper button:hover {
+      background-color: #ff9916;
+      color: white; }
+      .rb_contact1 .btn_wrapper button:hover span {
+        background-color: white;
+        color: #031a26; }
+        .rb_contact1 .btn_wrapper button:hover span i {
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -ms-transform: rotate(0deg);
+          -o-transform: rotate(0deg); }
 
 .rb_blog1 .container {
   max-width: 1760px; }

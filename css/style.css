@@ -30906,6 +30906,8 @@ header {
     border-radius: 4px;
     width: 20px;
     height: 20px; }
+  .mb_property_info .mb_check_box input[type="checkbox"] {
+    background-color: #fff !important; }
   .mb_property_info .mb_check_box label {
     font-weight: 500;
     font-size: 16px;

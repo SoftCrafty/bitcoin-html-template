@@ -36124,6 +36124,21 @@ header {
 .mb_post_property .select_card::after {
   color: rgba(3, 26, 38, 0.6);
 }
+.mb_post_property .btn_wrapper {
+  border-radius: 6px;
+  width: 100%;
+  height: 60px;
+  background: #031a26;
+  border: none;
+  margin-top: 54px;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  transition: all 0.5s ease;
+}
+.mb_post_property .btn_wrapper:hover {
+  background-color: #ff9916;
+}
 
 .mb_post_property_wrapper {
   border: 1px solid rgba(3, 26, 38, 0.1);
@@ -36409,7 +36424,7 @@ header {
 .mb_property_common .mb_dubble_input input {
   border: none;
 }
-.mb_property_common .mb_dubble_input .nice-select {
+.mb_property_common .mb_dubble_input select {
   background: #ffeed8;
   border: 1px solid transparent;
   height: 46px;
@@ -36420,12 +36435,12 @@ header {
   -o-border-radius: 0px 10px 10px 0px;
   border-right: 1px solid rgba(3, 26, 38, 0.1);
 }
-.mb_property_common .mb_dubble_input .nice-select .current {
+.mb_property_common .mb_dubble_input select .current {
   font-weight: 500;
   font-size: 18px;
   color: rgba(3, 26, 38, 0.6);
 }
-.mb_property_common .mb_dubble_input .nice-select .current sub {
+.mb_property_common .mb_dubble_input select .current sub {
   font-size: 12px;
 }
 .mb_property_common .mb_title h4 {
@@ -43644,6 +43659,9 @@ ul.children {
   .agent_details_area .agent_details_sidebar .send_specific p {
     font-size: 16px;
   }
+}
+.agent_details_area .agent_details_sidebar .mb_contact_braham form p {
+  margin-bottom: 10px;
 }
 .agent_details_area .agent_details_sidebar .mb_contact_braham input {
   border: 1px solid rgba(3, 26, 38, 0.12);

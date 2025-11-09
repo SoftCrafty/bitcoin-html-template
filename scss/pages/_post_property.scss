@@ -44,6 +44,21 @@
 
         }
     }
+    .btn_wrapper{
+        border-radius: 6px;
+        width: 100%;
+        height: 60px;
+        background: #031a26;
+        border: none;
+        margin-top: 54px;
+        font-weight: 600;
+        font-size: 24px;
+        color: #fff;
+        @include transition(0.5s);
+        &:hover{
+            background-color: $primary;
+        }
+    }
 }
 .mb_post_property_wrapper{
     border: 1px solid rgba(3, 26, 38, 0.1);
@@ -291,7 +306,7 @@
             border: none;
 
         }
-        .nice-select{
+        select{
             background: #ffeed8;
             border: 1px solid transparent;
             height: 46px;

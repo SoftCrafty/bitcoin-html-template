@@ -207,6 +207,8 @@
     .heading_area {
         .heading {
             h3 {
+                @include flex(row, flex-start, center);
+                gap: 20px;
                 @include md {
                     font-size: 35px;
                 }

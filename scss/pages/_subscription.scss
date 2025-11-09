@@ -767,19 +767,23 @@
     }
 }
 
-.mb_edit_button {
-    padding: 10px 30px;
-    background: #ffebd0;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 20px;
-    color: #000;
-    @include border-radius(10px);
-    border: none;
-    @include xxs {
-        font-size: 18px;
+    .mb_edit_button {
+        padding: 10px 30px;
+        // background: #ffebd0;
+        background: transparent;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 20px;
+        color: #000;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        @include border-radius(10px);
+        border: none;
+        @include xxs {
+            font-size: 18px;
+        }
     }
-}
 
 
 .mb_professional_toggle {

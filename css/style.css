@@ -30470,6 +30470,73 @@ header {
         .rb_about2 .rb_thumb img {
           width: 100%; } }
 
+.Trusted-professional .mb_our_agent_shape {
+  position: absolute;
+  top: 0;
+  left: 2%; }
+  @media only screen and (max-width: 1599px) {
+    .Trusted-professional .mb_our_agent_shape {
+      display: none; } }
+.Trusted-professional .heading_area {
+  margin-bottom: 60px; }
+  .Trusted-professional .heading_area .heading {
+    max-width: 960px;
+    margin: auto;
+    text-align: center; }
+  .Trusted-professional .heading_area p {
+    max-width: 580px;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px; }
+.Trusted-professional .trasted-item {
+  border: 1px solid #031A2624;
+  padding: 40px;
+  transition: all 0.4s;
+  min-height: 550px; }
+  @media only screen and (max-width: 1199px) {
+    .Trusted-professional .trasted-item {
+      min-height: 510px;
+      padding: 25px; } }
+  @media only screen and (max-width: 991px) {
+    .Trusted-professional .trasted-item {
+      min-height: 460px; } }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .Trusted-professional .trasted-item {
+      min-height: auto;
+      padding: 35px 30px; } }
+  .Trusted-professional .trasted-item:hover {
+    border-color: #FF9916; }
+  .Trusted-professional .trasted-item .trasted-content {
+    margin-top: 180px; }
+    @media only screen and (max-width: 1399px) {
+      .Trusted-professional .trasted-item .trasted-content {
+        margin-top: 150px; } }
+    @media only screen and (max-width: 1199px) {
+      .Trusted-professional .trasted-item .trasted-content {
+        margin-top: 120px; } }
+    .Trusted-professional .trasted-item .trasted-content h4 {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1;
+      color: #031A26;
+      margin-bottom: 18px; }
+      @media only screen and (max-width: 1199px) {
+        .Trusted-professional .trasted-item .trasted-content h4 {
+          font-size: 20px; } }
+    .Trusted-professional .trasted-item .trasted-content ul {
+      padding-left: 18px; }
+      .Trusted-professional .trasted-item .trasted-content ul li {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #031A2699;
+        list-style-type: disc;
+        margin-bottom: 8px; }
+        .Trusted-professional .trasted-item .trasted-content ul li:last-child {
+          margin-bottom: 0; }
+
 /*---Sidebar Start---*/
 .mb_property_sidebar ul {
   width: 100%;
@@ -31429,7 +31496,8 @@ header {
     outline: none;
     font-weight: 400;
     font-size: 16px;
-    color: #333; }
+    color: #333;
+    background: white !important; }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .mb_contact_us .mb_form_field input {
         font-size: 12px; } }
@@ -31449,7 +31517,8 @@ header {
     -o-border-radius: 10px;
     height: 120px;
     resize: none;
-    color: #333; }
+    color: #333;
+    background: white !important; }
     .mb_contact_us .mb_form_field textarea::placeholder {
       color: #68767d; }
 .mb_contact_us .mb_send_button {
@@ -34117,8 +34186,6 @@ header {
     -webkit-border-radius: 0px 0px 20px 20px;
     -ms-border-radius: 0px 0px 20px 20px;
     -o-border-radius: 0px 0px 20px 20px; }
-    .blog-area .blog-posts .single-post-item .post-content-wrapper:hover {
-      background-color: #ffebd0; }
     .blog-area .blog-posts .single-post-item .post-content-wrapper.style_1 {
       padding: 40px;
       border: 1px solid rgba(3, 26, 38, 0.1); }
@@ -37846,11 +37913,14 @@ ul.children {
     object-fit: cover; }
 .mb_my_profile_area .mb_edit_button {
   padding: 10px 30px;
-  background: #ffebd0;
+  background: transparent;
   cursor: pointer;
   font-weight: 600;
   font-size: 20px;
   color: #000;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;

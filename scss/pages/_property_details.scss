@@ -149,6 +149,10 @@
                 padding: 30px 20px;
             }
             .rb_location {
+                max-width: 40%;
+                @include sm{
+                    max-width: 100%;
+                }
                 .rb_title {
                     color: $text_color;
                     font-family: $inter-font;

@@ -51,8 +51,10 @@
         background: #031a26;
         border: none;
         margin-top: 54px;
+        @include flex(row, center, center);
         font-weight: 600;
         font-size: 24px;
+        text-align: center;
         color: #fff;
         @include transition(0.5s);
         &:hover{
@@ -208,7 +210,7 @@
         .heading {
             h3 {
                 @include flex(row, flex-start, center);
-                gap: 20px;
+                
                 @include md {
                     font-size: 35px;
                 }

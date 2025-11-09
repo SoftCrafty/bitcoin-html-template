@@ -30582,8 +30582,13 @@ header {
   background: #031a26;
   border: none;
   margin-top: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   font-size: 24px;
+  text-align: center;
   color: #fff;
   transition: all 0.5s ease; }
   .mb_post_property .btn_wrapper:hover {
@@ -30723,8 +30728,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
-    gap: 20px; }
+    align-items: center; }
     @media only screen and (max-width: 991px) {
       .mb_property_common .heading_area .heading h3 {
         font-size: 35px; } }
@@ -31712,26 +31716,31 @@ header {
   @media only screen and (max-width: 991px) {
     .rb_project_tab .rb_overview_content .rb_overview_card {
       padding: 30px 20px; } }
-  .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
-    color: #031a26;
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal; }
-    @media only screen and (max-width: 991px) {
-      .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
-        font-size: 20px; } }
-    .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title i {
-      color: rgba(3, 26, 38, 0.4); }
-  .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_text {
-    color: #031a26;
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    opacity: 0.7; }
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_location {
+    max-width: 40%; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_location {
+        max-width: 100%; } }
+    .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
+      color: #031a26;
+      font-family: "Inter", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal; }
+      @media only screen and (max-width: 991px) {
+        .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
+          font-size: 20px; } }
+      .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title i {
+        color: rgba(3, 26, 38, 0.4); }
+    .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_text {
+      color: #031a26;
+      font-family: "Inter", sans-serif;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      opacity: 0.7; }
   .rb_project_tab .rb_overview_content .rb_overview_card .rb_btn {
     display: flex;
     display: flex;

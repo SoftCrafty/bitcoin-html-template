@@ -32327,7 +32327,11 @@ header {
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal; }
+    line-height: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
     .rb_project_tab .rb_btc_card .rb_est span {
       color: #031a26;
       font-size: 8px;
@@ -32335,7 +32339,7 @@ header {
       font-weight: 500;
       line-height: normal; }
     .rb_project_tab .rb_btc_card .rb_est img {
-      padding-left: 40px;
+      padding-left: 20px;
       cursor: pointer; }
 .rb_project_tab .rb_schedule_card {
   border-radius: 10px;

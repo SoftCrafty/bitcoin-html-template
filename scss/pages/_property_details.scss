@@ -857,6 +857,7 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+            @include flex(row, flex-start, center);
             span {
                 color: $text_color;
                 font-size: 8px;
@@ -865,7 +866,7 @@
                 line-height: normal;
             }
             img {
-                padding-left: 40px;
+                padding-left: 20px;
                 cursor: pointer;
             }
         }

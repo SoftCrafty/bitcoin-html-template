@@ -278,31 +278,30 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 }
 
-.Toastify{
-    .min-h-screen.bg-gradient-to-br{
-        padding-top: 100px;
 
-        .bg-white.rounded-2xl{
-            padding: 40px;
+.payment-success-wrapper{
+    padding-top: 100px;
 
-            .bg-gray-50.rounded-xl{
-                padding: 20px;
-                
-                .space-y-3{
-                    margin-bottom: 25px;
+    .bg-white.rounded-2xl{
+        padding: 40px;
 
-                    .flex.justify-between.pt-3.border-t{
-                        margin-top: 10px;
-                    }
+        .bg-gray-50.rounded-xl{
+            padding: 20px;
+            
+            .space-y-3{
+                margin-bottom: 25px;
+
+                .flex.justify-between.pt-3.border-t{
+                    margin-top: 10px;
                 }
             }
-
-             .space-y-3{
-                .bg-blue-600{
-                    margin-bottom: 12px;
-                }
-             }
-
         }
+
+            .space-y-3{
+            .bg-blue-600{
+                margin-bottom: 12px;
+            }
+            }
+
     }
 }

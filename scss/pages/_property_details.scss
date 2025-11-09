@@ -2229,6 +2229,9 @@ background: rgba(3, 26, 38, 0.6);
   @include border-radius(50%);
   background-color: #ffebd0;
   text-align: center;
+  img{
+    display: inline !important;
+  }
 }
 .mb_risk_title {
     font-weight: 700;

@@ -31125,6 +31125,9 @@ header {
     .mb_map_content .row.style_1 {
       border: none;
       margin: 0; } }
+.mb_map_content .row .col-xxl-3,
+.mb_map_content .row .col-xxl-9 {
+  margin-top: 0; }
 @media only screen and (max-width: 991px) {
   .mb_map_content .md-order {
     order: -1; } }
@@ -31213,12 +31216,16 @@ header {
     .mb_map_content .mb_search_conent .mb_map_sidebar_content .right-arrow:hover {
       background-color: #ff9916;
       color: #fff; }
-  .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content {
-    padding: 0; }
-    .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content .rb_meta {
-      gap: 12px; }
-    .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content .rb_item img {
-      padding-right: 5px; }
+  .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card {
+    margin-bottom: 25px; }
+    .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card:last-child {
+      margin-bottom: 0; }
+    .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content {
+      padding: 0; }
+      .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content .rb_meta {
+        gap: 12px; }
+      .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content .rb_item img {
+        padding-right: 5px; }
 .mb_map_content .mb_search_heading {
   display: flex;
   flex-direction: row;
@@ -34177,6 +34184,19 @@ header {
   transition: background-color 0.3s ease; }
   .mb_payment_area .mb_submit_button:hover {
     background-color: #333; }
+
+.payment-success-wrapper {
+  padding-top: 100px; }
+  .payment-success-wrapper .bg-white.rounded-2xl {
+    padding: 40px; }
+    .payment-success-wrapper .bg-white.rounded-2xl .bg-gray-50.rounded-xl {
+      padding: 20px; }
+      .payment-success-wrapper .bg-white.rounded-2xl .bg-gray-50.rounded-xl .space-y-3 {
+        margin-bottom: 25px; }
+        .payment-success-wrapper .bg-white.rounded-2xl .bg-gray-50.rounded-xl .space-y-3 .flex.justify-between.pt-3.border-t {
+          margin-top: 10px; }
+    .payment-success-wrapper .bg-white.rounded-2xl .space-y-3 .bg-blue-600 {
+      margin-bottom: 12px; }
 
 .blog-area .blog-posts .single-post-item {
   margin-bottom: 60px; }

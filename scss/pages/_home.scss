@@ -1851,18 +1851,36 @@
             }
         }
         .mb_check{
-            color:  #12cc3b;
-            font-size: 26px;
+            span{
+                height: 26px;
+                width: 26px;
+                border-radius: 50%;
+                display: inline-block;
+                background: linear-gradient(180deg, #53FF79 -1.09%, #12CC3B 98.91%);
+
+                i{
+                    display: none;
+                }
+            }
             &.style_1{
-                color: #d12e46;
-                
+                span{
+                    background: linear-gradient(180deg, #E44660 0%, #D31031 100%);
+                }
+
+            }
+            &.style_2{
+                span{
+                    background: linear-gradient(180deg, #FAD257 0%, #E4AE46 100%);
+
+                }
+
             }
         }
         
     }
     .mb_casa_brokerage_contains{
         padding: 0px 40px;
-        max-height:486px;
+        max-height: 448px;
         transition: all 0.5s ease-in-out; 
         &.active{
             max-height: 100%;
@@ -1944,6 +1962,10 @@
         padding: 12px 0;
         justify-content: flex-start;
     }
+}
+
+.process-item .mb_check:nth-child(2) {
+  background-color: #ffeed8;
 }
 
 .process-header{

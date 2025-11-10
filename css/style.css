@@ -38357,6 +38357,10 @@ header {
   border: 1px solid rgba(3, 26, 38, 0.12);
   padding: 20px 40px 36px 40px;
 }
+.rb_project_tab .rb_schedule_card .rb_form.common_input_2 .form-group {
+  padding-left: 0;
+  padding-right: 0;
+}
 .rb_project_tab .rb_schedule_card .rb_schedule_title {
   color: #031a26;
   font-size: 30px;

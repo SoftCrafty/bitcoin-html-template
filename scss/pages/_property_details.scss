@@ -890,6 +890,13 @@
         border-radius: 10px;
         border: 1px solid $border;
         padding: 20px 40px 36px 40px;
+
+        .rb_form.common_input_2{
+            .form-group{
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
         .rb_schedule_title {
             color: $text_color;
             font-size: 30px;

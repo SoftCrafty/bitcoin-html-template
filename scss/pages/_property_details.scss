@@ -149,6 +149,10 @@
                 padding: 30px 20px;
             }
             .rb_location {
+                max-width: 40%;
+                @include sm{
+                    max-width: 100%;
+                }
                 .rb_title {
                     color: $text_color;
                     font-family: $inter-font;
@@ -853,6 +857,7 @@
             font-style: normal;
             font-weight: 500;
             line-height: normal;
+            @include flex(row, flex-start, center);
             span {
                 color: $text_color;
                 font-size: 8px;
@@ -861,7 +866,7 @@
                 line-height: normal;
             }
             img {
-                padding-left: 40px;
+                padding-left: 20px;
                 cursor: pointer;
             }
         }
@@ -898,7 +903,7 @@
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 24px; /* 150% */
+                    line-height: 24px; /* 150%  */
                 }
                 h4 {
                     color: $text_color;
@@ -2224,6 +2229,9 @@ background: rgba(3, 26, 38, 0.6);
   @include border-radius(50%);
   background-color: #ffebd0;
   text-align: center;
+  img{
+    display: inline !important;
+  }
 }
 .mb_risk_title {
     font-weight: 700;

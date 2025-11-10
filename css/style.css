@@ -36131,8 +36131,13 @@ header {
   background: #031a26;
   border: none;
   margin-top: 54px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-weight: 600;
   font-size: 24px;
+  text-align: center;
   color: #fff;
   transition: all 0.5s ease;
 }
@@ -36300,6 +36305,12 @@ header {
   .mb_property_common {
     padding: 25px 15px 40px 15px;
   }
+}
+.mb_property_common .heading_area .heading h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 @media only screen and (max-width: 991px) {
   .mb_property_common .heading_area .heading h3 {
@@ -36534,6 +36545,9 @@ header {
   border-radius: 4px;
   width: 20px;
   height: 20px;
+}
+.mb_property_info .mb_check_box input[type=checkbox] {
+  background-color: #fff !important;
 }
 .mb_property_info .mb_check_box label {
   font-weight: 500;
@@ -37527,6 +37541,14 @@ header {
     padding: 30px 20px;
   }
 }
+.rb_project_tab .rb_overview_content .rb_overview_card .rb_location {
+  max-width: 40%;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .rb_location {
+    max-width: 100%;
+  }
+}
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_location .rb_title {
   color: #031a26;
   font-family: "Inter", sans-serif;
@@ -38282,6 +38304,10 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 .rb_project_tab .rb_btc_card .rb_est span {
   color: #031a26;
@@ -38291,7 +38317,7 @@ header {
   line-height: normal;
 }
 .rb_project_tab .rb_btc_card .rb_est img {
-  padding-left: 40px;
+  padding-left: 20px;
   cursor: pointer;
 }
 .rb_project_tab .rb_schedule_card {
@@ -38329,7 +38355,7 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px; /* 150%  */
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .item h4 {
   color: #031a26;
@@ -39791,6 +39817,9 @@ header {
   background-color: #ffebd0;
   text-align: center;
 }
+.mb_environment_risk .mb_risk_icon img {
+  display: inline !important;
+}
 .mb_environment_risk .mb_risk_title {
   font-weight: 700;
   font-size: 16px;
@@ -40106,6 +40135,30 @@ header {
   font-weight: normal;
   color: #7f8c8d;
   font-size: 12px;
+}
+
+.property-review-section .grid h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #031A26;
+  margin-bottom: 15px;
+}
+.property-review-section .grid .space-y-2 {
+  margin-bottom: 12px;
+}
+.property-review-section .grid .space-y-2 .font-medium {
+  font-weight: 600;
+}
+.property-review-section .grid .space-y-2 span.ml-2 {
+  margin-left: 8px !important;
+}
+
+.rb_project_content .property-review-section {
+  margin-top: 40px;
+  border: 1px solid rgba(3, 26, 38, 0.12);
+  border-radius: 10px;
+  padding: 50px !important;
 }
 
 /*--- Broker Info End---*/

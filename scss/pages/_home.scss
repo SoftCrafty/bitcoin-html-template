@@ -1193,6 +1193,7 @@
                 display: inline-block;
                 &:first-child{
                     padding-left: 8px;
+                    margin-right: 5px;
                     position: relative;
                     &::before{
                         content: "";

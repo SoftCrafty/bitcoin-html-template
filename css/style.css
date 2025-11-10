@@ -34576,6 +34576,7 @@ header {
 }
 .mb_browse_properties .mb_properties_card .mb_count_properties span:first-child {
   padding-left: 8px;
+  margin-right: 5px;
   position: relative;
 }
 .mb_browse_properties .mb_properties_card .mb_count_properties span:first-child::before {
@@ -35857,25 +35858,23 @@ header {
 .rb_about2 .rb_content .item .icon {
   width: 80px;
   height: 80px;
+  border-radius: 100px;
+  border: 1px solid #E6E8E9;
+  background: #fff;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .rb_about2 .rb_content .item .icon {
     width: 57px;
     height: 57px;
-    flex-shrink: 0;
     aspect-ratio: 1/1;
   }
 }
 .rb_about2 .rb_content .item .icon img {
-  border-radius: 100px;
-  border: 1px solid #E6E8E9;
-  background: #fff;
-  padding: 23px 18px;
-}
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  .rb_about2 .rb_content .item .icon img {
-    padding: 16px 12px;
-  }
+  object-fit: contain;
 }
 .rb_about2 .rb_content .item .rb_title {
   color: #031a26;

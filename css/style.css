@@ -33725,6 +33725,9 @@ header {
     flex-wrap: nowrap;
   }
 }
+.mb_our_features .row.align-items-center {
+  align-items: unset !important;
+}
 .mb_our_features .mb_feature_image {
   width: 100%;
   height: 868px !important;
@@ -33771,14 +33774,13 @@ header {
   height: 100%;
 }
 .mb_our_features .mb_feature_card {
-  padding: 110px 120px 110px 120px;
+  padding: 0px 120px;
   background-color: #ffeed8;
   position: relative;
-}
-@media only screen and (max-width: 1699px) {
-  .mb_our_features .mb_feature_card {
-    padding: 83px 120px 83px 120px;
-  }
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media only screen and (max-width: 1599px) {
   .mb_our_features .mb_feature_card {
@@ -33792,7 +33794,7 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .mb_our_features .mb_feature_card {
-    padding: 72px 20px 30px 20px;
+    padding: 72px 20px 60px 20px;
   }
 }
 .mb_our_features .mb_feature_card .mb_shape1 {
@@ -33866,7 +33868,7 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .mb_our_features .mb_feature_card .mb_single_card {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 28px;
   }
 }
@@ -33890,24 +33892,28 @@ header {
     border-bottom: none;
   }
 }
+.mb_our_features .mb_feature_card .mb_single_card:last-child .mb_card_contains {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
 .mb_our_features .mb_feature_card .mb_single_card .mb_icon {
-  width: 74px;
-  height: 74px;
+  max-width: 74px;
+  flex-shrink: 0;
 }
 @media only screen and (max-width: 991px) {
   .mb_our_features .mb_feature_card .mb_single_card .mb_icon {
-    width: 60px;
-    height: 60px;
+    max-width: 60px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .mb_our_features .mb_feature_card .mb_single_card .mb_icon {
+    max-width: 44px;
   }
 }
 .mb_our_features .mb_feature_card .mb_single_card .mb_icon img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-}
-.mb_our_features .mb_feature_card .mb_single_card .mb_icon.style_1 img {
-  width: 74px;
-  height: 74px;
+  object-fit: cover;
 }
 .mb_our_features .mb_feature_card .mb_single_card h4 {
   font-weight: 600;

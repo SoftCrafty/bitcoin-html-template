@@ -2570,11 +2570,22 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         border: 1px solid rgba(3, 26, 38, 0.12);
         border-radius: 10px;
         padding: 50px !important;
+
+        @include md{
+            padding: 30px !important;
+        }
+        @include xs{
+            padding: 20px !important;
+        }
+
+        &.container{
+            max-width: 100% !important;
+        }
     }
  }
 
 
- 
+
 /*--- Broker Info End---*/
 
 //  .mb_tab_content {

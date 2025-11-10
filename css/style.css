@@ -40160,6 +40160,19 @@ header {
   border-radius: 10px;
   padding: 50px !important;
 }
+@media only screen and (max-width: 991px) {
+  .rb_project_content .property-review-section {
+    padding: 30px !important;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_project_content .property-review-section {
+    padding: 20px !important;
+  }
+}
+.rb_project_content .property-review-section.container {
+  max-width: 100% !important;
+}
 
 /*--- Broker Info End---*/
 /*

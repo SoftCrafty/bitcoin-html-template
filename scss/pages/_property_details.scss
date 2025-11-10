@@ -2529,6 +2529,44 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 }
 }
+
+
+.property-review-section{
+
+    .grid{
+        h2{
+            font-family: "Inter",sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #031A26;
+            margin-bottom: 15px;
+        }
+
+        .space-y-2{
+            margin-bottom: 12px;
+
+            .font-medium{
+                font-weight: 600;
+            }
+
+            span.ml-2{
+                margin-left: 8px !important;
+            }
+        }
+    }
+ }
+
+.rb_project_content{
+    .property-review-section{
+        margin-top: 40px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        border-radius: 10px;
+        padding: 50px !important;
+    }
+ }
+
+
+ 
 /*--- Broker Info End---*/
 
 //  .mb_tab_content {

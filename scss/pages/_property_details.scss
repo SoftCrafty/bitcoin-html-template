@@ -915,11 +915,51 @@
             display: flex;
             justify-content: space-between;
             gap: 15px;
+            position: relative;
+
+            .slick-slide{
+                margin: 0 5px;
+
+                &.slick-current{
+                    background:  #031A26;
+                    border: none;
+                    border-radius: 10px;
+                    span {
+                        color: $white;
+                    }
+                    h4 {
+                        color: $white;
+                    }
+                }
+            }
+
+            .slick-arrow{
+                height: 44px;
+                width: 44px;
+                border-radius: 50%;
+                background-color: #FF9916;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+
+                &.right-arrow{
+                    right: -15px;
+                }
+                &.left-arrow{
+                    display: none;
+                }
+            }
             .item {
                 border-radius: 10px;
                 border: 1px solid $border;
-                padding: 20px 30px 10px;
+                padding: 16px;
                 text-align: center;
+                margin-right: 10px;
+                overflow: hidden;
                 span {
                     color: var(--800, #68767D);
                     font-size: 16px;
@@ -934,16 +974,16 @@
                     font-weight: 700;
                     line-height: 48px;
                 }
-                &.active {
-                    background:  #031A26;
-                    border: none;
-                    span {
-                        color: $white;
-                    }
-                    h4 {
-                        color: $white;
-                    }
-                }
+                // &.active {
+                //     background:  #031A26;
+                //     border: none;
+                //     span {
+                //         color: $white;
+                //     }
+                //     h4 {
+                //         color: $white;
+                //     }
+                // }
             }
         }
         .rb_schedule_btn {

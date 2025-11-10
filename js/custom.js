@@ -430,6 +430,17 @@
             vertical: true,
             verticalSwiping: true 
         });
+
+        $('.rb_date_slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            autoplay: false,
+            speed: 1000,
+            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left-long"></i></span>`,
+            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>`,
+        });
        
         
         $('.open_more_content').on('click', () => {

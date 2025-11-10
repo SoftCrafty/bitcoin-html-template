@@ -37559,6 +37559,20 @@ header {
     padding: 30px 20px;
   }
 }
+.rb_project_tab .rb_overview_content .rb_overview_card .row .d-flex.justify-content-between.col-12.flex-wrap.gap-4 {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .row .d-flex.justify-content-between.col-12.flex-wrap.gap-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_project_tab .rb_overview_content .rb_overview_card .row .d-flex.justify-content-between.col-12.flex-wrap.gap-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .rb_project_tab .rb_overview_content .rb_overview_card .rb_location {
   max-width: 40%;
 }
@@ -38395,13 +38409,14 @@ header {
 .rb_project_tab .rb_schedule_card .rb_schedule_btn {
   border-radius: 999px;
   background: var(--P, #FF9916);
-  padding: 19px 20px;
+  padding: 15px 20px;
   text-align: center;
   color: #fff;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  border: none;
 }
 .rb_project_tab .rb_schedule_card .rb_more_about_property {
   color: #031a26;

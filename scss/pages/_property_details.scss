@@ -145,8 +145,23 @@
             padding: 45px 50px;
             border-radius: 10px;
             border: 1px solid $border;
+
             @include md {
                 padding: 30px 20px;
+            }
+
+            .row{
+                .d-flex.justify-content-between.col-12.flex-wrap.gap-4{
+                    display: grid !important;
+                    grid-template-columns: repeat(3, 1fr);
+
+                    @include sm{
+                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    @include xs{
+                         grid-template-columns: repeat(1, 1fr);
+                    }
+                }
             }
             .rb_location {
                 max-width: 40%;
@@ -927,13 +942,14 @@
         .rb_schedule_btn {
             border-radius: 999px;
             background: var(--P, #FF9916);
-            padding: 19px 20px;
+            padding: 15px 20px;
             text-align: center;
             color: $white;
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            border: none;
         }
         .rb_more_about_property {
             color: $text_color;

@@ -481,6 +481,9 @@
 
             }
         }
+        &.align-items-center{
+            align-items: unset !important;
+        }
     }
   
    
@@ -521,12 +524,15 @@
     }
     
     .mb_feature_card{
-        padding: 110px 120px 110px 120px;
+        padding: 0px 120px;
         background-color: #ffeed8;
         position: relative;
-        @include xxxl {
-            padding: 83px 120px 83px 120px;
-        }
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        
         @include xxl {
             padding: 83px 90px 83px 90px;
         }
@@ -534,7 +540,7 @@
             padding: 60px 30px;
         }
         @include sm{
-            padding:72px 20px 30px 20px;
+            padding:72px 20px 60px 20px;
         }
         .mb_shape1{
             position: absolute;
@@ -598,7 +604,7 @@
                 flex-wrap: nowrap;
             }
             @include sm{
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 gap: 28px;
             }
             .mb_card_contains{
@@ -617,24 +623,28 @@
                     }
                 }
             }
+
+            &:last-child{
+                .mb_card_contains{
+                    border-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
             .mb_icon{
-                width: 74px;
-                height: 74px;
+                max-width: 74px;
+                flex-shrink: 0;
                 @include md{
-                    width: 60px;
-                    height: 60px;
+                    max-width: 60px;
+                }
+                @include xs{
+                    max-width: 44px;
                 }
                 img{
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
+                    object-fit: cover;
                 }
-                &.style_1 {
-                    img {
-                        width: 74px;
-                        height: 74px;  
-                    }
-                }
+                
             }
             h4{
                 font-weight: 600;
@@ -1079,7 +1089,7 @@
     }
     .mb_properties_btn{
         @include flex(row, flex-start, center);
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         gap: 6px;
         overflow: scroll;
         &::-webkit-scrollbar {
@@ -1183,6 +1193,7 @@
                 display: inline-block;
                 &:first-child{
                     padding-left: 8px;
+                    margin-right: 5px;
                     position: relative;
                     &::before{
                         content: "";
@@ -1840,18 +1851,36 @@
             }
         }
         .mb_check{
-            color:  #12cc3b;
-            font-size: 26px;
+            span{
+                height: 26px;
+                width: 26px;
+                border-radius: 50%;
+                display: inline-block;
+                background: linear-gradient(180deg, #53FF79 -1.09%, #12CC3B 98.91%);
+
+                i{
+                    display: none;
+                }
+            }
             &.style_1{
-                color: #d12e46;
-                
+                span{
+                    background: linear-gradient(180deg, #E44660 0%, #D31031 100%);
+                }
+
+            }
+            &.style_2{
+                span{
+                    background: linear-gradient(180deg, #FAD257 0%, #E4AE46 100%);
+
+                }
+
             }
         }
         
     }
     .mb_casa_brokerage_contains{
         padding: 0px 40px;
-        max-height:486px;
+        max-height: 448px;
         transition: all 0.5s ease-in-out; 
         &.active{
             max-height: 100%;
@@ -1933,6 +1962,10 @@
         padding: 12px 0;
         justify-content: flex-start;
     }
+}
+
+.process-item .mb_check:nth-child(2) {
+  background-color: #ffeed8;
 }
 
 .process-header{

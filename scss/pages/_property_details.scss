@@ -145,8 +145,23 @@
             padding: 45px 50px;
             border-radius: 10px;
             border: 1px solid $border;
+
             @include md {
                 padding: 30px 20px;
+            }
+
+            .row{
+                .d-flex.justify-content-between.col-12.flex-wrap.gap-4{
+                    display: grid !important;
+                    grid-template-columns: repeat(3, 1fr);
+
+                    @include sm{
+                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    @include xs{
+                         grid-template-columns: repeat(1, 1fr);
+                    }
+                }
             }
             .rb_location {
                 max-width: 40%;
@@ -875,6 +890,26 @@
         border-radius: 10px;
         border: 1px solid $border;
         padding: 20px 40px 36px 40px;
+
+        .rb_form.common_input_2{
+            .form-group{
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .rb_schedule_btn {
+            border-radius: 999px;
+            background: var(--P, #FF9916);
+            padding: 15px 20px;
+            text-align: center;
+            color: $white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border: none;
+            }
+        }
         .rb_schedule_title {
             color: $text_color;
             font-size: 30px;
@@ -893,11 +928,52 @@
             display: flex;
             justify-content: space-between;
             gap: 15px;
+            position: relative;
+
+            .slick-slide{
+                margin: 0 5px;
+
+                &.slick-current{
+                    background:  #031A26;
+                    border: none;
+                    border-radius: 10px;
+                    span {
+                        color: $white;
+                    }
+                    h4 {
+                        color: $white;
+                    }
+                }
+            }
+
+            .slick-arrow{
+                height: 44px;
+                width: 44px;
+                border-radius: 50%;
+                background-color: #FF9916;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 15;
+
+                &.right-arrow{
+                    right: -15px;
+                }
+                &.left-arrow{
+                    left:-15px;
+                }
+            }
             .item {
                 border-radius: 10px;
                 border: 1px solid $border;
-                padding: 20px 30px 10px;
+                padding: 16px;
                 text-align: center;
+                margin-right: 10px;
+                overflow: hidden;
                 span {
                     color: var(--800, #68767D);
                     font-size: 16px;
@@ -912,28 +988,29 @@
                     font-weight: 700;
                     line-height: 48px;
                 }
-                &.active {
-                    background:  #031A26;
-                    border: none;
-                    span {
-                        color: $white;
-                    }
-                    h4 {
-                        color: $white;
-                    }
-                }
+                // &.active {
+                //     background:  #031A26;
+                //     border: none;
+                //     span {
+                //         color: $white;
+                //     }
+                //     h4 {
+                //         color: $white;
+                //     }
+                // }
             }
         }
         .rb_schedule_btn {
             border-radius: 999px;
             background: var(--P, #FF9916);
-            padding: 19px 20px;
+            padding: 15px 20px;
             text-align: center;
             color: $white;
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
             line-height: normal;
+            border: none;
         }
         .rb_more_about_property {
             color: $text_color;
@@ -2537,6 +2614,55 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 }
 }
+
+
+.property-review-section{
+
+    .grid{
+        h2{
+            font-family: "Inter",sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #031A26;
+            margin-bottom: 15px;
+        }
+
+        .space-y-2{
+            margin-bottom: 12px;
+
+            .font-medium{
+                font-weight: 600;
+            }
+
+            span.ml-2{
+                margin-left: 8px !important;
+            }
+        }
+    }
+ }
+
+.rb_project_content{
+    .property-review-section{
+        margin-top: 40px;
+        border: 1px solid rgba(3, 26, 38, 0.12);
+        border-radius: 10px;
+        padding: 50px !important;
+
+        @include md{
+            padding: 30px !important;
+        }
+        @include xs{
+            padding: 20px !important;
+        }
+
+        &.container{
+            max-width: 100% !important;
+        }
+    }
+ }
+
+
+
 /*--- Broker Info End---*/
 
 //  .mb_tab_content {

@@ -950,7 +950,7 @@
                     right: -15px;
                 }
                 &.left-arrow{
-                    display: none;
+                    display: none !important;
                 }
             }
             .item {

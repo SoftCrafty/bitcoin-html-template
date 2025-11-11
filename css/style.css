@@ -38412,7 +38412,7 @@ header {
   right: -15px;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-arrow.left-arrow {
-  display: none;
+  display: none !important;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .item {
   border-radius: 10px;

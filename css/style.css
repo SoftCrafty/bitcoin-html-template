@@ -36965,6 +36965,12 @@ header {
 }
 .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content .rb_meta {
   gap: 12px;
+  flex-wrap: wrap;
+}
+.mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content .rb_item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 .mb_map_content .mb_search_conent .mb_map_sidebar_content .rb_blog_card .rb_content .rb_item img {
   padding-right: 5px;

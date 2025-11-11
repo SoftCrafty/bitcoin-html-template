@@ -311,3 +311,16 @@ $box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 
     }
 }
+
+.mb_payment_card{
+    .flex.gap-2{
+        button{
+            border-radius: 10px;
+            padding: 10px 0 !important;
+
+            &.bg-blue-600{
+                background-color: #ff9916 !important;
+            }
+        }
+    }
+}

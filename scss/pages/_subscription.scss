@@ -1292,4 +1292,27 @@ img{
 
 }
 /*---Sign Up End---*/
+.mb_saved_listing_slider {
 
+    .slick-arrow{
+            height: 44px;
+            width: 44px;
+            border-radius: 50%;
+            background-color: #FF9916;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 15;
+    
+            &.right-arrow{
+                right: -15px;
+            }
+            &.left-arrow{
+                left:-15px;
+            }
+        }
+}

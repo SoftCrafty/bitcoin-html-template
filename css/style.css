@@ -40811,6 +40811,14 @@ header {
   margin-bottom: 12px;
 }
 
+.mb_payment_card .flex.gap-2 button {
+  border-radius: 10px;
+  padding: 10px 0 !important;
+}
+.mb_payment_card .flex.gap-2 button.bg-blue-600 {
+  background-color: #ff9916 !important;
+}
+
 .blog-area .blog-posts .single-post-item {
   margin-bottom: 60px;
 }
@@ -46077,6 +46085,27 @@ ul.children {
 }
 
 /*---Sign Up End---*/
+.mb_saved_listing_slider .slick-arrow {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #FF9916;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 15;
+}
+.mb_saved_listing_slider .slick-arrow.right-arrow {
+  right: -15px;
+}
+.mb_saved_listing_slider .slick-arrow.left-arrow {
+  left: -15px;
+}
+
 .rb_contact1 {
   position: relative;
 }

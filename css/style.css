@@ -40623,6 +40623,9 @@ header {
   background: #fae7d0;
   text-align: center;
   line-height: 55px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .mb_payment_area .mb_bitcoin_info .mb_bitcoin_header span img {
   width: 40px;
@@ -40705,6 +40708,9 @@ header {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border: 1px solid rgba(3, 26, 38, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .mb_payment_area .mb_instructions {
   margin-top: 32px;

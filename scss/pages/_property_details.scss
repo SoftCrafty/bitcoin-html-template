@@ -896,6 +896,19 @@
                 padding-left: 0;
                 padding-right: 0;
             }
+
+            .rb_schedule_btn {
+            border-radius: 999px;
+            background: var(--P, #FF9916);
+            padding: 15px 20px;
+            text-align: center;
+            color: $white;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            border: none;
+            }
         }
         .rb_schedule_title {
             color: $text_color;
@@ -945,12 +958,13 @@
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
+                z-index: 15;
 
                 &.right-arrow{
                     right: -15px;
                 }
                 &.left-arrow{
-                    display: none !important;
+                    left:-15px;
                 }
             }
             .item {

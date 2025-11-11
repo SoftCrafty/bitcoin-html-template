@@ -38361,6 +38361,18 @@ header {
   padding-left: 0;
   padding-right: 0;
 }
+.rb_project_tab .rb_schedule_card .rb_form.common_input_2 .rb_schedule_btn {
+  border-radius: 999px;
+  background: var(--P, #FF9916);
+  padding: 15px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+}
 .rb_project_tab .rb_schedule_card .rb_schedule_title {
   color: #031a26;
   font-size: 30px;
@@ -38407,12 +38419,13 @@ header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 15;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-arrow.right-arrow {
   right: -15px;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-arrow.left-arrow {
-  display: none !important;
+  left: -15px;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .item {
   border-radius: 10px;

@@ -36095,6 +36095,12 @@ header {
 }
 
 /*---Sidebar Start---*/
+.mb_property_sidebar {
+  position: sticky;
+  top: 100px; /* adjust for your header height */
+  height: calc(100vh - 120px); /* optional: keeps sidebar height within screen */
+  overflow-y: auto; /* if sidebar is long */
+}
 .mb_property_sidebar ul {
   width: 100%;
   display: flex;
@@ -36118,6 +36124,7 @@ header {
   color: rgba(3, 26, 38, 0.7);
   border-radius: 6px;
   max-width: 265px;
+  cursor: pointer;
 }
 .mb_property_sidebar ul li span {
   margin-right: 10px;

@@ -1,5 +1,13 @@
  /*---Sidebar Start---*/
     .mb_property_sidebar{
+
+        
+  position: sticky;
+  top: 100px; /* adjust for your header height */
+  height: calc(100vh - 120px); /* optional: keeps sidebar height within screen */
+  overflow-y: auto; /* if sidebar is long */
+
+
         ul{
             width: 100%;
             @include flex(column, flex-start, flex-start);
@@ -17,6 +25,7 @@
                 color: $text_style3;
                 border-radius: 6px;
                 max-width: 265px;
+                cursor: pointer;
                 span{
                     margin-right: 10px;
                     color: $text_style3;

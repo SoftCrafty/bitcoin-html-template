@@ -1304,7 +1304,7 @@ img{
             align-items: center;
             justify-content: center;
             position: absolute;
-            top: 50%;
+            top: 32%;
             transform: translateY(-50%);
             z-index: 15;
     
@@ -1313,6 +1313,10 @@ img{
             }
             &.left-arrow{
                 left:-15px;
+            }
+
+            @include md{
+                display: none !important;
             }
         }
 }

@@ -46095,7 +46095,7 @@ ul.children {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 50%;
+  top: 32%;
   transform: translateY(-50%);
   z-index: 15;
 }
@@ -46104,6 +46104,11 @@ ul.children {
 }
 .mb_saved_listing_slider .slick-arrow.left-arrow {
   left: -15px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_saved_listing_slider .slick-arrow {
+    display: none !important;
+  }
 }
 
 .rb_contact1 {

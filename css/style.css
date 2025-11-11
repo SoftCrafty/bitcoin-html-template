@@ -34452,7 +34452,7 @@ header {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 6px;
   overflow: scroll;
 }
@@ -36649,6 +36649,9 @@ header {
   .mb_tour_schedule .mb_calendar_container {
     padding: 14px;
   }
+}
+.mb_tour_schedule .mb_calendar_container .inline-calendar {
+  margin: auto;
 }
 .mb_tour_schedule .mb_calendar_header {
   border: 1px solid #E5E7EB;

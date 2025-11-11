@@ -1089,7 +1089,7 @@
     }
     .mb_properties_btn{
         @include flex(row, flex-start, center);
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         gap: 6px;
         overflow: scroll;
         &::-webkit-scrollbar {

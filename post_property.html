@@ -213,10 +213,9 @@
       </div>
     </header>
     <!-- Header End !-->
-    <div id="smooth-wrapper">
-      <div id="smooth-content">
+    
      <!-- Inner Page Hero Section Start -->
-      <section class="mb_inner_page_hero">
+      <section class="mb_inner_page_hero for-post-property">
        <div class="mb_blur_circle"></div>
       <div class="container-xxl">
         <div class="mb_inner_hero_contains">
@@ -253,18 +252,18 @@
             <div class="col-lg-3">
                 <div class="mb_property_sidebar">
                     <ul>
-                        <li class="active"><span><i class="fa-regular fa-circle-check"></i></span> Select Category</li>
-                        <li><span><i class="fa-regular fa-circle-check"></i></span> Location Details</li>
-                        <li><span><i class="fa-regular fa-circle-check"></i></span> Basic Property Info</li>
-                        <li><span><i class="fa-regular fa-circle-check"></i></span> Features & Amenities</li>
-                        <li><span><i class="fa-regular fa-circle-check"></i></span> Room Details</li>
-                        <li><span><i class="fa-regular fa-circle-check"></i></span> Media Upload</li>
-                        <li><span><i class="fa-regular fa-circle-check"></i></span>Schedule Tour </li>
+                        <li class="active" data-target="category"><span><i class="fa-regular fa-circle-check"></i></span> Select Category</li>
+                        <li data-target="location"><span><i class="fa-regular fa-circle-check"></i></span> Location Details</li>
+                        <li data-target="property"><span><i class="fa-regular fa-circle-check"></i></span> Basic Property Info</li>
+                        <li data-target="features"><span><i class="fa-regular fa-circle-check"></i></span> Features & Amenities</li>
+                        <li data-target="room-details"><span><i class="fa-regular fa-circle-check"></i></span> Room Details</li>
+                        <li data-target="media"><span><i class="fa-regular fa-circle-check"></i></span> Media Upload</li>
+                        <li data-target="schedule-tour"><span><i class="fa-regular fa-circle-check"></i></span>Schedule Tour </li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="mb_post_property_wrapper">
+                <div id="category" class="mb_post_property_wrapper">
                     <div class="heading_area style_1">
                         <div class="heading">
                             <h3><span><img src="./images/post_property/property_type/layer1.png" alt=""></span>What type of property are you listing?</h3>
@@ -347,7 +346,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb_property_location mb_property_common mt-60">
+                <div id="location" class="mb_property_location mb_property_common mt-60">
                     <div class="heading_area style_1">
                         <div class="heading style_01">
                             <h3><span><img src="./images/post_property/property_type/layer2.png" alt=""></span>Where is your property located?</h3>
@@ -407,7 +406,7 @@
                         </div>
                         
                 </div>
-                <div class="mb_property_info mb_property_common mt-60">
+                <div id="property" class="mb_property_info mb_property_common mt-60">
                     <div class="heading_area style_1 mb-20">
                         <div class="heading style_01">
                             <h3><span><img src="./images/post_property/property_type/layer3.png" alt=""></span>Basic Property Info</h3>
@@ -488,7 +487,7 @@
                         </div>
                         </div>
                 </div>
-                <div class="mb_features_amenities mb_property_common mt-60">
+                <div id="features" class="mb_features_amenities mb_property_common mt-60">
                     <div class="heading_area style_1">
                         <div class="heading style_01">
                             <h3><span><img src="./images/post_property/property_type/layer4.png" alt=""></span>Features & Amenities</h3>
@@ -834,7 +833,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb_features_amenities mb_property_common mt-60">
+                <div id="room-details" class="mb_features_amenities mb_property_common mt-60">
                     <div class="heading_area style_1">
                         <div class="heading style_1">
                             <h3><span><img src="./images/post_property/property_type/layer5.png" alt=""></span>Room Details</h3>
@@ -1065,7 +1064,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mb_photo_media mb_property_common mt-60">
+                <div id="media" class="mb_photo_media mb_property_common mt-60">
                   <div class="heading_area style_1 mb-30">
                     <div class="heading style_1">
                         <h3><span><img src="./images/post_property/property_type/layer6.png" alt=""></span>Photos & Media</h3>
@@ -1110,39 +1109,39 @@
                     </div>
                 </div>
                 </div>
-                <div class="mb_tour_schedule mb_property_common mt-60">
+                <div id="schedule-tour" class="mb_tour_schedule mb_property_common mt-60">
                      <div class="mb_main_container container-fluid p-5 fix_padding">
-        <!-- Header Section -->
-        <div class="mb-5 d-flex align-items-center">
-            <!-- Icon for Schedule Tour -->
-            <h1 class="mb_section_header fs-2 mb-30"> <span class="me-2"><img src="./images/post_property/property_type/layer7.png" alt=""></span>Schedule Tour</h1>
-        </div>
+                        <!-- Header Section -->
+                        <div class="mb-5 d-flex align-items-center">
+                            <!-- Icon for Schedule Tour -->
+                            <h1 class="mb_section_header fs-2 mb-30"> <span class="me-2"><img src="./images/post_property/property_type/layer7.png" alt=""></span>Schedule Tour</h1>
+                        </div>
 
-        <!-- Calendar Container -->
-        <div class="mb_calendar_container">
-            <!-- Month Picker -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <div class="mb_calendar_header">
-                     <span><i class="fa-solid fa-calendar-days"></i> Sep 2023</span>
-                </div>
-            </div>
+                        <!-- Calendar Container -->
+                        <div class="mb_calendar_container">
+                            <!-- Month Picker -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="mb_calendar_header">
+                                    <span><i class="fa-solid fa-calendar-days"></i> Sep 2023</span>
+                                </div>
+                            </div>
 
-            <!-- Day Labels -->
-            <div class="mb_day_grid mb-4">
-                <span class="mb_day_label">S</span>
-                <span class="mb_day_label">M</span>
-                <span class="mb_day_label">T</span>
-                <span class="mb_day_label">W</span>
-                <span class="mb_day_label">T</span>
-                <span class="mb_day_label">F</span>
-                <span class="mb_day_label">S</span>
-            </div>
+                            <!-- Day Labels -->
+                            <div class="mb_day_grid mb-4">
+                                <span class="mb_day_label">S</span>
+                                <span class="mb_day_label">M</span>
+                                <span class="mb_day_label">T</span>
+                                <span class="mb_day_label">W</span>
+                                <span class="mb_day_label">T</span>
+                                <span class="mb_day_label">F</span>
+                                <span class="mb_day_label">S</span>
+                            </div>
 
-            <!-- Calendar Days -->
-            <div class="mb_day_grid" id="mb_calendar_days">
-            </div>
-        </div>
-    </div>
+                            <!-- Calendar Days -->
+                            <div class="mb_day_grid" id="mb_calendar_days">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <button type="button" class="btn_wrapper">Add Listing</button>
@@ -1247,8 +1246,7 @@
       </div>
     </footer>
     <!-- Footer Section End -->
-   </div>
-    </div>
+  
 
 
     <script src="./js/jquery-3.7.1.min.js"></script>

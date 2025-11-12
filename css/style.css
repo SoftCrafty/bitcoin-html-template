@@ -36094,7 +36094,17 @@ header {
   margin-bottom: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*---Sidebar Start---*/
+.mb_property_sidebar {
+  position: sticky;
+  top: 100px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
+}
 .mb_property_sidebar ul {
   width: 100%;
   display: flex;
@@ -36118,6 +36128,7 @@ header {
   color: rgba(3, 26, 38, 0.7);
   border-radius: 6px;
   max-width: 265px;
+  cursor: pointer;
 }
 .mb_property_sidebar ul li span {
   margin-right: 10px;
@@ -36736,6 +36747,10 @@ header {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+
+.mb_inner_page_hero.for-post-property {
+  margin-top: -90px;
 }
 
 .mb_map_search .mb_map_search_filter {
@@ -37419,13 +37434,17 @@ header {
     padding: 30px 0px 30px;
   }
 }
+.rb_project1 .rb_project1_card {
+  height: 100%;
+}
 .rb_project1 .rb_project1_card .rb_thumb {
   position: relative;
+  height: 100%;
 }
 .rb_project1 .rb_project1_card .rb_thumb img {
   border-radius: 15px;
   width: 100%;
-  max-height: 520px;
+  max-height: 550px;
 }
 .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
   display: flex;
@@ -38405,16 +38424,16 @@ header {
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide {
   margin: 0 5px;
 }
-.rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current {
-  background: #031A26;
-  border: none;
-  border-radius: 10px;
+.rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current .item {
+  background: #031A26 !important;
+  border: none !important;
+  border-radius: 10px !important;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current span {
-  color: #fff;
+  color: #fff !important;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current h4 {
-  color: #fff;
+  color: #fff !important;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-arrow {
   height: 44px;
@@ -39087,6 +39106,7 @@ header {
 }
 .costs_home_area .mb_apply_veterans p img {
   margin-left: 12px;
+  display: inline;
 }
 .costs_home_area .mb_item_header {
   display: flex;
@@ -40809,6 +40829,14 @@ header {
 }
 .payment-success-wrapper .bg-white.rounded-2xl .space-y-3 .bg-blue-600 {
   margin-bottom: 12px;
+}
+
+.mb_payment_card .flex.gap-2 button {
+  border-radius: 10px;
+  padding: 10px 0 !important;
+}
+.mb_payment_card .flex.gap-2 button.bg-blue-600 {
+  background-color: #ff9916 !important;
 }
 
 .blog-area .blog-posts .single-post-item {
@@ -46077,6 +46105,32 @@ ul.children {
 }
 
 /*---Sign Up End---*/
+.mb_saved_listing_slider .slick-arrow {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #FF9916;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 32%;
+  transform: translateY(-50%);
+  z-index: 15;
+}
+.mb_saved_listing_slider .slick-arrow.right-arrow {
+  right: -15px;
+}
+.mb_saved_listing_slider .slick-arrow.left-arrow {
+  left: -15px;
+}
+@media only screen and (max-width: 991px) {
+  .mb_saved_listing_slider .slick-arrow {
+    display: none !important;
+  }
+}
+
 .rb_contact1 {
   position: relative;
 }
@@ -46749,9 +46803,14 @@ ul.children {
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 18px;
   border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+}
+.rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item {
+  display: inline-flex;
+  align-items: center;
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item span {
   color: #031a26;

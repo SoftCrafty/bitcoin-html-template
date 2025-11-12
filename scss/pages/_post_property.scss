@@ -1,5 +1,16 @@
- /*---Sidebar Start---*/
+body{
+    overflow-x: hidden;
+}
+
+/*---Sidebar Start---*/
     .mb_property_sidebar{
+        
+            position: sticky;
+            top: 100px; 
+            height: calc(100vh - 120px); 
+            overflow-y: auto; 
+
+
         ul{
             width: 100%;
             @include flex(column, flex-start, flex-start);
@@ -17,6 +28,7 @@
                 color: $text_style3;
                 border-radius: 6px;
                 max-width: 265px;
+                cursor: pointer;
                 span{
                     margin-right: 10px;
                     color: $text_style3;
@@ -617,10 +629,15 @@
             -moz-border-radius: 30px;
             -ms-border-radius: 30px;
             -o-border-radius: 30px;
+        }
+        
+    }
 }
         
+.mb_inner_page_hero{
+    &.for-post-property{
+        margin-top: -90px;
+    }
 }
-}
-        
         
         

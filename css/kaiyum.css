@@ -2,3 +2,21 @@
 .css-pdld14 {
     line-height: 1em !important;
 }
+@media (max-width: 768px){
+    .css-18ayxda{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .css-y8uecl .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
+        padding-left: 3px !important;
+    }
+    .MuiAutocomplete-hasPopupIcon.css-y8uecl .MuiOutlinedInput-root{
+        padding-right: 15px !important;
+    }
+    .css-lfa68k {
+        text-align: center;
+    }
+    .css-pedg2t {
+        margin-left: 10px !important;
+    }
+}

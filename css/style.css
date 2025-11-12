@@ -37434,13 +37434,17 @@ body {
     padding: 30px 0px 30px;
   }
 }
+.rb_project1 .rb_project1_card {
+  height: 100%;
+}
 .rb_project1 .rb_project1_card .rb_thumb {
   position: relative;
+  height: 100%;
 }
 .rb_project1 .rb_project1_card .rb_thumb img {
   border-radius: 15px;
   width: 100%;
-  max-height: 520px;
+  max-height: 550px;
 }
 .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
   display: flex;

@@ -36094,6 +36094,10 @@ header {
   margin-bottom: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*---Sidebar Start---*/
 .mb_property_sidebar {
   position: sticky;
@@ -38416,16 +38420,16 @@ header {
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide {
   margin: 0 5px;
 }
-.rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current {
+.rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current .item {
   background: #031A26;
   border: none;
   border-radius: 10px;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current span {
-  color: #fff;
+  color: #fff !important;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current h4 {
-  color: #fff;
+  color: #fff !important;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-arrow {
   height: 44px;

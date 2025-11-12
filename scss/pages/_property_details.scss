@@ -934,14 +934,18 @@
                 margin: 0 5px;
 
                 &.slick-current{
-                    background:  #031A26;
-                    border: none;
-                    border-radius: 10px;
+                    
+                    .item{
+                        background:  #031A26;
+                        border: none;
+                        border-radius: 10px;
+                    }
+                    
                     span {
-                        color: $white;
+                        color: $white !important;
                     }
                     h4 {
-                        color: $white;
+                        color: $white !important;
                     }
                 }
             }

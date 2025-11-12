@@ -36097,9 +36097,9 @@ header {
 /*---Sidebar Start---*/
 .mb_property_sidebar {
   position: sticky;
-  top: 100px; /* adjust for your header height */
-  height: calc(100vh - 120px); /* optional: keeps sidebar height within screen */
-  overflow-y: auto; /* if sidebar is long */
+  top: 100px;
+  height: calc(100vh - 120px);
+  overflow-y: auto;
 }
 .mb_property_sidebar ul {
   width: 100%;
@@ -36743,6 +36743,10 @@ header {
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+
+.mb_inner_page_hero.for-post-property {
+  margin-top: -90px;
 }
 
 .mb_map_search .mb_map_search_filter {

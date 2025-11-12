@@ -39106,6 +39106,7 @@ body {
 }
 .costs_home_area .mb_apply_veterans p img {
   margin-left: 12px;
+  display: inline;
 }
 .costs_home_area .mb_item_header {
   display: flex;

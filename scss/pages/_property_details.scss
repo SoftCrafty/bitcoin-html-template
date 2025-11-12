@@ -1517,7 +1517,9 @@
         font-size: 20px;
         color: $text_color;
         img{
-            margin-left: 12px
+            margin-left: 12px;
+            display: inline;
+            
         }
     }
 }

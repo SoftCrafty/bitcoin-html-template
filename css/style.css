@@ -46802,9 +46802,14 @@ ul.children {
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_meta {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 18px;
   border-bottom: 1px solid rgba(3, 26, 38, 0.1);
+}
+.rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item {
+  display: inline-flex;
+  align-items: center;
 }
 .rb_blog2 .rb_blog_card .rb_content .rb_meta .rb_item span {
   color: #031a26;

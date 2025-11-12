@@ -425,10 +425,13 @@
             }
             .rb_meta {
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
                 gap: 18px;
-                border-bottom: 1px solid rgba(3, 26, 38, 0.10);;
+                border-bottom: 1px solid rgba(3, 26, 38, 0.10);
                 .rb_item {
+                    display: inline-flex;
+                    align-items: center;
                     span {
                         color: $text_color;
                         font-family: $inter-font;

@@ -38421,9 +38421,9 @@ body {
   margin: 0 5px;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current .item {
-  background: #031A26;
-  border: none;
-  border-radius: 10px;
+  background: #031A26 !important;
+  border: none !important;
+  border-radius: 10px !important;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current span {
   color: #fff !important;

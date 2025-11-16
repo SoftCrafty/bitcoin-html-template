@@ -1908,6 +1908,12 @@
         @include transformX(-50%);
         a{
             cursor: pointer;
+            @include sm{
+                font-size: 14px;
+                padding: 14px 4px 14px 22px;
+            
+
+            }
             &:hover{
                 background-color: $white;
                 color: $text_color;

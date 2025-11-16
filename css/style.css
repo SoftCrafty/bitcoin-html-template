@@ -29269,7 +29269,7 @@ header {
         padding: 40px 24px; }
         .mb_browse_properties .mb_browse_wrapper .explore_btn {
           position: absolute;
-          bottom: 0px;
+          bottom: 20px;
           left: 50%;
           transform: translateX(-50%); } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {

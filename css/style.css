@@ -28961,7 +28961,7 @@ header {
         left: 35.5%; } }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .mb_how_work .left-arrow {
-        bottom: -18%;
+        bottom: -1%;
         left: 32.5%; } }
     .mb_how_work .left-arrow:hover {
       background-color: #ff9916;
@@ -29050,6 +29050,10 @@ header {
         bottom: -11%;
         left: 50%;
         transform: translate(-50%, 0px); } }
+  @media only screen and (max-width: 1199px) and (min-width: 0px) and (max-width: 767px) {
+    .mb_how_work .mb_how_work_dots {
+      bottom: -18%; } }
+
     .mb_how_work .mb_how_work_dots li {
       position: relative; }
     .mb_how_work .mb_how_work_dots button {

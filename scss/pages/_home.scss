@@ -753,8 +753,8 @@
             left: 35.5%;
         }
         @include xxs {
-            bottom: -18%;
-            left: 32.5%;
+            bottom: -17.5%;
+            left: 31.5%;
 
         }
         &:hover{
@@ -839,6 +839,9 @@
             top: auto;
             right: auto;
             bottom: -11%;
+            @include sm{
+                bottom: -18%;
+            }
             left: 50%;
             transform: translate(-50%, 0px);
         }

@@ -28961,8 +28961,8 @@ header {
         left: 35.5%; } }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .mb_how_work .left-arrow {
-        bottom: -11%;
-        left: 31.5%; } }
+        bottom: -18%;
+        left: 32.5%; } }
     .mb_how_work .left-arrow:hover {
       background-color: #ff9916;
       color: #fff; }
@@ -29004,7 +29004,7 @@ header {
         height: 35px;
         width: 35px;
         left: 65%;
-        bottom: -11%; } }
+        bottom: -17.5%; } }
     @media only screen and (min-width: 0px) and (max-width: 479px) {
       .mb_how_work .right-arrow {
         height: 35px;
@@ -29259,7 +29259,7 @@ header {
         padding: 40px 24px; }
         .mb_browse_properties .mb_browse_wrapper .explore_btn {
           position: absolute;
-          bottom: 20px;
+          bottom: 0px;
           left: 50%;
           transform: translateX(-50%); } }
     @media only screen and (min-width: 0px) and (max-width: 767px) {

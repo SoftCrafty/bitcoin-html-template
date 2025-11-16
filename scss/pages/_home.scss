@@ -753,8 +753,8 @@
             left: 35.5%;
         }
         @include xxs {
-            bottom: -11%;
-            left: 31.5%;
+            bottom: -18%;
+            left: 32.5%;
 
         }
         &:hover{
@@ -799,7 +799,7 @@
             height: 35px;
             width: 35px;
             left: 65%;
-            bottom: -11%;
+            bottom: -17.5%;
         }
         @include xxs{ 
             height: 35px;
@@ -1080,7 +1080,7 @@
             .explore_btn{
                  
         position: absolute;
-        bottom: 20px;
+        bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
             }

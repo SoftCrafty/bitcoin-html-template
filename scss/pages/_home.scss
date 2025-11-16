@@ -318,6 +318,9 @@
 }
 /*--Branding Start---*/
 .mb_branding_area{
+    @include sm{
+        margin-top: 20px !important;
+    }
     .mb_branding_wrapper{
         @include flex(row, space-between, center);
         

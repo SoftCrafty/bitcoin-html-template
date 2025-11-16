@@ -267,7 +267,15 @@
                 }
                 img {
                     object-fit: contain;
-                }
+                    padding: 0px !important;
+                    border: none !important;
+                    border-radius: 0px !important;
+                    -webkit-border-radius: 0px !important;
+                    -moz-border-radius: 0px !important;
+                    -ms-border-radius: 0px !important;
+                    -o-border-radius: 0px !important;
+                    background-color: transparent !important;
+}
             }
             .rb_title {
                 color: $text_color;

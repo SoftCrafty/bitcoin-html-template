@@ -30397,7 +30397,15 @@ header {
             height: 57px;
             aspect-ratio: 1/1; } }
         .rb_about2 .rb_content .item .icon img {
-          object-fit: contain; }
+          object-fit: contain;
+          padding: 0px !important;
+          border: none !important;
+          border-radius: 0px !important;
+          -webkit-border-radius: 0px !important;
+          -moz-border-radius: 0px !important;
+          -ms-border-radius: 0px !important;
+          -o-border-radius: 0px !important;
+          background-color: transparent !important; }
       .rb_about2 .rb_content .item .rb_title {
         color: #031a26;
         font-family: "Inter", sans-serif;

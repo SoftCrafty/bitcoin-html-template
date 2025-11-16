@@ -28585,6 +28585,9 @@ header {
     flex-shrink: 0; } }
 .mb_branding_area .mb_branding_wrapper_rtl {
   direction: rtl; }
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .mb_branding_area .mb_branding_wrapper_rtl {
+      margin-top: 20px !important; } }
 
 /*--Branding End---*/
 /*--blockquote Start---*/

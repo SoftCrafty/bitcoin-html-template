@@ -350,6 +350,9 @@
     }
     .mb_branding_wrapper_rtl{
         direction: rtl;
+        @include sm{
+            margin-top: 20px !important;
+        }
     }
 }
 /*--Branding End---*/

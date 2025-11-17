@@ -634,10 +634,14 @@ body{
     }
 }
         
-.mb_inner_page_hero{
-    &.for-post-property{
-        margin-top: -90px;
+.for-post-property{
+    .mb_inner_page_hero{      
+        margin-top: -90px;        
+    }
+
+    .ScrollSmoother-wrapper{
+        position: relative !important;
+        inset: unset !important;
     }
 }
-        
         

@@ -2,3 +2,42 @@
 .css-pdld14 {
     line-height: 1em !important;
 }
+@media (max-width: 768px){
+    .css-18ayxda{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .css-y8uecl .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
+        padding-left: 3px !important;
+    }
+    .MuiAutocomplete-hasPopupIcon.css-y8uecl .MuiOutlinedInput-root{
+        padding-right: 15px !important;
+    }
+    .css-lfa68k {
+        text-align: center;
+    }
+    .css-pedg2t {
+        margin-left: 10px !important;
+    }
+}
+.css-1uhkb2 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.css-ukickz {
+    margin-bottom: 0px !important;
+}
+.css-zsajsa {
+    right: 6px !important;
+}
+.css-gna9mu {
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+}
+.css-kbq71j{
+    width: 100% !important;
+}
+.css-1lhg0sk {
+    margin-left: 10px !important;
+}

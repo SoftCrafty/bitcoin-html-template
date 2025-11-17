@@ -935,21 +935,21 @@
             .slick-slide{
                 margin: 0 5px;
 
-                &.slick-current{
+                // &.slick-current{
                     
-                    .item{
-                        background:  #031A26 !important;
-                        border: none !important;
-                        border-radius: 10px !important;
-                    }
+                //     .item{
+                //         background:  #031A26 !important;
+                //         border: none !important;
+                //         border-radius: 10px !important;
+                //     }
 
-                    span {
-                        color: $white !important;
-                    }
-                    h4 {
-                        color: $white !important;
-                    }
-                }
+                //     span {
+                //         color: $white !important;
+                //     }
+                //     h4 {
+                //         color: $white !important;
+                //     }
+                // }
             }
 
             .slick-arrow{

@@ -33517,6 +33517,11 @@ header {
 }
 
 /*--Branding Start---*/
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_branding_area {
+    margin-top: 20px !important;
+  }
+}
 .mb_branding_area .mb_branding_wrapper {
   display: flex;
   flex-direction: row;
@@ -33552,6 +33557,11 @@ header {
 }
 .mb_branding_area .mb_branding_wrapper_rtl {
   direction: rtl;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_branding_area .mb_branding_wrapper_rtl {
+    margin-top: 20px !important;
+  }
 }
 
 /*--Branding End---*/
@@ -34055,7 +34065,7 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .mb_how_work .left-arrow {
-    bottom: -11%;
+    bottom: -17.5%;
     left: 31.5%;
   }
 }
@@ -34106,7 +34116,7 @@ header {
     height: 35px;
     width: 35px;
     left: 65%;
-    bottom: -11%;
+    bottom: -17.5%;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
@@ -34163,6 +34173,11 @@ header {
     bottom: -11%;
     left: 50%;
     transform: translate(-50%, 0px);
+  }
+}
+@media only screen and (max-width: 1199px) and (min-width: 0px) and (max-width: 767px) {
+  .mb_how_work .mb_how_work_dots {
+    bottom: -18%;
   }
 }
 .mb_how_work .mb_how_work_dots li {
@@ -34440,12 +34455,15 @@ header {
     padding: 40px 24px;
   }
   .mb_browse_properties .mb_browse_wrapper .explore_btn {
-    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .mb_browse_properties .mb_browse_wrapper {
-    padding: 30px 20px;
+    padding: 30px 20px 60px 20px;
   }
 }
 .mb_browse_properties .mb_properties_btn {
@@ -35405,6 +35423,12 @@ header {
 .mb_mibitcoin_casa .btn_wrapper a {
   cursor: pointer;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .mb_mibitcoin_casa .btn_wrapper a {
+    font-size: 14px;
+    padding: 14px 4px 14px 22px;
+  }
+}
 .mb_mibitcoin_casa .btn_wrapper a:hover {
   background-color: #fff;
   color: #031a26;
@@ -35889,6 +35913,14 @@ header {
 }
 .rb_about2 .rb_content .item .icon img {
   object-fit: contain;
+  padding: 0px !important;
+  border: none !important;
+  border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  background-color: transparent !important;
 }
 .rb_about2 .rb_content .item .rb_title {
   color: #031a26;
@@ -38428,17 +38460,6 @@ body {
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide {
   margin: 0 5px;
-}
-.rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current .item {
-  background: #031A26 !important;
-  border: none !important;
-  border-radius: 10px !important;
-}
-.rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current span {
-  color: #fff !important;
-}
-.rb_project_tab .rb_schedule_card .rb_date_slider .slick-slide.slick-current h4 {
-  color: #fff !important;
 }
 .rb_project_tab .rb_schedule_card .rb_date_slider .slick-arrow {
   height: 44px;

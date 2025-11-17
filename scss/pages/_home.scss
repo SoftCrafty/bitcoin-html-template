@@ -318,6 +318,9 @@
 }
 /*--Branding Start---*/
 .mb_branding_area{
+    @include sm{
+        margin-top: 20px !important;
+    }
     .mb_branding_wrapper{
         @include flex(row, space-between, center);
         
@@ -347,6 +350,9 @@
     }
     .mb_branding_wrapper_rtl{
         direction: rtl;
+        @include sm{
+            margin-top: 20px !important;
+        }
     }
 }
 /*--Branding End---*/
@@ -753,7 +759,7 @@
             left: 35.5%;
         }
         @include xxs {
-            bottom: -11%;
+            bottom: -17.5%;
             left: 31.5%;
 
         }
@@ -799,7 +805,7 @@
             height: 35px;
             width: 35px;
             left: 65%;
-            bottom: -11%;
+            bottom: -17.5%;
         }
         @include xxs{ 
             height: 35px;
@@ -839,6 +845,9 @@
             top: auto;
             right: auto;
             bottom: -11%;
+            @include sm{
+                bottom: -18%;
+            }
             left: 50%;
             transform: translate(-50%, 0px);
         }
@@ -1078,11 +1087,15 @@
         @include md{
             padding: 40px 24px;
             .explore_btn{
-                display: none;
+                 
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
             }
         }
         @include sm{
-            padding: 30px 20px;
+            padding: 30px 20px 60px 20px;
             
         }
         @include border-radius(24px);
@@ -1908,6 +1921,12 @@
         @include transformX(-50%);
         a{
             cursor: pointer;
+            @include sm{
+                font-size: 14px;
+                padding: 14px 4px 14px 22px;
+            
+
+            }
             &:hover{
                 background-color: $white;
                 color: $text_color;

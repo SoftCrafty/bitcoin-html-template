@@ -30002,6 +30002,8 @@ header {
     background: linear-gradient(180deg, #E44660 0%, #D31031 100%); }
   .mb_mibitcoin_casa .mb_casa_brokerage .mb_check.style_2 span {
     background: linear-gradient(180deg, #FAD257 0%, #E4AE46 100%); }
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_check .tk_yellow span {
+    background-color: yellow; }
 .mb_mibitcoin_casa .mb_casa_brokerage_contains {
   padding: 0px 40px;
   max-height: 448px;

@@ -42,5 +42,5 @@
     margin-left: 10px !important;
 }
  .mb_mibitcoin_casa .mb_casa_brokerage .mb_check.tk_yellow span {
-     background-color: yellow;
+     background-color: yellow !important;
  }

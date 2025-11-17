@@ -27487,7 +27487,8 @@ header {
     .heading_area .heading h3 {
       font-size: 20px; } }
   .heading_area .heading h3 span {
-    margin-right: 10px; }
+    margin-right: 10px;
+    display: inline-block; }
 .heading_area .heading.style_01 h2 {
   color: #031a26; }
 .heading_area .heading.style_01 h3 {
@@ -31104,8 +31105,11 @@ body {
   -ms-border-radius: 30px;
   -o-border-radius: 30px; }
 
-.mb_inner_page_hero.for-post-property {
+.for-post-property .mb_inner_page_hero {
   margin-top: -90px; }
+.for-post-property .ScrollSmoother-wrapper {
+  position: relative !important;
+  inset: unset !important; }
 
 .mb_map_search .mb_map_search_filter {
   overflow-x: auto;

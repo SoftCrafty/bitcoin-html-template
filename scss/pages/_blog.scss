@@ -92,6 +92,11 @@
 }
 
 .rb_blog2 {
+    .tk_listing_slider{
+        .slick-slide{
+            margin: 0px 10px;
+        }
+    }
     position: relative;
     .mb_choose_option {
         border-left: 1px solid rgba(3, 26, 38, 0.20);;

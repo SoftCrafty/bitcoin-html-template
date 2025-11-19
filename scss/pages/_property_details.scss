@@ -2679,3 +2679,16 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 9999999;
 
 }
+
+.logout_btn {
+    button {
+    border: 1px solid rgba(3, 26, 38, 0.14);
+    border-radius: 30px;
+    padding: 6px 20px;
+}
+button{
+    span {
+    margin-right: 8px;
+    }
+}
+}

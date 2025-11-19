@@ -33931,6 +33931,13 @@ body {
 #tk_property_details_btn {
   z-index: 9999999; }
 
+.logout_btn button {
+  border: 1px solid rgba(3, 26, 38, 0.14);
+  border-radius: 30px;
+  padding: 6px 20px; }
+.logout_btn button span {
+  margin-right: 8px; }
+
 .mb_login_area .mb_login_container {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 20px;

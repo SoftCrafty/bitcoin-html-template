@@ -2683,8 +2683,8 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 .logout_btn {
     button {
     border: 1px solid rgba(3, 26, 38, 0.14);
-    border-radius: 30px;
-    padding: 6px 20px;
+    @include border-radius(30px);
+    color: rgb(38, 38, 38);
     background-color: transparent !important;
 }
 button{

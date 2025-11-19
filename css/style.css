@@ -33934,7 +33934,11 @@ body {
 .logout_btn button {
   border: 1px solid rgba(3, 26, 38, 0.14);
   border-radius: 30px;
-  padding: 6px 20px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  color: #262626;
   background-color: transparent !important; }
 .logout_btn button span {
   margin-right: 8px; }

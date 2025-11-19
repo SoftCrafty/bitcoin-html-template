@@ -27006,6 +27006,14 @@ header {
   opacity: 1;
   display: block; }
 
+.property_sticky_top {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  animation: slideDown 2s ease forwards;
+  background-color: #fffdfd; }
+
 /* Animation for SlideDown */
 @keyframes up-down {
   from {
@@ -31668,7 +31676,7 @@ body {
       .rb_project1 .rb_project1_card .rb_thumb img {
         border-radius: 15px;
         width: 100%;
-        max-height: 550px; }
+        max-height: 534px; }
       .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
         display: flex;
         align-items: center;
@@ -33920,33 +33928,9 @@ body {
   .rb_project_content .property-review-section.container {
     max-width: 100% !important; }
 
-/*--- Broker Info End---*/
-/*
+#tk_property_details_btn {
+  z-index: 9999999; }
 
-
-[data-bs-theme="dark"] .banner_slider .heading h2 {
-    color: $white;
-}
-[data-bs-theme="dark"] .banner_slider p {
-    color: $white;
-}
-[data-bs-theme="dark"] .header-wrap .main-menu ul li a {
-	color: white;
-}
-
-[data-bs-theme="dark"] .sticky_top.header-1 .header-wrap .main-menu ul li a.search i{
-	color: black !important;
-}
-[data-bs-theme="dark"] #header-1.sticky_top .main-menu ul li.menu-item-has-children::before {
-	color: black !important;
-}
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('../img/bg.png') no-repeat center center;
-    background-size: cover; 
-  
-
-    */
 .mb_login_area .mb_login_container {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 20px;

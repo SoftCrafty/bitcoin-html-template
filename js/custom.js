@@ -82,14 +82,14 @@
             $(".body-overlay").removeClass("opened");
         });
         //>> Sticky Menu <<//
-        // windowOn.on('scroll', function () {
-        //     var scroll = windowOn.scrollTop();
-        //     if (scroll < 300) {
-        //         $("#header-sticky").removeClass("sticky_top");
-        //     } else {
-        //         $("#header-sticky").addClass("sticky_top");
-        //     }
-        // });
+        windowOn.on('scroll', function () {
+            var scroll = windowOn.scrollTop();
+            if (scroll < 0) {
+                $("#tk_property_details_btn").removeClass("sticky_top");
+            } else {
+                $("#tk_property_details_btn").addClass("sticky_top");
+            }
+        });
         //>> offcanvas bar <<//
         $(".tp-offcanvas-toogle").on('click', function () {
             $(".tp-offcanvas").addClass("tp-offcanvas-open");

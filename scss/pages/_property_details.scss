@@ -21,7 +21,7 @@
             img {
                 border-radius: 15px;
                 width: 100%;
-                max-height: 550px;
+                max-height: 534px;
             }
             .rb_btn {
                 display: flex;
@@ -2670,46 +2670,11 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  }
 
 
+#tk_property_details_btn{
+    // background-color: red;
+    // position:  fixed !important;
+    // top: 0px !important;
+    // width: 100%;
+    z-index: 9999999;
 
-/*--- Broker Info End---*/
-
-//  .mb_tab_content {
-//             display: none;
-//         }
-
-//         .mb_tab_content.active {
-//             display: block;
-//         }
-
-
-
-
-
-/*
-
-
-[data-bs-theme="dark"] .banner_slider .heading h2 {
-    color: $white;
 }
-[data-bs-theme="dark"] .banner_slider p {
-    color: $white;
-}
-[data-bs-theme="dark"] .header-wrap .main-menu ul li a {
-	color: white;
-}
-
-[data-bs-theme="dark"] .sticky_top.header-1 .header-wrap .main-menu ul li a.search i{
-	color: black !important;
-}
-[data-bs-theme="dark"] #header-1.sticky_top .main-menu ul li.menu-item-has-children::before {
-	color: black !important;
-}
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('../img/bg.png') no-repeat center center;
-    background-size: cover; 
-  
-
-    */
-
-

@@ -26879,7 +26879,6 @@ header {
   margin: auto;
   animation: slideDown 2s ease forwards;
   background-color: #fffdfd;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: top 0.5s ease-in-out; }
   .sticky_top.header-1 .header-wrap {
     margin-top: 0; }
@@ -30003,8 +30002,8 @@ header {
     background: linear-gradient(180deg, #E44660 0%, #D31031 100%); }
   .mb_mibitcoin_casa .mb_casa_brokerage .mb_check.style_2 span {
     background: linear-gradient(180deg, #FAD257 0%, #E4AE46 100%); }
-  .mb_mibitcoin_casa .mb_casa_brokerage .mb_check .tk_yellow span {
-    background-color: yellow; }
+  .mb_mibitcoin_casa .mb_casa_brokerage .mb_check.tk_yellow span {
+    background-color: yellow !important; }
 .mb_mibitcoin_casa .mb_casa_brokerage_contains {
   padding: 0px 40px;
   max-height: 448px;

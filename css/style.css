@@ -33938,7 +33938,7 @@ body {
   -webkit-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  color: #262626;
+  color: #262626 !important;
   background-color: transparent !important; }
 .logout_btn button span {
   margin-right: 8px; }

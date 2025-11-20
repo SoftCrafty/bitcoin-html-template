@@ -82,14 +82,16 @@
             $(".body-overlay").removeClass("opened");
         });
         //>> Sticky Menu <<//
-        windowOn.on('scroll', function () {
-            var scroll = windowOn.scrollTop();
-            if (scroll < 0) {
-                $("#tk_property_details_btn").removeClass("sticky_top");
-            } else {
-                $("#tk_property_details_btn").addClass("sticky_top");
-            }
-        });
+        // windowOn.on('scroll', function () {
+        //     var scroll = windowOn.scrollTop();
+        //     if (scroll < 1200) {
+        //         $("#tk_property_details_btn").removeClass("sticky_top");
+        //     } else {
+        //         $("#tk_property_details_btn").addClass("sticky_top");
+        //     }
+        // });
+        
+
         //>> offcanvas bar <<//
         $(".tp-offcanvas-toogle").on('click', function () {
             $(".tp-offcanvas").addClass("tp-offcanvas-open");
@@ -102,32 +104,22 @@
 
 
         $(document).ready(function () {
-            // Offset for 'active' state activation (300px from top)
             const activeOffset = 300;
 
             // Target elements
             const $tabButtons = $('.mb_tab');
             const $tabContents = $('.mb_tab_content');
-
-            // 1. Function to manage the 'active' class based on scroll position
             function updateActiveButtonOnScroll() {
                 let currentActiveButtonTarget = null;
                 let found = false;
-
-                // Iterate through content sections to find the one near the top
                 $tabContents.each(function () {
                     const $content = $(this);
-                    // Check if the content section exists (it must have an ID)
                     if ($content.attr('id')) {
-                        // Get the content section's position relative to the viewport top
                         const contentTop = $content.offset().top - $(window).scrollTop();
-
-                        // If the content is past the activeOffset point (i.e., at or above 300px from top)
-                        // and it is still visible on the screen (contentTop < windowHeight)
-                        if (contentTop <= activeOffset && contentTop + $content.height() > 0) {
+                        if (contentTop <= activeOffset && contentTop + $content.height() > 300) {
                             currentActiveButtonTarget = '#' + $content.attr('id');
                             found = true;
-                            return false; // Exit the loop (we only need the topmost one)
+                            return false; 
                         }
                     }
                 });
@@ -428,8 +420,20 @@
             prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-down-long"></i></span>`,
             nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-up-long"></i></span>`,
             vertical: true,
-            verticalSwiping: true 
+            verticalSwiping: true
         });
+
+        // Mouse wheel scroll → Slide Up/Down
+        $('.how_work_section_slider').on('wheel', function (e) {
+            e.preventDefault();
+
+            if (e.originalEvent.deltaY < 0) {
+                $(this).slick('slickPrev');
+            } else {
+                $(this).slick('slickNext');
+            }
+        });
+
         $('.tk_listing_slider').slick({
             slidesToShow: 4,
             slidesToScroll: 1,
@@ -962,4 +966,18 @@ ScrollSmoother.create({
     smooth: 1.3,
     effects: true,
     smoothTouch: 0.1,
+});
+
+var windowOn = $(window);
+var target = $("#tk_property_details_btn");
+var targetOffset = target.offset().top;
+
+windowOn.on('scroll', function () {
+    var scroll = windowOn.scrollTop();
+
+    if (scroll >= targetOffset) {
+        target.addClass("tk_tab_sticky");
+    } else {
+        target.removeClass("tk_tab_sticky");
+    }
 });

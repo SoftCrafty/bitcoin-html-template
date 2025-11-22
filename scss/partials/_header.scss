@@ -477,10 +477,14 @@ header{
             position: fixed;
             top: 0px;
             margin: auto;
-            animation: slideDown 2s ease forwards;
+            // animation: slideDown 2s ease forwards;
             background-color: #fffdfd;
+<<<<<<< HEAD
             // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 			 transition: top 0.5s ease-in-out;
+=======
+			//  transition: top 0.5s ease-in-out;
+>>>>>>> 6831f1d6c170ac01ee185ea5e5d3f8e8412bd0ab
 	&.header-1{
  		.header-wrap{
 			margin-top: 0;
@@ -678,7 +682,14 @@ header{
   opacity: 1;
   display: block;
 }
-
+.property_sticky_top{
+	 width: 100%;
+            position: fixed;
+            top: 0px;
+            margin: auto;
+            animation: slideDown 2s ease forwards;
+            background-color: #fffdfd;
+}
 
 .no-smooth{
 	.mb_inner_page_hero{

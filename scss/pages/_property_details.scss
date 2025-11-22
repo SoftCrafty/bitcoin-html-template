@@ -12,7 +12,25 @@
         @include xxs {
            padding: 30px 0px 30px;
         }
+        .row{
+            .col-xxx-5{
+                .row{
+                    .col-md-6{
+                        .rb_thumb{
+                            height: 253px;
+                            width: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+    // change
     .rb_project1_card {
         height: 100%;
         .rb_thumb {
@@ -21,7 +39,7 @@
             img {
                 border-radius: 15px;
                 width: 100%;
-                max-height: 550px;
+                max-height: 534px;
             }
             .rb_btn {
                 display: flex;
@@ -105,10 +123,41 @@
         }
     }
 }
+ .rb_tab_buttons {
+        // display: flex;
+        gap: 10px;
+        position: sticky !important;
+        top: 0px !important;
+        z-index: 9999999;
+        overflow: visible !important; 
+    overflow-y: visible !important;
+        .item {
+            display: inline-flex;
+            // height: 40px;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            border-radius: 5px;
+            cursor: pointer;
+            &.active {
+                background: var(--P, #FF9916);
+                color: $white;
+            }
+        }
+    }
+.tk_tab_sticky{
+     width: 100%;
+     box-shadow:0px 4px 4.7px 0px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            top: 0px;
+            margin: auto;
+            background-color: #fff;
+}
 
 .rb_project_tab {
-    .rb_project_content {  
-    }
+    background-color: #fff;
+    padding: 15px 0px;
     .rb_tab_buttons {
         // display: flex;
         gap: 10px;
@@ -2670,46 +2719,25 @@ $mb_box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
  }
 
 
+#tk_property_details_btn{
+    // background-color: red;
+    // position:  fixed !important;
+    // top: 0px !important;
+    // width: 100%;
+    z-index: 9999999;
 
-/*--- Broker Info End---*/
-
-//  .mb_tab_content {
-//             display: none;
-//         }
-
-//         .mb_tab_content.active {
-//             display: block;
-//         }
-
-
-
-
-
-/*
-
-
-[data-bs-theme="dark"] .banner_slider .heading h2 {
-    color: $white;
-}
-[data-bs-theme="dark"] .banner_slider p {
-    color: $white;
-}
-[data-bs-theme="dark"] .header-wrap .main-menu ul li a {
-	color: white;
 }
 
-[data-bs-theme="dark"] .sticky_top.header-1 .header-wrap .main-menu ul li a.search i{
-	color: black !important;
+.logout_btn {
+    button {
+    border: 1px solid rgba(3, 26, 38, 0.14);
+    @include border-radius(30px);
+    color: rgb(38, 38, 38) !important;
+    background-color: transparent !important;
 }
-[data-bs-theme="dark"] #header-1.sticky_top .main-menu ul li.menu-item-has-children::before {
-	color: black !important;
+button{
+    span {
+    margin-right: 8px;
+    }
 }
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-        url('../img/bg.png') no-repeat center center;
-    background-size: cover; 
-  
-
-    */
-
-
+}

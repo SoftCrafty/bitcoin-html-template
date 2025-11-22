@@ -31409,7 +31409,6 @@ header {
   margin: auto;
   animation: slideDown 2s ease forwards;
   background-color: #fffdfd;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   transition: top 0.5s ease-in-out;
 }
 .sticky_top.header-1 .header-wrap {
@@ -31579,6 +31578,10 @@ header {
 .mb_properties_card_container.show {
   opacity: 1;
   display: block;
+}
+
+.no-smooth .mb_inner_page_hero {
+  margin-top: -90px;
 }
 
 /* Animation for SlideDown */

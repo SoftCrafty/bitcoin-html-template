@@ -81,15 +81,15 @@
             $(".df-search-area").removeClass("opened");;
             $(".body-overlay").removeClass("opened");
         });
-        //>> Sticky Menu <<//
-        // windowOn.on('scroll', function () {
-        //     var scroll = windowOn.scrollTop();
-        //     if (scroll < 300) {
-        //         $("#header-sticky").removeClass("sticky_top");
-        //     } else {
-        //         $("#header-sticky").addClass("sticky_top");
-        //     }
-        // });
+        // >> Sticky Menu <<//
+        windowOn.on('scroll', function () {
+            var scroll = windowOn.scrollTop();
+            if (scroll < 300) {
+                $("#header-sticky").removeClass("sticky_top");
+            } else {
+                $("#header-sticky").addClass("sticky_top");
+            }
+        });
         //>> offcanvas bar <<//
         $(".tp-offcanvas-toogle").on('click', function () {
             $(".tp-offcanvas").addClass("tp-offcanvas-open");

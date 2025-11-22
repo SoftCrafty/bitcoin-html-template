@@ -81,7 +81,6 @@
             $(".df-search-area").removeClass("opened");;
             $(".body-overlay").removeClass("opened");
         });
-<<<<<<< HEAD
         // >> Sticky Menu <<//
         windowOn.on('scroll', function () {
             var scroll = windowOn.scrollTop();
@@ -91,19 +90,6 @@
                 $("#header-sticky").addClass("sticky_top");
             }
         });
-=======
-        //>> Sticky Menu <<//
-        // windowOn.on('scroll', function () {
-        //     var scroll = windowOn.scrollTop();
-        //     if (scroll < 1200) {
-        //         $("#tk_property_details_btn").removeClass("sticky_top");
-        //     } else {
-        //         $("#tk_property_details_btn").addClass("sticky_top");
-        //     }
-        // });
-        
-
->>>>>>> 6831f1d6c170ac01ee185ea5e5d3f8e8412bd0ab
         //>> offcanvas bar <<//
         $(".tp-offcanvas-toogle").on('click', function () {
             $(".tp-offcanvas").addClass("tp-offcanvas-open");

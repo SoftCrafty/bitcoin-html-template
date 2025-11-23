@@ -50,3 +50,9 @@
  }
  .mb_mibitcoin_casa .tk_yellow span i {
       display: none; }
+
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-direction-xs-row.css-iv3pi7{
+    justify-content: center;
+    gap: 120px;
+}

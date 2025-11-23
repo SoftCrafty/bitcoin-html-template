@@ -37199,6 +37199,13 @@ body {
   color: #031a26;
 }
 
+.mb-search-container.google_map_search .input-group {
+  justify-content: space-between;
+}
+.mb-search-container.google_map_search .input-group div {
+  flex-grow: 1;
+}
+
 .mb_contact_us .mb_contact_container {
   box-shadow: 0 0 34px 0 rgba(0, 0, 0, 0.1);
   background: #fff;

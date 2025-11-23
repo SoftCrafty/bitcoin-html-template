@@ -373,3 +373,13 @@ button{
     color: #031a26;
     }
    }     
+
+   .mb-search-container.google_map_search{
+    .input-group{
+        justify-content: space-between;
+
+        div{
+            flex-grow: 1;
+        }
+    }
+   }

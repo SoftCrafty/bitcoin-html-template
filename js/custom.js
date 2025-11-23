@@ -440,9 +440,9 @@
             autoplay: true,
             speed: 3000,
             autoplaySpeed: 3000,
-            // dotsClass: "mb_how_work_dots",
-            // prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-down-long"></i></span>`,
-            // nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-up-long"></i></span>`,
+           
+            prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-down-long"></i></span>`,
+            nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-up-long"></i></span>`,
         });
 
         $('.rb_date_slider').slick({

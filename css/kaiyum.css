@@ -54,3 +54,9 @@
     top          : 0px !important;
     border-radius: 0px 0px 10px 10px !important;
 }
+
+
+.MuiGrid-root.MuiGrid-container.MuiGrid-direction-xs-row.css-iv3pi7{
+    justify-content: center;
+    gap: 120px;
+}

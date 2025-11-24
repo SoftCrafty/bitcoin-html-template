@@ -91,3 +91,7 @@
     display: flex;
     justify-content: space-between;
 }
+.tk_table_area{
+    width: 100% !important;
+    background-color: red !important;
+}

@@ -74,3 +74,6 @@
     height: fit-content !important;
     padding: 10px 0px !important;
 }
+.MuiPaper-root.MuiPaper-outlined.MuiPaper-rounded.MuiCard-root.css-208sy0 {
+    box-shadow: none !important;
+}

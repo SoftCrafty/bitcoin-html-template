@@ -81,9 +81,13 @@
     gap: none !important;
 }
 .css-12qq0qi {
-    width: 200px;
+    width: 250px;
 }
 .css-1116vy {
     display: flex;
     justify-content: flex-start;
+}
+.css-1klpoq2 {
+    display: flex;
+    justify-content: space-between;
 }

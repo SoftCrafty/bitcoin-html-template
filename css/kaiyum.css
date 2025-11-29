@@ -161,3 +161,8 @@
 .tk_profile_delete_warning{
     margin-bottom: 20px;
 }
+.tk_settings_profile_area .css-rjkyii {
+    @media (min-width: 1200px){
+        margin-left: 8.125rem !important;
+    }
+}

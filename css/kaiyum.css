@@ -152,3 +152,12 @@
 .tk_settings_profile_input{
     margin-top: 20px;
 }
+.tk_profile_delete{
+    margin-top: 20px;
+}
+.tk_settings_profile_button{
+    margin-top: 20px;
+}
+.tk_profile_delete_warning{
+    margin-bottom: 20px;
+}

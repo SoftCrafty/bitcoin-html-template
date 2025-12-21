@@ -34164,7 +34164,7 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .mb_how_work .mb_dots_arrow_card {
-    width: 186px;
+    width: 210px;
   }
 }
 .mb_how_work .mb_how_work_dots {
@@ -35267,7 +35267,7 @@ header {
 /*--Our Agents End---*/
 /*--MiBitcoin vs Brokerage Start---*/
 .mb_mibitcoin_casa .bg_primary {
-  background-color: #ffeed8;
+  background-color: white;
   padding: 7px 0px;
 }
 .mb_mibitcoin_casa .bg_primary.style_001 {

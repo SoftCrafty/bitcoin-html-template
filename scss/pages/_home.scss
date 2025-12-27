@@ -867,6 +867,10 @@
     .slick-slide{
         margin: 10px 0px;
     }
+    .mb_work_heading,
+    .mb_work_details{
+        text-align: left;
+    }
     .mb_number{
         @include md {
             display: flex;

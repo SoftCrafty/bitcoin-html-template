@@ -34191,6 +34191,10 @@ header {
 .mb_how_work .slick-slide {
   margin: 10px 0px;
 }
+.mb_how_work .mb_work_heading,
+.mb_how_work .mb_work_details {
+  text-align: left;
+}
 @media only screen and (max-width: 991px) {
   .mb_how_work .mb_number {
     display: flex;

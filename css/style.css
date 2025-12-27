@@ -34029,54 +34029,6 @@ header {
   z-index: 10;
   transition: all 0.4s ease;
 }
-@media only screen and (max-width: 1199px) {
-  .mb_how_work .left-arrow {
-    top: auto;
-    right: auto;
-    bottom: -11.6%;
-    left: 40.5%;
-    transform: translate(-50%, 0px);
-  }
-}
-@media only screen and (max-width: 991px) {
-  .mb_how_work .left-arrow {
-    bottom: -11%;
-    left: 37.5%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .left-arrow {
-    height: 35px;
-    width: 35px;
-    left: 35%;
-    bottom: -10%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow {
-    height: 35px;
-    width: 35px;
-    left: 30%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .left-arrow {
-    bottom: -11%;
-    left: 37.5%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .left-arrow {
-    bottom: -11%;
-    left: 35.5%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .left-arrow {
-    bottom: -17.5%;
-    left: 31.5%;
-  }
-}
 .mb_how_work .left-arrow:hover {
   background-color: #ff9916;
   color: #fff;
@@ -34102,36 +34054,6 @@ header {
   order: 4;
   transition: all 0.4s ease;
 }
-@media only screen and (max-width: 1199px) {
-  .mb_how_work .right-arrow {
-    top: auto;
-    right: auto;
-    bottom: -11.6%;
-    left: 59.5%;
-    transform: translate(-50%, 0px);
-  }
-}
-@media only screen and (max-width: 991px) {
-  .mb_how_work .right-arrow {
-    bottom: -11%;
-    left: 62.5%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  .mb_how_work .right-arrow {
-    height: 35px;
-    width: 35px;
-    left: 65%;
-    bottom: -17.5%;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .mb_how_work .right-arrow {
-    height: 35px;
-    width: 35px;
-    left: 69%;
-  }
-}
 .mb_how_work .right-arrow:hover {
   background-color: #ff9916;
   color: #fff;
@@ -34150,17 +34072,6 @@ header {
   -webkit-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
-  position: absolute;
-  top: 55px;
-  right: 11px;
-}
-@media only screen and (max-width: 1199px) {
-  .mb_how_work .mb_dots_arrow_card {
-    top: auto;
-    bottom: -10%;
-    left: 50%;
-    transform: translate(-50%, 0px);
-  }
 }
 .mb_how_work .mb_how_work_dots {
   display: flex;
@@ -34187,6 +34098,15 @@ header {
 }
 .mb_how_work .mb_how_work_dots .slick-active button {
   background-color: #ff9916;
+}
+.mb_how_work .how_work_header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.mb_how_work .how_work_header .mb_dots_arrow_card {
+  align-self: flex-end;
 }
 .mb_how_work .slick-slide {
   margin: 10px 0px;

@@ -34025,9 +34025,6 @@ header {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   color: #020626;
-  position: absolute;
-  top: -97px;
-  right: 193px;
   background-color: #fff;
   z-index: 10;
   transition: all 0.4s ease;
@@ -34100,11 +34097,9 @@ header {
   -o-border-radius: 50%;
   color: #020626;
   cursor: pointer;
-  position: absolute;
-  right: 16px;
   background-color: #fff;
-  top: -97px;
   z-index: 10;
+  order: 4;
   transition: all 0.4s ease;
 }
 @media only screen and (max-width: 1199px) {
@@ -34143,8 +34138,13 @@ header {
 }
 .mb_how_work .mb_dots_arrow_card {
   background-color: #031a26;
-  width: 232px;
-  height: 54px;
+  width: fit-content;
+  height: auto;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   border-radius: 100px;
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -34162,16 +34162,10 @@ header {
     transform: translate(-50%, 0px);
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_dots_arrow_card {
-    width: 210px;
-  }
-}
 .mb_how_work .mb_how_work_dots {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  align-items: flex-end;
   gap: 5px;
   position: absolute;
   top: -80px;
@@ -34193,6 +34187,7 @@ header {
 }
 .mb_how_work .mb_how_work_dots li {
   position: relative;
+  display: inline-flex;
 }
 .mb_how_work .mb_how_work_dots button {
   width: 10px;

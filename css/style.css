@@ -34167,23 +34167,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  position: absolute;
-  top: -80px;
-  right: 92px;
-}
-@media only screen and (max-width: 1199px) {
-  .mb_how_work .mb_how_work_dots {
-    top: auto;
-    right: auto;
-    bottom: -11%;
-    left: 50%;
-    transform: translate(-50%, 0px);
-  }
-}
-@media only screen and (max-width: 1199px) and (min-width: 0px) and (max-width: 767px) {
-  .mb_how_work .mb_how_work_dots {
-    bottom: -18%;
-  }
 }
 .mb_how_work .mb_how_work_dots li {
   position: relative;

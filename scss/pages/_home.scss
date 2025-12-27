@@ -839,19 +839,8 @@
         align-items: center;
         justify-content: center;
         gap: 5px;
-        position: absolute;
-        top: -80px;
-        right: 92px;
-        @include lg {
-            top: auto;
-            right: auto;
-            bottom: -11%;
-            @include sm{
-                bottom: -18%;
-            }
-            left: 50%;
-            transform: translate(-50%, 0px);
-        }
+       
+       
     
         li{
             position: relative;

@@ -37479,7 +37479,7 @@ body {
 .rb_project1 .rb_project1_card .rb_thumb img {
   border-radius: 15px;
   width: 100%;
-  max-height: 534px;
+  height: 255px;
 }
 .rb_project1 .rb_project1_card .rb_thumb .rb_btn {
   display: flex;
@@ -37576,6 +37576,9 @@ body {
   .rb_project1 .rb_project1_card .rb_content .rb_desc2 {
     font-size: 14px;
   }
+}
+.rb_project1 .rb_project1_card.big-img .rb_thumb img {
+  height: 534px;
 }
 
 .rb_tab_buttons {

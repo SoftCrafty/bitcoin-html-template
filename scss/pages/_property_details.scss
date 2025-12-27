@@ -39,7 +39,7 @@
             img {
                 border-radius: 15px;
                 width: 100%;
-                max-height: 534px;
+               height: 255px;
             }
             .rb_btn {
                 display: flex;
@@ -118,6 +118,14 @@
                 line-height: 26px; /* 162.5% */
                 @include xxxl {
                     font-size: 14px;
+                }
+            }
+        }
+
+        &.big-img{
+            .rb_thumb {
+                img {
+                    height: 534px;
                 }
             }
         }

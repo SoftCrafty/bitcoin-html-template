@@ -40396,6 +40396,19 @@ body {
   right: 0px;
 }
 
+.package-tag {
+  display: inline-block;
+  background: #FF9916;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
 .mb_login_area .mb_login_container {
   border: 1px solid rgba(3, 26, 38, 0.1);
   border-radius: 20px;

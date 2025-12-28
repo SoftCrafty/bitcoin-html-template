@@ -2754,6 +2754,7 @@ button{
 }
 }
 
+// Pricing card Chip Tag Style
 .chip-tag {
     background: #FF9916;
     font-weight: 600;
@@ -2767,4 +2768,18 @@ button{
     position: absolute;
     top: 3px;
     right: 0px;
+}
+
+// Package Tag Style
+.package-tag {
+    display: inline-block;
+    background: #FF9916;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }

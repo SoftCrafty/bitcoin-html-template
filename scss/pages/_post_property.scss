@@ -76,6 +76,8 @@ body{
 }
 
 .btn-group{
+    margin-top: 40px;
+    
     @include xxs{
         flex-direction: column;
         gap: 15px;

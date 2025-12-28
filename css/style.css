@@ -36123,6 +36123,9 @@ body {
   background-color: #ff9916;
 }
 
+.btn-group {
+  margin-top: 40px;
+}
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .btn-group {
     flex-direction: column;

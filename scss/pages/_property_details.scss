@@ -133,7 +133,9 @@
         }
     }
 }
- .rb_tab_buttons {
+
+
+.rb_tab_buttons {
         // display: flex;
         gap: 10px;
         position: sticky !important;
@@ -2750,4 +2752,19 @@ button{
     margin-right: 8px;
     }
 }
+}
+
+.chip-tag {
+    background: #FF9916;
+    font-weight: 600;
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 3px;
+    right: 0px;
 }

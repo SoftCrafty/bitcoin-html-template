@@ -74,6 +74,19 @@ body{
         }
     }
 }
+
+.btn-group{
+    @include xs{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn_wrapper{
+        @include xs{
+            font-size: 20px;
+        }
+    }
+}
 .mb_post_property_wrapper{
     border: 1px solid rgba(3, 26, 38, 0.1);
     border-radius: 10px;

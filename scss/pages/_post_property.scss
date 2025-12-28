@@ -76,14 +76,18 @@ body{
 }
 
 .btn-group{
-    @include xs{
+    @include xxs{
         flex-direction: column;
         gap: 15px;
     }
 
     .btn_wrapper{
         @include xs{
-            font-size: 20px;
+            font-size: 18px;
+        }
+
+        @include xxs{
+            margin-top: 0;
         }
     }
 }

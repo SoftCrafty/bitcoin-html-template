@@ -58,6 +58,7 @@
           background: $white;
           padding: 12px 30px;
           outline: none;
+          padding-right: 50px;
           @include border-radius(999px);
           &::placeholder {
             color: $text;

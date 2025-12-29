@@ -22,6 +22,7 @@
             max-height: 240px;
             img {
                 width: 100%;
+                height: 245px;
                 border-radius: 14px;
                 @include transition(0.4s);
                 &:hover {

@@ -320,10 +320,10 @@
             position: relative;
             overflow: hidden;
             border-radius: 14px;
-            max-height: 230px;
             img {
                 width: 100%;
                 border-radius: 14px;
+                height: 245px;
                 @include transition(0.4s);
                 &:hover {
                     scale: 1.2;

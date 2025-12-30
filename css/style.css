@@ -36047,6 +36047,17 @@ header {
   width: 100%;
 }
 
+.rb_blog2_shape2.shape-3 {
+  position: absolute;
+  bottom: -110px;
+  right: 35px;
+}
+@media only screen and (max-width: 991px) {
+  .rb_blog2_shape2.shape-3 {
+    display: none;
+  }
+}
+
 body {
   overflow-x: hidden;
 }

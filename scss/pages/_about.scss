@@ -485,3 +485,13 @@
         width: 100%;
     }
 }
+
+.rb_blog2_shape2.shape-3{
+    position: absolute;
+    bottom: -110px;
+    right: 35px;
+
+    @include md {
+        display: none;
+    }
+}

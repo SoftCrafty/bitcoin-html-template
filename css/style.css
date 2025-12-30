@@ -36043,6 +36043,10 @@ header {
   margin-bottom: 0;
 }
 
+.rb_step_thumb img {
+  width: 100%;
+}
+
 body {
   overflow-x: hidden;
 }
